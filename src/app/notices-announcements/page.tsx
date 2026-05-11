@@ -88,11 +88,11 @@ export default function NoticesAnnouncements() {
 <h4 className="font-display-xs text-display-xs font-bold text-ink group-hover:text-primary transition-colors">Registration for International Exchange Program 2025</h4>
 <p className="text-on-surface-variant font-body-md line-clamp-2">Applications are invited from 3rd-year engineering students for the semester-abroad programs in partnership with our European affiliate universities...</p>
 <div className="flex items-center gap-xl pt-xxs">
-<a className="flex items-center gap-xs text-primary font-caption-bold hover:underline" href="#">
+<a className="flex items-center gap-xs text-primary font-caption-bold hover:underline" href="/downloads-documents">
 <span className="material-symbols-outlined text-[20px]">picture_as_pdf</span>
                                         DOWNLOAD PDF (420 KB)
                                     </a>
-<a className="flex items-center gap-xs text-secondary font-caption-bold hover:text-ink" href="#">
+<a className="flex items-center gap-xs text-secondary font-caption-bold hover:text-ink" href="/downloads-documents">
 <span className="material-symbols-outlined text-[20px]">share</span>
                                         SHARE
                                     </a>
@@ -117,11 +117,11 @@ export default function NoticesAnnouncements() {
 <h4 className="font-display-xs text-display-xs font-bold text-ink group-hover:text-primary transition-colors">On-Campus Recruitment Drive: Global Tech Solutions</h4>
 <p className="text-on-surface-variant font-body-md line-clamp-2">All final year B.Tech and MCA students are required to register on the placement portal for the upcoming recruitment drive scheduled for late October...</p>
 <div className="flex items-center gap-xl pt-xxs">
-<a className="flex items-center gap-xs text-primary font-caption-bold hover:underline" href="#">
+<a className="flex items-center gap-xs text-primary font-caption-bold hover:underline" href="/downloads-documents">
 <span className="material-symbols-outlined text-[20px]">picture_as_pdf</span>
                                         DOWNLOAD PDF (1.2 MB)
                                     </a>
-<a className="flex items-center gap-xs text-secondary font-caption-bold hover:text-ink" href="#">
+<a className="flex items-center gap-xs text-secondary font-caption-bold hover:text-ink" href="/downloads-documents">
 <span className="material-symbols-outlined text-[20px]">share</span>
                                         SHARE
                                     </a>
@@ -146,11 +146,11 @@ export default function NoticesAnnouncements() {
 <h4 className="font-display-xs text-display-xs font-bold text-ink group-hover:text-primary transition-colors">Revised Academic Calendar for Winter Session</h4>
 <p className="text-on-surface-variant font-body-md line-clamp-2">Please take note of the slight adjustments in the winter session dates including pre-board examinations and the commencement of the new semester...</p>
 <div className="flex items-center gap-xl pt-xxs">
-<a className="flex items-center gap-xs text-primary font-caption-bold hover:underline" href="#">
+<a className="flex items-center gap-xs text-primary font-caption-bold hover:underline" href="/downloads-documents">
 <span className="material-symbols-outlined text-[20px]">picture_as_pdf</span>
                                         DOWNLOAD PDF (245 KB)
                                     </a>
-<a className="flex items-center gap-xs text-secondary font-caption-bold hover:text-ink" href="#">
+<a className="flex items-center gap-xs text-secondary font-caption-bold hover:text-ink" href="/downloads-documents">
 <span className="material-symbols-outlined text-[20px]">share</span>
                                         SHARE
                                     </a>
@@ -188,24 +188,24 @@ export default function NoticesAnnouncements() {
                         Notice Archive
                     </h3>
 <nav className="space-y-xxs">
-<a className="flex items-center justify-between py-sm px-md hover:bg-canvas rounded-lg transition-all group" href="#">
+<a className="flex items-center justify-between py-sm px-md hover:bg-canvas rounded-lg transition-all group" href="/downloads-documents">
 <span className="font-body-emphasis text-on-surface-variant group-hover:text-primary">Year 2024</span>
 <span className="bg-fog text-secondary text-[12px] px-sm py-xxs rounded-full">142</span>
 </a>
-<a className="flex items-center justify-between py-sm px-md hover:bg-canvas rounded-lg transition-all group" href="#">
+<a className="flex items-center justify-between py-sm px-md hover:bg-canvas rounded-lg transition-all group" href="/downloads-documents">
 <span className="font-body-emphasis text-on-surface-variant group-hover:text-primary">Year 2023</span>
 <span className="bg-fog text-secondary text-[12px] px-sm py-xxs rounded-full">489</span>
 </a>
-<a className="flex items-center justify-between py-sm px-md hover:bg-canvas rounded-lg transition-all group" href="#">
+<a className="flex items-center justify-between py-sm px-md hover:bg-canvas rounded-lg transition-all group" href="/downloads-documents">
 <span className="font-body-emphasis text-on-surface-variant group-hover:text-primary">Year 2022</span>
 <span className="bg-fog text-secondary text-[12px] px-sm py-xxs rounded-full">312</span>
 </a>
-<a className="flex items-center justify-between py-sm px-md hover:bg-canvas rounded-lg transition-all group" href="#">
+<a className="flex items-center justify-between py-sm px-md hover:bg-canvas rounded-lg transition-all group" href="/downloads-documents">
 <span className="font-body-emphasis text-on-surface-variant group-hover:text-primary">Year 2021</span>
 <span className="bg-fog text-secondary text-[12px] px-sm py-xxs rounded-full">267</span>
 </a>
 <div className="pt-sm border-t border-fog mt-sm">
-<a className="text-primary font-caption-bold text-caption-md flex items-center justify-center gap-xs py-sm hover:underline" href="#">
+<a className="text-primary font-caption-bold text-caption-md flex items-center justify-center gap-xs py-sm hover:underline" href="/downloads-documents">
                                 View Full Archive History
                                 <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
 </a>
@@ -215,7 +215,7 @@ export default function NoticesAnnouncements() {
 
 <div className="p-xl border border-steel border-dashed rounded-xl">
 <p className="text-caption-md text-secondary text-center">Missing a specific circular or notice from your department?</p>
-<a className="block text-center mt-sm text-primary font-button-md text-button-md uppercase hover:underline" href="#">Contact Registrar&apos;s Office</a>
+<a className="block text-center mt-sm text-primary font-button-md text-button-md uppercase hover:underline" href="/contact-niet">Contact Registrar&apos;s Office</a>
 </div>
 </aside>
 </div>

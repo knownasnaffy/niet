@@ -45,7 +45,7 @@ export default function ProgramsCourses() {
 <h2 className="font-display-md text-display-md text-ink font-bold">Premier Departments</h2>
 <p className="font-body-md text-body-md text-graphite mt-xxs">Specialized curricula designed for global competitiveness.</p>
 </div>
-<a className="text-primary font-button-md text-button-md uppercase flex items-center gap-xxs hover:underline" href="#">
+<a className="text-primary font-button-md text-button-md uppercase flex items-center gap-xxs hover:underline" href="/department-listing">
                 Compare All Programs <span className="material-symbols-outlined">arrow_forward</span>
 </a>
 </div>

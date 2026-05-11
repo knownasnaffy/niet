@@ -27,17 +27,17 @@ export default function Footer() {
           <ul className="space-y-sm text-caption-md">
             <li><Link className="text-on-ink font-bold" href="/academic-calendar">Academic Calendar</Link></li>
             <li><Link className="opacity-70 hover:opacity-100 hover:text-primary-bright transition-opacity" href="/department-listing">Departments</Link></li>
-            <li><Link className="opacity-70 hover:opacity-100 hover:text-primary-bright transition-opacity" href="#">Library</Link></li>
+            <li><Link className="opacity-70 hover:opacity-100 hover:text-primary-bright transition-opacity" href="/course-resources">Library</Link></li>
             <li><Link className="opacity-70 hover:opacity-100 hover:text-primary-bright transition-opacity" href="/academic-results">Examinations</Link></li>
           </ul>
         </div>
         <div>
           <h5 className="text-body-emphasis font-bold mb-lg">Quick Links</h5>
           <ul className="space-y-sm text-caption-md">
-            <li><Link className="opacity-70 hover:opacity-100 hover:text-primary-bright transition-opacity" href="#">Alumni Connect</Link></li>
+            <li><Link className="opacity-70 hover:opacity-100 hover:text-primary-bright transition-opacity" href="/student-success-stories">Alumni Connect</Link></li>
             <li><Link className="opacity-70 hover:opacity-100 hover:text-primary-bright transition-opacity" href="/recruiter-gallery">Careers</Link></li>
-            <li><Link className="opacity-70 hover:opacity-100 hover:text-primary-bright transition-opacity" href="#">Privacy Policy</Link></li>
-            <li><Link className="opacity-70 hover:opacity-100 hover:text-primary-bright transition-opacity" href="#">NIRF Data</Link></li>
+            <li><Link className="opacity-70 hover:opacity-100 hover:text-primary-bright transition-opacity" href="/downloads-documents">Privacy Policy</Link></li>
+            <li><Link className="opacity-70 hover:opacity-100 hover:text-primary-bright transition-opacity" href="/downloads-documents">NIRF Data</Link></li>
           </ul>
         </div>
         <div>

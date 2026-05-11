@@ -56,19 +56,19 @@ export default function CourseResources() {
 <span className="material-symbols-outlined text-[18px]">person</span> Prof. Elena Rodriguez
                             </p>
 <div className="space-y-sm">
-<a className="flex items-center justify-between p-sm rounded-lg hover:bg-cloud border border-transparent hover:border-fog transition-all group/link" href="#">
+<a className="flex items-center justify-between p-sm rounded-lg hover:bg-cloud border border-transparent hover:border-fog transition-all group/link" href="/downloads-documents">
 <span className="flex items-center gap-sm font-body-emphasis text-body-emphasis text-ink">
 <span className="material-symbols-outlined text-primary">description</span> Lecture Notes
                                     </span>
 <span className="material-symbols-outlined text-graphite group-hover/link:translate-x-1 transition-transform">chevron_right</span>
 </a>
-<a className="flex items-center justify-between p-sm rounded-lg hover:bg-cloud border border-transparent hover:border-fog transition-all group/link" href="#">
+<a className="flex items-center justify-between p-sm rounded-lg hover:bg-cloud border border-transparent hover:border-fog transition-all group/link" href="/downloads-documents">
 <span className="flex items-center gap-sm font-body-emphasis text-body-emphasis text-ink">
 <span className="material-symbols-outlined text-primary">assignment</span> Assignment Briefs
                                     </span>
 <span className="material-symbols-outlined text-graphite group-hover/link:translate-x-1 transition-transform">chevron_right</span>
 </a>
-<a className="flex items-center justify-between p-sm rounded-lg hover:bg-cloud border border-transparent hover:border-fog transition-all group/link" href="#">
+<a className="flex items-center justify-between p-sm rounded-lg hover:bg-cloud border border-transparent hover:border-fog transition-all group/link" href="/downloads-documents">
 <span className="flex items-center gap-sm font-body-emphasis text-body-emphasis text-ink">
 <span className="material-symbols-outlined text-primary">menu_book</span> Reading List
                                     </span>
@@ -89,19 +89,19 @@ export default function CourseResources() {
 <span className="material-symbols-outlined text-[18px]">person</span> Dr. Marcus Sterling
                             </p>
 <div className="space-y-sm">
-<a className="flex items-center justify-between p-sm rounded-lg hover:bg-cloud border border-transparent hover:border-fog transition-all group/link" href="#">
+<a className="flex items-center justify-between p-sm rounded-lg hover:bg-cloud border border-transparent hover:border-fog transition-all group/link" href="/downloads-documents">
 <span className="flex items-center gap-sm font-body-emphasis text-body-emphasis text-ink">
 <span className="material-symbols-outlined text-primary">description</span> Lecture Notes
                                     </span>
 <span className="material-symbols-outlined text-graphite group-hover/link:translate-x-1 transition-transform">chevron_right</span>
 </a>
-<a className="flex items-center justify-between p-sm rounded-lg hover:bg-cloud border border-transparent hover:border-fog transition-all group/link" href="#">
+<a className="flex items-center justify-between p-sm rounded-lg hover:bg-cloud border border-transparent hover:border-fog transition-all group/link" href="/downloads-documents">
 <span className="flex items-center gap-sm font-body-emphasis text-body-emphasis text-ink">
 <span className="material-symbols-outlined text-primary">assignment</span> Assignment Briefs
                                     </span>
 <span className="material-symbols-outlined text-graphite group-hover/link:translate-x-1 transition-transform">chevron_right</span>
 </a>
-<a className="flex items-center justify-between p-sm rounded-lg hover:bg-cloud border border-transparent hover:border-fog transition-all group/link" href="#">
+<a className="flex items-center justify-between p-sm rounded-lg hover:bg-cloud border border-transparent hover:border-fog transition-all group/link" href="/downloads-documents">
 <span className="flex items-center gap-sm font-body-emphasis text-body-emphasis text-ink">
 <span className="material-symbols-outlined text-primary">menu_book</span> Reading List
                                     </span>
@@ -122,19 +122,19 @@ export default function CourseResources() {
 <span className="material-symbols-outlined text-[18px]">person</span> Prof. Sarah Jenkins
                             </p>
 <div className="space-y-sm">
-<a className="flex items-center justify-between p-sm rounded-lg hover:bg-cloud border border-transparent hover:border-fog transition-all group/link" href="#">
+<a className="flex items-center justify-between p-sm rounded-lg hover:bg-cloud border border-transparent hover:border-fog transition-all group/link" href="/downloads-documents">
 <span className="flex items-center gap-sm font-body-emphasis text-body-emphasis text-ink">
 <span className="material-symbols-outlined text-primary">description</span> Lecture Notes
                                     </span>
 <span className="material-symbols-outlined text-graphite group-hover/link:translate-x-1 transition-transform">chevron_right</span>
 </a>
-<a className="flex items-center justify-between p-sm rounded-lg hover:bg-cloud border border-transparent hover:border-fog transition-all group/link" href="#">
+<a className="flex items-center justify-between p-sm rounded-lg hover:bg-cloud border border-transparent hover:border-fog transition-all group/link" href="/downloads-documents">
 <span className="flex items-center gap-sm font-body-emphasis text-body-emphasis text-ink">
 <span className="material-symbols-outlined text-primary">assignment</span> Assignment Briefs
                                     </span>
 <span className="material-symbols-outlined text-graphite group-hover/link:translate-x-1 transition-transform">chevron_right</span>
 </a>
-<a className="flex items-center justify-between p-sm rounded-lg hover:bg-cloud border border-transparent hover:border-fog transition-all group/link" href="#">
+<a className="flex items-center justify-between p-sm rounded-lg hover:bg-cloud border border-transparent hover:border-fog transition-all group/link" href="/downloads-documents">
 <span className="flex items-center gap-sm font-body-emphasis text-body-emphasis text-ink">
 <span className="material-symbols-outlined text-primary">menu_book</span> Reading List
                                     </span>

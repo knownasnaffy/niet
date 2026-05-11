@@ -69,19 +69,19 @@ export default function StudentDashboard() {
 <div className="bg-ink p-xl rounded-xl text-on-ink">
 <h3 className="text-body-emphasis font-bold mb-xl">Quick Access</h3>
 <nav className="flex flex-col gap-md">
-<a className="flex items-center gap-md p-sm rounded-lg hover:bg-ink-soft transition-colors text-on-ink opacity-80 hover:opacity-100" href="#">
+<a className="flex items-center gap-md p-sm rounded-lg hover:bg-ink-soft transition-colors text-on-ink opacity-80 hover:opacity-100" href="/course-resources">
 <span className="material-symbols-outlined">library_books</span>
 <span className="font-button-md text-button-md uppercase">Digital Library</span>
 </a>
-<a className="flex items-center gap-md p-sm rounded-lg hover:bg-ink-soft transition-colors text-on-ink opacity-80 hover:opacity-100" href="#">
+<a className="flex items-center gap-md p-sm rounded-lg hover:bg-ink-soft transition-colors text-on-ink opacity-80 hover:opacity-100" href="/scholarships-fees">
 <span className="material-symbols-outlined">payments</span>
 <span className="font-button-md text-button-md uppercase">Fee Payment</span>
 </a>
-<a className="flex items-center gap-md p-sm rounded-lg hover:bg-ink-soft transition-colors text-on-ink opacity-80 hover:opacity-100" href="#">
+<a className="flex items-center gap-md p-sm rounded-lg hover:bg-ink-soft transition-colors text-on-ink opacity-80 hover:opacity-100" href="/student-success-stories">
 <span className="material-symbols-outlined">account_circle</span>
 <span className="font-button-md text-button-md uppercase">Profile Settings</span>
 </a>
-<a className="flex items-center gap-md p-sm rounded-lg hover:bg-ink-soft transition-colors text-on-ink opacity-80 hover:opacity-100" href="#">
+<a className="flex items-center gap-md p-sm rounded-lg hover:bg-ink-soft transition-colors text-on-ink opacity-80 hover:opacity-100" href="/programs-courses">
 <span className="material-symbols-outlined">school</span>
 <span className="font-button-md text-button-md uppercase">Transcript</span>
 </a>

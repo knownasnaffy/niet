@@ -36,7 +36,7 @@ export default function DepartmentListing() {
 </div>
 <h3 className="font-display-sm text-display-sm text-ink mb-sm">Computer Science</h3>
 <p className="font-body-md text-body-md text-secondary mb-xl flex-grow">Specializing in software engineering, cloud computing, and theoretical foundations to build the next generation of digital infrastructure.</p>
-<a className="inline-flex items-center text-primary font-button-md text-button-md uppercase group-hover:gap-xs transition-all" href="#">
+<a className="inline-flex items-center text-primary font-button-md text-button-md uppercase group-hover:gap-xs transition-all" href="/department-computer-science">
                             Explore Department <span className="material-symbols-outlined ml-xxs">arrow_forward</span>
 </a>
 </div>
@@ -47,7 +47,7 @@ export default function DepartmentListing() {
 </div>
 <h3 className="font-display-sm text-display-sm text-ink mb-sm">AI &amp; Data Science</h3>
 <p className="font-body-md text-body-md text-secondary mb-xl flex-grow">Leveraging machine learning, big data analytics, and neural networks to solve complex global challenges through intelligent automation.</p>
-<a className="inline-flex items-center text-primary font-button-md text-button-md uppercase group-hover:gap-xs transition-all" href="#">
+<a className="inline-flex items-center text-primary font-button-md text-button-md uppercase group-hover:gap-xs transition-all" href="/department-computer-science">
                             Explore Department <span className="material-symbols-outlined ml-xxs">arrow_forward</span>
 </a>
 </div>
@@ -58,7 +58,7 @@ export default function DepartmentListing() {
 </div>
 <h3 className="font-display-sm text-display-sm text-ink mb-sm">Mechanical Engineering</h3>
 <p className="font-body-md text-body-md text-secondary mb-xl flex-grow">Focusing on robotics, thermodynamics, and manufacturing systems that drive industrial progress and hardware innovation.</p>
-<a className="inline-flex items-center text-primary font-button-md text-button-md uppercase group-hover:gap-xs transition-all" href="#">
+<a className="inline-flex items-center text-primary font-button-md text-button-md uppercase group-hover:gap-xs transition-all" href="/department-computer-science">
                             Explore Department <span className="material-symbols-outlined ml-xxs">arrow_forward</span>
 </a>
 </div>
@@ -69,7 +69,7 @@ export default function DepartmentListing() {
 </div>
 <h3 className="font-display-sm text-display-sm text-ink mb-sm">Civil Engineering</h3>
 <p className="font-body-md text-body-md text-secondary mb-xl flex-grow">Designing sustainable infrastructure and urban landscapes with a focus on structural integrity and environmental impact.</p>
-<a className="inline-flex items-center text-primary font-button-md text-button-md uppercase group-hover:gap-xs transition-all" href="#">
+<a className="inline-flex items-center text-primary font-button-md text-button-md uppercase group-hover:gap-xs transition-all" href="/department-computer-science">
                             Explore Department <span className="material-symbols-outlined ml-xxs">arrow_forward</span>
 </a>
 </div>
@@ -80,7 +80,7 @@ export default function DepartmentListing() {
 </div>
 <h3 className="font-display-sm text-display-sm text-ink mb-sm">ECE</h3>
 <p className="font-body-md text-body-md text-secondary mb-xl flex-grow">Exploring electronics, telecommunications, and VLSI design to power the communication networks of tomorrow.</p>
-<a className="inline-flex items-center text-primary font-button-md text-button-md uppercase group-hover:gap-xs transition-all" href="#">
+<a className="inline-flex items-center text-primary font-button-md text-button-md uppercase group-hover:gap-xs transition-all" href="/department-computer-science">
                             Explore Department <span className="material-symbols-outlined ml-xxs">arrow_forward</span>
 </a>
 </div>
@@ -91,7 +91,7 @@ export default function DepartmentListing() {
 </div>
 <h3 className="font-display-sm text-display-sm text-ink mb-sm">Electrical Engineering</h3>
 <p className="font-body-md text-body-md text-secondary mb-xl flex-grow">Mastering power systems, renewable energy, and control engineering for a more efficient and electrified world.</p>
-<a className="inline-flex items-center text-primary font-button-md text-button-md uppercase group-hover:gap-xs transition-all" href="#">
+<a className="inline-flex items-center text-primary font-button-md text-button-md uppercase group-hover:gap-xs transition-all" href="/department-computer-science">
                             Explore Department <span className="material-symbols-outlined ml-xxs">arrow_forward</span>
 </a>
 </div>
@@ -102,7 +102,7 @@ export default function DepartmentListing() {
 </div>
 <h3 className="font-display-sm text-display-sm text-ink mb-sm">Management Studies</h3>
 <p className="font-body-md text-body-md text-secondary mb-xl flex-grow">Developing strategic thinking, organizational leadership, and entrepreneurial skills for the modern corporate landscape.</p>
-<a className="inline-flex items-center text-primary font-button-md text-button-md uppercase group-hover:gap-xs transition-all" href="#">
+<a className="inline-flex items-center text-primary font-button-md text-button-md uppercase group-hover:gap-xs transition-all" href="/department-computer-science">
                             Explore Department <span className="material-symbols-outlined ml-xxs">arrow_forward</span>
 </a>
 </div>

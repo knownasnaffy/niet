@@ -9,9 +9,9 @@ export default function TopNav() {
           <nav className="hidden md:flex items-center gap-lg">
             <Link className="font-body-emphasis text-body-emphasis text-primary border-b-2 border-primary pb-1" href="/programs-courses">Academics</Link>
             <Link className="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200" href="/admissions-overview">Admissions</Link>
-            <Link className="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200" href="#">Research</Link>
+            <Link className="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200" href="/course-resources">Research</Link>
             <Link className="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200" href="/placement-overview">Placements</Link>
-            <Link className="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200" href="#">Campus Life</Link>
+            <Link className="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200" href="/events-page">Campus Life</Link>
             <Link className="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200" href="/about-niet">About Us</Link>
           </nav>
         </div>
