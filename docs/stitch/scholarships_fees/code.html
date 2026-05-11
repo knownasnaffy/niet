@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Scholarships &amp; Fees | NIET</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-background": "#191b23",
+                    "on-surface-variant": "#434655",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "on-error-container": "#93000a",
+                    "inverse-surface": "#2e3039",
+                    "background": "#faf8ff",
+                    "primary-fixed-dim": "#b6c4ff",
+                    "on-surface": "#191b23",
+                    "on-primary": "#ffffff",
+                    "surface-variant": "#e2e1ed",
+                    "primary-deep": "#0e3191",
+                    "error": "#ba1a1a",
+                    "surface-bright": "#faf8ff",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#862300",
+                    "inverse-primary": "#b6c4ff",
+                    "storm-sea": "#7fadbe",
+                    "on-tertiary-container": "#ffc1b0",
+                    "on-primary-fixed": "#00164f",
+                    "canvas": "#ffffff",
+                    "primary-fixed": "#dce1ff",
+                    "primary-container": "#024ad8",
+                    "surface-tint": "#1451de",
+                    "bloom-coral": "#ff5050",
+                    "ink-deep": "#000000",
+                    "ink-soft": "#292929",
+                    "primary": "#0036a4",
+                    "tertiary-fixed": "#ffdbd1",
+                    "paper": "#ffffff",
+                    "surface": "#faf8ff",
+                    "error-container": "#ffdad6",
+                    "tertiary-container": "#a52d00",
+                    "bloom-deep": "#b3262b",
+                    "tertiary": "#7c2000",
+                    "outline-variant": "#c3c5d7",
+                    "surface-container-high": "#e7e7f3",
+                    "outline": "#747686",
+                    "tertiary-fixed-dim": "#ffb59f",
+                    "on-primary-container": "#c2ceff",
+                    "surface-container-low": "#f3f2ff",
+                    "graphite": "#636363",
+                    "secondary": "#5f5e5e",
+                    "cloud": "#f7f7f7",
+                    "on-primary-fixed-variant": "#003bb0",
+                    "bloom-rose": "#f9d4d2",
+                    "surface-container-highest": "#e2e1ed",
+                    "on-tertiary-fixed": "#3a0a00",
+                    "on-ink": "#ffffff",
+                    "ink": "#1a1a1a",
+                    "primary-bright": "#296ef9",
+                    "storm-deep": "#356373",
+                    "fog": "#e8e8e8",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container": "#ededf9",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-container": "#636262",
+                    "charcoal": "#3d3d3d",
+                    "steel": "#c2c2c2",
+                    "secondary-fixed": "#e5e2e1",
+                    "on-error": "#ffffff",
+                    "inverse-on-surface": "#f0f0fc",
+                    "on-secondary-fixed-variant": "#474746",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "secondary-container": "#e2dfde",
+                    "primary-soft": "#c9e0fc"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "xl": "24px",
+                    "lg": "20px",
+                    "section": "80px",
+                    "max-width": "1366px",
+                    "xxs": "4px",
+                    "xs": "8px",
+                    "sm": "12px",
+                    "md": "16px",
+                    "xxl": "32px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Manrope"],
+                    "display-sm": ["Manrope"],
+                    "caption-md": ["Manrope"],
+                    "caption-bold": ["Manrope"],
+                    "display-xxl": ["Manrope"],
+                    "display-xs": ["Manrope"],
+                    "price-md": ["Manrope"],
+                    "display-md": ["Manrope"],
+                    "caption-sm": ["Manrope"],
+                    "body-md": ["Manrope"],
+                    "body-lg": ["Manrope"],
+                    "body-emphasis": ["Manrope"],
+                    "button-md": ["Manrope"],
+                    "display-xl": ["Manrope"]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .chevron-bg-left {
+            clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+        }
+        .chevron-bg-right {
+            clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+        }
+    </style>
+</head>
+<body class="bg-canvas text-on-background font-body-md antialiased">
+<!-- TopNavBar -->
+<nav class="h-16 flex justify-between items-center w-full px-lg max-w-max-width mx-auto bg-canvas border-b border-fog sticky top-0 z-50">
+<div class="flex items-center gap-xl">
+<span class="text-display-sm font-display-sm font-extrabold text-ink">NIET</span>
+<div class="hidden md:flex gap-md items-center">
+<a class="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200" href="#">Academics</a>
+<a class="font-body-emphasis text-body-emphasis text-primary border-b-2 border-primary pb-1" href="#">Admissions</a>
+<a class="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200" href="#">Research</a>
+<a class="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200" href="#">Placements</a>
+<a class="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200" href="#">Campus Life</a>
+<a class="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200" href="#">About Us</a>
+</div>
+</div>
+<div class="flex items-center gap-md">
+<span class="material-symbols-outlined text-ink cursor-pointer hover:text-primary">language</span>
+<span class="material-symbols-outlined text-ink cursor-pointer hover:text-primary">search</span>
+<button class="bg-primary text-on-ink px-xl py-xs font-button-md text-button-md uppercase rounded-xxs transition-transform active:scale-95">Apply Now</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative w-full bg-ink text-on-ink overflow-hidden">
+<div class="absolute inset-0 opacity-40">
+<img class="w-full h-full object-cover" data-alt="A grand university campus building at dusk with architectural lighting emphasizing the structured geometry and professional atmosphere. The scene is captured with a high-end cinematic lens, featuring soft transitions from the deep ink shadows of the architecture to the pristine cool tones of the sky. The overall mood is prestigious and secure, representing the academic excellence and reliability of the Northvale Institute." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZThqvk2SzwnpalntrDalGXZ6o1_DMAu9i4XIwlzeOBQVMx2u6AQFm3bWmMFucmqhZazPJnE5O1Yjr3D8fhYUZWDOj5s4SCc4vMeSKJ6VMwNgPeoa5826YSsQGmzGuaJayQ1v-4s7Z3nj6PttF0tbmTMzGzH3wnOZFCqGwUbOEEQu2ZOuAu2W2snInOsaUYtYYGzupUps3kHoix5Va0V-KH7aDe0_Wgn-lsBDxNOfEgznrA-hVqAHXFuQLooSbSfUWcj_4cURo8TEp"/>
+</div>
+<div class="relative max-w-max-width mx-auto px-lg py-section flex flex-col items-center text-center">
+<div class="absolute -left-12 top-0 h-full w-24 bg-primary chevron-bg-left opacity-90 hidden lg:block"></div>
+<div class="absolute -right-12 top-0 h-full w-24 bg-primary chevron-bg-right opacity-90 hidden lg:block"></div>
+<h1 class="font-display-xl text-display-xl font-extrabold mb-md tracking-tight">Investment in Excellence</h1>
+<p class="font-body-lg text-body-lg max-w-2xl opacity-90">Transparent fee structures and merit-driven scholarship programs designed to empower the next generation of engineers and leaders.</p>
+</div>
+</header>
+<!-- Fee Structure Section -->
+<section class="max-w-max-width mx-auto px-lg py-section">
+<div class="flex flex-col gap-xl">
+<div class="flex items-end justify-between border-b border-fog pb-md">
+<div>
+<h2 class="font-display-md text-display-md text-ink font-bold">Annual Fee Structure</h2>
+<p class="text-on-surface-variant font-body-md mt-xxs">Academic Year 2024-25 • All figures in INR</p>
+</div>
+<div class="hidden md:flex gap-xs">
+<span class="material-symbols-outlined text-primary" data-weight="fill">download</span>
+<span class="font-button-md text-button-md text-primary cursor-pointer hover:underline uppercase">Download PDF</span>
+</div>
+</div>
+<div class="overflow-x-auto rounded-xl border border-fog shadow-sm bg-canvas">
+<table class="w-full text-left border-collapse">
+<thead class="bg-cloud border-b border-fog">
+<tr>
+<th class="p-md font-caption-bold text-caption-bold text-ink uppercase">Course Category</th>
+<th class="p-md font-caption-bold text-caption-bold text-ink uppercase">Tuition Fee</th>
+<th class="p-md font-caption-bold text-caption-bold text-ink uppercase">Exam Fee</th>
+<th class="p-md font-caption-bold text-caption-bold text-ink uppercase">Hostel (Optional)</th>
+<th class="p-md font-caption-bold text-caption-bold text-primary uppercase">Total Annual</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-on-surface">
+<tr class="border-b border-fog hover:bg-surface-container-low transition-colors">
+<td class="p-md font-body-emphasis">B.Tech (CSE/IT/Specializations)</td>
+<td class="p-md">₹ 1,45,000</td>
+<td class="p-md">₹ 10,000</td>
+<td class="p-md">₹ 95,000</td>
+<td class="p-md font-bold text-primary">₹ 2,50,000</td>
+</tr>
+<tr class="border-b border-fog hover:bg-surface-container-low transition-colors">
+<td class="p-md font-body-emphasis">B.Tech (Core Branches)</td>
+<td class="p-md">₹ 1,20,000</td>
+<td class="p-md">₹ 10,000</td>
+<td class="p-md">₹ 95,000</td>
+<td class="p-md font-bold text-primary">₹ 2,25,000</td>
+</tr>
+<tr class="border-b border-fog hover:bg-surface-container-low transition-colors">
+<td class="p-md font-body-emphasis">MBA (Integrated/Regular)</td>
+<td class="p-md">₹ 1,60,000</td>
+<td class="p-md">₹ 12,000</td>
+<td class="p-md">₹ 1,05,000</td>
+<td class="p-md font-bold text-primary">₹ 2,77,000</td>
+</tr>
+<tr class="border-b border-fog hover:bg-surface-container-low transition-colors">
+<td class="p-md font-body-emphasis">M.Tech (All Specializations)</td>
+<td class="p-md">₹ 95,000</td>
+<td class="p-md">₹ 8,000</td>
+<td class="p-md">₹ 95,000</td>
+<td class="p-md font-bold text-primary">₹ 1,98,000</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="p-md font-body-emphasis">Polytechnic (Diploma)</td>
+<td class="p-md">₹ 45,000</td>
+<td class="p-md">₹ 5,000</td>
+<td class="p-md">₹ 85,000</td>
+<td class="p-md font-bold text-primary">₹ 1,35,000</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="text-caption-sm text-on-surface-variant italic">* Fees are subject to university guidelines and may vary based on specific departmental requirements.</p>
+</div>
+</section>
+<!-- Scholarship Section -->
+<section class="bg-cloud w-full py-section">
+<div class="max-w-max-width mx-auto px-lg">
+<div class="text-center mb-xxl">
+<h2 class="font-display-md text-display-md text-ink font-bold mb-xs">Scholarships &amp; Financial Aid</h2>
+<p class="text-on-surface-variant font-body-lg max-w-xl mx-auto">We reward academic brilliance and support those in need through our multi-tiered scholarship ecosystem.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-xl">
+<!-- Entrance Exam Rank -->
+<div class="bg-canvas p-xl rounded-xl border border-fog flex flex-col h-full shadow-[0_2px_8px_rgba(26,26,26,0.08)]">
+<div class="mb-lg">
+<span class="material-symbols-outlined text-primary text-4xl mb-md">military_tech</span>
+<h3 class="font-display-sm text-display-sm font-bold text-ink">Entrance Rank</h3>
+<p class="text-on-surface-variant font-body-md mt-xs">For top performers in JEE Mains and CUET examinations.</p>
+</div>
+<div class="flex-grow">
+<ul class="flex flex-col gap-sm">
+<li class="flex items-start gap-xs">
+<span class="material-symbols-outlined text-primary-bright text-lg">check_circle</span>
+<span class="text-body-md"><strong class="text-ink">Rank 1-50,000:</strong> 100% Tuition Waiver</span>
+</li>
+<li class="flex items-start gap-xs">
+<span class="material-symbols-outlined text-primary-bright text-lg">check_circle</span>
+<span class="text-body-md"><strong class="text-ink">Rank 50k-1L:</strong> 50% Tuition Waiver</span>
+</li>
+</ul>
+</div>
+<button class="mt-xl border border-ink text-ink py-xs font-button-md text-button-md uppercase rounded-xxs hover:bg-ink hover:text-on-ink transition-colors">Check Rank Criteria</button>
+</div>
+<!-- Merit-Based (Featured) -->
+<div class="bg-canvas p-xl rounded-xl border-t-4 border-primary flex flex-col h-full shadow-[0_8px_24px_rgba(26,26,26,0.12)] relative">
+<div class="absolute -top-4 right-6 bg-primary text-on-ink text-caption-bold font-caption-bold px-md py-1 rounded-full uppercase tracking-wider">Most Popular</div>
+<div class="mb-lg">
+<span class="material-symbols-outlined text-primary text-4xl mb-md">star</span>
+<h3 class="font-display-sm text-display-sm font-bold text-ink">Merit Excellence</h3>
+<p class="text-on-surface-variant font-body-md mt-xs">Celebrating consistent academic performance in 10+2 board exams.</p>
+</div>
+<div class="flex-grow">
+<div class="bg-surface-container-low p-md rounded-lg mb-md">
+<span class="text-display-md font-display-md text-primary-bright block">₹ 50,000</span>
+<span class="text-caption-md text-on-surface-variant">Annual Scholarship Amount</span>
+</div>
+<ul class="flex flex-col gap-sm">
+<li class="flex items-start gap-xs">
+<span class="material-symbols-outlined text-primary-bright text-lg">check_circle</span>
+<span class="text-body-md"><strong class="text-ink">Eligibility:</strong> 90% aggregate in PCM</span>
+</li>
+<li class="flex items-start gap-xs">
+<span class="material-symbols-outlined text-primary-bright text-lg">check_circle</span>
+<span class="text-body-md">Applicable for all 4 years of B.Tech</span>
+</li>
+</ul>
+</div>
+<button class="mt-xl bg-primary text-on-ink py-xs font-button-md text-button-md uppercase rounded-xxs transition-transform active:scale-95 shadow-lg shadow-primary/20">Apply for Merit Aid</button>
+</div>
+<!-- Financial Aid -->
+<div class="bg-canvas p-xl rounded-xl border border-fog flex flex-col h-full shadow-[0_2px_8px_rgba(26,26,26,0.08)]">
+<div class="mb-lg">
+<span class="material-symbols-outlined text-primary text-4xl mb-md">volunteer_activism</span>
+<h3 class="font-display-sm text-display-sm font-bold text-ink">Opportunity Grant</h3>
+<p class="text-on-surface-variant font-body-md mt-xs">Ensuring financial constraints never hinder high-potential students.</p>
+</div>
+<div class="flex-grow">
+<ul class="flex flex-col gap-sm">
+<li class="flex items-start gap-xs">
+<span class="material-symbols-outlined text-primary-bright text-lg">check_circle</span>
+<span class="text-body-md"><strong class="text-ink">Income Limit:</strong> Below 5 LPA family income</span>
+</li>
+<li class="flex items-start gap-xs">
+<span class="material-symbols-outlined text-primary-bright text-lg">check_circle</span>
+<span class="text-body-md">Up to 40% aid on tuition fees</span>
+</li>
+</ul>
+</div>
+<button class="mt-xl border border-ink text-ink py-xs font-button-md text-button-md uppercase rounded-xxs hover:bg-ink hover:text-on-ink transition-colors">Submit Application</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Additional Info / FAQ Band -->
+<section class="max-w-max-width mx-auto px-lg py-section">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-xxl items-center">
+<div class="rounded-xl overflow-hidden relative aspect-video shadow-xl">
+<img class="w-full h-full object-cover" data-alt="A diverse group of university students collaborating in a modern, bright study lounge. Large windows allow natural high-key sunlight to fill the space, highlighting the clean lines of the contemporary furniture. The color palette features whites, light grays, and occasional pops of vibrant brand blue, creating an atmosphere of focus, optimism, and collaborative innovation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlny8-VslUlrh2x4kALNRnIeglV0l1hgACQ1vGVzi69JYEMc7TCiDo5ZYdkdpkqdLCXgg-8l5OByl8ww1eAVf8eFCcK6mnRrECmeUnKVwKi5lhf_mTQDjJcJ8vvjvMwJmNpD3Zi9cBJOSmEOl_AYBkFwxYzXW5zr5zo9wnCR5xsC65dcXsndn8Kqj6rNhjaiZ5q6i31Hn9QmovUL75hvJ5_Ftb59PcI0VlY2Gyb19Nv5QfqOYkWd1oUGd7KQfN8fqBomoLDIFgyBsK"/>
+</div>
+<div>
+<h3 class="font-display-md text-display-md text-ink font-bold mb-md">Common Questions</h3>
+<div class="space-y-md">
+<details class="group border border-fog rounded-lg p-md cursor-pointer hover:bg-cloud transition-colors">
+<summary class="flex justify-between items-center font-body-emphasis text-ink list-none">
+                            Is the hostel fee mandatory?
+                            <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="mt-sm text-on-surface-variant font-body-md">No, hostel facilities are optional. Students living within a 20km radius of the campus may opt-out or choose our dedicated transport fleet.</p>
+</details>
+<details class="group border border-fog rounded-lg p-md cursor-pointer hover:bg-cloud transition-colors">
+<summary class="flex justify-between items-center font-body-emphasis text-ink list-none">
+                            Can I combine multiple scholarships?
+                            <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="mt-sm text-on-surface-variant font-body-md">Students are typically eligible for one institutional scholarship per year. The higher of the qualifying amounts will be applied to the fee account.</p>
+</details>
+<details class="group border border-fog rounded-lg p-md cursor-pointer hover:bg-cloud transition-colors">
+<summary class="flex justify-between items-center font-body-emphasis text-ink list-none">
+                            Are there sibling discounts?
+                            <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="mt-sm text-on-surface-variant font-body-md">Yes, NIET offers a 10% loyalty discount on tuition fees for siblings currently enrolled in any of our programs.</p>
+</details>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-ink text-on-ink">
+<div class="grid grid-cols-1 md:grid-cols-5 gap-xl w-full px-lg py-xxl max-w-max-width mx-auto">
+<div class="md:col-span-1">
+<span class="text-display-xs font-display-xs text-on-ink font-extrabold mb-md block">NIET</span>
+<p class="font-caption-md text-caption-md opacity-70 leading-relaxed">Pioneering technical education through industry-integrated curriculum and world-class research facilities.</p>
+</div>
+<div>
+<h4 class="font-caption-bold text-caption-bold text-on-ink uppercase mb-md">Admissions</h4>
+<ul class="flex flex-col gap-sm font-caption-md text-caption-md opacity-70">
+<li class="hover:opacity-100 hover:text-primary-bright cursor-pointer transition-opacity">Apply Online</li>
+<li class="hover:opacity-100 hover:text-primary-bright cursor-pointer transition-opacity">Fee Structure</li>
+<li class="hover:opacity-100 hover:text-primary-bright cursor-pointer transition-opacity">Entrance Exams</li>
+<li class="hover:opacity-100 hover:text-primary-bright cursor-pointer transition-opacity">International Students</li>
+</ul>
+</div>
+<div>
+<h4 class="font-caption-bold text-caption-bold text-on-ink uppercase mb-md">Quick Links</h4>
+<ul class="flex flex-col gap-sm font-caption-md text-caption-md opacity-70">
+<li class="hover:opacity-100 hover:text-primary-bright cursor-pointer transition-opacity">Academic Calendar</li>
+<li class="hover:opacity-100 hover:text-primary-bright cursor-pointer transition-opacity">Alumni Connect</li>
+<li class="hover:opacity-100 hover:text-primary-bright cursor-pointer transition-opacity">Careers</li>
+<li class="hover:opacity-100 hover:text-primary-bright cursor-pointer transition-opacity">Contact Us</li>
+</ul>
+</div>
+<div>
+<h4 class="font-caption-bold text-caption-bold text-on-ink uppercase mb-md">Legal</h4>
+<ul class="flex flex-col gap-sm font-caption-md text-caption-md opacity-70">
+<li class="hover:opacity-100 hover:text-primary-bright cursor-pointer transition-opacity">Privacy Policy</li>
+<li class="hover:opacity-100 hover:text-primary-bright cursor-pointer transition-opacity">Terms of Service</li>
+<li class="hover:opacity-100 hover:text-primary-bright cursor-pointer transition-opacity">Anti-Ragging Policy</li>
+</ul>
+</div>
+<div>
+<h4 class="font-caption-bold text-caption-bold text-on-ink uppercase mb-md">Newsletter</h4>
+<div class="flex gap-xxs">
+<input class="bg-ink-soft border border-charcoal rounded-xxs px-sm py-2 text-caption-md w-full focus:outline-none focus:border-primary" placeholder="Email Address" type="email"/>
+<button class="bg-primary px-md rounded-xxs"><span class="material-symbols-outlined text-on-ink">arrow_forward</span></button>
+</div>
+</div>
+</div>
+<div class="border-t border-charcoal py-md">
+<div class="max-w-max-width mx-auto px-lg text-center font-caption-md text-caption-md opacity-50">
+                © 2024 Northvale Institute of Engineering &amp; Technology. All rights reserved.
+            </div>
+</div>
+</footer>
+</body></html>

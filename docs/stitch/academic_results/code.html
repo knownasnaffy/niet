@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Academic Results | NIET Portal</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error": "#ba1a1a",
+                    "on-tertiary-fixed-variant": "#862300",
+                    "surface-tint": "#1451de",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "on-ink": "#ffffff",
+                    "surface-bright": "#faf8ff",
+                    "primary-fixed-dim": "#b6c4ff",
+                    "primary-deep": "#0e3191",
+                    "on-primary-fixed": "#00164f",
+                    "inverse-surface": "#2e3039",
+                    "ink-soft": "#292929",
+                    "on-tertiary-fixed": "#3a0a00",
+                    "bloom-coral": "#ff5050",
+                    "storm-sea": "#7fadbe",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "graphite": "#636363",
+                    "primary-container": "#024ad8",
+                    "surface-variant": "#e2e1ed",
+                    "storm-deep": "#356373",
+                    "on-secondary": "#ffffff",
+                    "on-surface": "#191b23",
+                    "surface-container-highest": "#e2e1ed",
+                    "charcoal": "#3d3d3d",
+                    "surface-container-high": "#e7e7f3",
+                    "on-primary-fixed-variant": "#003bb0",
+                    "background": "#faf8ff",
+                    "tertiary-container": "#a52d00",
+                    "secondary-container": "#e2dfde",
+                    "tertiary-fixed-dim": "#ffb59f",
+                    "bloom-deep": "#b3262b",
+                    "secondary": "#5f5e5e",
+                    "ink": "#1a1a1a",
+                    "on-surface-variant": "#434655",
+                    "on-error-container": "#93000a",
+                    "on-background": "#191b23",
+                    "primary-soft": "#c9e0fc",
+                    "ink-deep": "#000000",
+                    "surface-container-low": "#f3f2ff",
+                    "on-primary-container": "#c2ceff",
+                    "canvas": "#ffffff",
+                    "primary": "#0036a4",
+                    "on-tertiary-container": "#ffc1b0",
+                    "on-secondary-container": "#636262",
+                    "on-tertiary": "#ffffff",
+                    "inverse-primary": "#b6c4ff",
+                    "cloud": "#f7f7f7",
+                    "tertiary-fixed": "#ffdbd1",
+                    "steel": "#c2c2c2",
+                    "surface": "#faf8ff",
+                    "on-error": "#ffffff",
+                    "primary-bright": "#296ef9",
+                    "outline-variant": "#c3c5d7",
+                    "on-secondary-fixed-variant": "#474746",
+                    "error-container": "#ffdad6",
+                    "tertiary": "#7c2000",
+                    "surface-container-lowest": "#ffffff",
+                    "bloom-rose": "#f9d4d2",
+                    "surface-container": "#ededf9",
+                    "paper": "#ffffff",
+                    "outline": "#747686",
+                    "inverse-on-surface": "#f0f0fc",
+                    "fog": "#e8e8e8",
+                    "secondary-fixed": "#e5e2e1",
+                    "primary-fixed": "#dce1ff",
+                    "on-primary": "#ffffff",
+                    "surface-dim": "#d9d9e5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "xl": "24px",
+                    "xs": "8px",
+                    "max-width": "1366px",
+                    "sm": "12px",
+                    "xxs": "4px",
+                    "section": "80px",
+                    "lg": "20px",
+                    "xxl": "32px",
+                    "md": "16px"
+            },
+            "fontFamily": {
+                    "display-xs": ["Manrope"],
+                    "display-md": ["Manrope"],
+                    "display-xxl": ["Manrope"],
+                    "body-lg": ["Manrope"],
+                    "caption-md": ["Manrope"],
+                    "button-md": ["Manrope"],
+                    "display-xl": ["Manrope"],
+                    "price-md": ["Manrope"],
+                    "body-emphasis": ["Manrope"],
+                    "display-lg": ["Manrope"],
+                    "caption-bold": ["Manrope"],
+                    "caption-sm": ["Manrope"],
+                    "body-md": ["Manrope"],
+                    "display-sm": ["Manrope"]
+            },
+            "fontSize": {
+                    "display-xs": ["20px", {"lineHeight": "1.0", "letterSpacing": "0", "fontWeight": "500"}],
+                    "display-md": ["32px", {"lineHeight": "1.0", "letterSpacing": "0", "fontWeight": "500"}],
+                    "display-xxl": ["72px", {"lineHeight": "1.0", "letterSpacing": "0", "fontWeight": "800"}],
+                    "body-lg": ["18px", {"lineHeight": "1.33", "letterSpacing": "0", "fontWeight": "400"}],
+                    "caption-md": ["14px", {"lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400"}],
+                    "button-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.7px", "fontWeight": "600"}],
+                    "display-xl": ["56px", {"lineHeight": "1.0", "letterSpacing": "0", "fontWeight": "500"}],
+                    "price-md": ["24px", {"lineHeight": "1.17", "letterSpacing": "0", "fontWeight": "500"}],
+                    "body-emphasis": ["16px", {"lineHeight": "1.38", "letterSpacing": "0", "fontWeight": "500"}],
+                    "display-lg": ["44px", {"lineHeight": "1.0", "letterSpacing": "0", "fontWeight": "500"}],
+                    "caption-bold": ["14px", {"lineHeight": "1.3", "letterSpacing": "0", "fontWeight": "700"}],
+                    "caption-sm": ["12px", {"lineHeight": "1.33", "letterSpacing": "0", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.38", "letterSpacing": "0", "fontWeight": "400"}],
+                    "display-sm": ["24px", {"lineHeight": "1.17", "letterSpacing": "0", "fontWeight": "800"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .chevron-bg {
+            clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+        }
+    </style>
+</head>
+<body class="bg-canvas font-body-md text-ink antialiased">
+<!-- TopNavBar -->
+<header class="bg-canvas dark:bg-ink border-b border-fog dark:border-outline-variant h-16 flex justify-between items-center w-full px-lg max-w-max-width mx-auto">
+<div class="flex items-center gap-xl">
+<span class="text-display-sm font-display-sm font-extrabold text-ink dark:text-on-ink tracking-tight">NIET</span>
+<nav class="hidden md:flex items-center gap-lg">
+<a class="font-body-emphasis text-body-emphasis text-ink dark:text-on-ink opacity-80 hover:text-primary dark:hover:text-primary-bright transition-colors duration-200" href="#">Academics</a>
+<a class="font-body-emphasis text-body-emphasis text-primary dark:text-primary-bright border-b-2 border-primary dark:border-primary-bright pb-1 transition-colors duration-200" href="#">Admissions</a>
+<a class="font-body-emphasis text-body-emphasis text-ink dark:text-on-ink opacity-80 hover:text-primary dark:hover:text-primary-bright transition-colors duration-200" href="#">Research</a>
+<a class="font-body-emphasis text-body-emphasis text-ink dark:text-on-ink opacity-80 hover:text-primary dark:hover:text-primary-bright transition-colors duration-200" href="#">Placements</a>
+<a class="font-body-emphasis text-body-emphasis text-ink dark:text-on-ink opacity-80 hover:text-primary dark:hover:text-primary-bright transition-colors duration-200" href="#">Campus Life</a>
+<a class="font-body-emphasis text-body-emphasis text-ink dark:text-on-ink opacity-80 hover:text-primary dark:hover:text-primary-bright transition-colors duration-200" href="#">About Us</a>
+</nav>
+</div>
+<div class="flex items-center gap-md">
+<span class="material-symbols-outlined text-ink dark:text-on-ink cursor-pointer">search</span>
+<span class="material-symbols-outlined text-ink dark:text-on-ink cursor-pointer">language</span>
+<button class="bg-primary text-on-ink font-button-md text-button-md px-xl py-2 rounded-DEFAULT scale-100 active:scale-95 transition-transform">Apply Now</button>
+</div>
+</header>
+<main class="max-w-max-width mx-auto px-lg py-section">
+<!-- Hero Summary Section -->
+<div class="relative bg-ink text-on-ink rounded-xl overflow-hidden mb-section">
+<!-- Architectural Chevron Motif -->
+<div class="absolute left-0 top-0 h-full w-24 bg-primary chevron-bg opacity-20 -translate-x-12"></div>
+<div class="absolute right-0 top-0 h-full w-24 bg-primary chevron-bg opacity-20 translate-x-12"></div>
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-xxl p-xxl items-center">
+<div>
+<h1 class="font-display-lg text-display-lg mb-xs">Academic Performance</h1>
+<p class="font-body-lg text-body-lg text-on-ink opacity-70">Official transcript record for the Bachelor of Technology program.</p>
+</div>
+<div class="flex gap-xl justify-end">
+<div class="bg-ink-soft p-xl rounded-lg border border-charcoal text-center min-w-[160px]">
+<span class="block font-display-xxl text-display-xxl text-primary-bright">8.72</span>
+<span class="font-caption-bold text-caption-bold uppercase tracking-wider opacity-60">Overall CGPA</span>
+</div>
+<div class="bg-ink-soft p-xl rounded-lg border border-charcoal text-center min-w-[160px]">
+<span class="block font-display-xxl text-display-xxl text-on-ink">144</span>
+<span class="font-caption-bold text-caption-bold uppercase tracking-wider opacity-60">Credits Earned</span>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-xl">
+<!-- Main Content Area: Results Table -->
+<div class="lg:col-span-9 space-y-lg">
+<!-- Filter Bar -->
+<div class="flex items-center justify-between bg-cloud p-md border border-fog rounded-lg">
+<div class="flex items-center gap-md">
+<label class="font-body-emphasis text-body-emphasis text-secondary" for="semester">Academic Term:</label>
+<select class="bg-canvas border border-steel rounded-md px-md py-xs font-body-md focus:ring-0 focus:border-ink outline-none cursor-pointer" id="semester">
+<option>Semester 4 (Current)</option>
+<option>Semester 3</option>
+<option>Semester 2</option>
+<option>Semester 1</option>
+</select>
+</div>
+<div class="flex items-center gap-xs text-secondary">
+<span class="material-symbols-outlined text-[18px]">info</span>
+<span class="font-caption-md text-caption-md">Last updated: Oct 24, 2024</span>
+</div>
+</div>
+<!-- Results Table Card -->
+<div class="bg-canvas border border-fog rounded-xl shadow-[0_2px_8px_rgba(26,26,26,0.08)] overflow-hidden">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-cloud border-b border-fog">
+<th class="px-xl py-md font-caption-bold text-caption-bold text-secondary uppercase tracking-wider">Subject Code</th>
+<th class="px-xl py-md font-caption-bold text-caption-bold text-secondary uppercase tracking-wider">Subject Title</th>
+<th class="px-xl py-md font-caption-bold text-caption-bold text-secondary uppercase tracking-wider text-center">Credits</th>
+<th class="px-xl py-md font-caption-bold text-caption-bold text-secondary uppercase tracking-wider text-center">Grade</th>
+<th class="px-xl py-md font-caption-bold text-caption-bold text-secondary uppercase tracking-wider text-right">Status</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-fog">
+<tr class="hover:bg-surface-container-lowest transition-colors">
+<td class="px-xl py-lg font-body-emphasis text-body-emphasis text-ink">CS401</td>
+<td class="px-xl py-lg font-body-md text-body-md text-ink">Design and Analysis of Algorithms</td>
+<td class="px-xl py-lg font-body-md text-body-md text-ink text-center">4</td>
+<td class="px-xl py-lg font-display-xs text-display-xs text-primary-bright text-center">A+</td>
+<td class="px-xl py-lg text-right">
+<span class="inline-flex items-center px-sm py-xxs bg-green-50 text-green-700 rounded-full text-caption-bold font-caption-bold">PASS</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-lowest transition-colors">
+<td class="px-xl py-lg font-body-emphasis text-body-emphasis text-ink">CS402</td>
+<td class="px-xl py-lg font-body-md text-body-md text-ink">Database Management Systems</td>
+<td class="px-xl py-lg font-body-md text-body-md text-ink text-center">4</td>
+<td class="px-xl py-lg font-display-xs text-display-xs text-primary-bright text-center">A</td>
+<td class="px-xl py-lg text-right">
+<span class="inline-flex items-center px-sm py-xxs bg-green-50 text-green-700 rounded-full text-caption-bold font-caption-bold">PASS</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-lowest transition-colors">
+<td class="px-xl py-lg font-body-emphasis text-body-emphasis text-ink">CS403</td>
+<td class="px-xl py-lg font-body-md text-body-md text-ink">Operating Systems</td>
+<td class="px-xl py-lg font-body-md text-body-md text-ink text-center">3</td>
+<td class="px-xl py-lg font-display-xs text-display-xs text-primary-bright text-center">B+</td>
+<td class="px-xl py-lg text-right">
+<span class="inline-flex items-center px-sm py-xxs bg-green-50 text-green-700 rounded-full text-caption-bold font-caption-bold">PASS</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-lowest transition-colors">
+<td class="px-xl py-lg font-body-emphasis text-body-emphasis text-ink">MA401</td>
+<td class="px-xl py-lg font-body-md text-body-md text-ink">Discrete Mathematics</td>
+<td class="px-xl py-lg font-body-md text-body-md text-ink text-center">4</td>
+<td class="px-xl py-lg font-display-xs text-display-xs text-primary-bright text-center">A</td>
+<td class="px-xl py-lg text-right">
+<span class="inline-flex items-center px-sm py-xxs bg-green-50 text-green-700 rounded-full text-caption-bold font-caption-bold">PASS</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-lowest transition-colors">
+<td class="px-xl py-lg font-body-emphasis text-body-emphasis text-ink">CS404</td>
+<td class="px-xl py-lg font-body-md text-body-md text-ink">Computer Organization &amp; Architecture</td>
+<td class="px-xl py-lg font-body-md text-body-md text-ink text-center">3</td>
+<td class="px-xl py-lg font-display-xs text-display-xs text-primary-bright text-center">A-</td>
+<td class="px-xl py-lg text-right">
+<span class="inline-flex items-center px-sm py-xxs bg-green-50 text-green-700 rounded-full text-caption-bold font-caption-bold">PASS</span>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="bg-cloud px-xl py-md flex justify-between items-center border-t border-fog">
+<p class="font-caption-md text-caption-md text-secondary">Total SGPA for Semester 4: <span class="font-bold text-ink">8.85</span></p>
+<p class="font-caption-md text-caption-md text-secondary">Total Credits Attempted: <span class="font-bold text-ink">18</span></p>
+</div>
+</div>
+</div>
+<!-- Sidebar Actions -->
+<aside class="lg:col-span-3 space-y-lg">
+<div class="bg-canvas border border-fog rounded-xl p-xl shadow-[0_2px_8px_rgba(26,26,26,0.08)]">
+<h3 class="font-display-xs text-display-xs mb-md">Quick Actions</h3>
+<div class="space-y-md">
+<button class="w-full flex items-center justify-center gap-xs bg-ink text-on-ink font-button-md text-button-md py-3 rounded-DEFAULT hover:bg-ink-soft transition-colors scale-100 active:scale-95">
+<span class="material-symbols-outlined text-[20px]">download</span>
+                            DOWNLOAD MARKSHEET
+                        </button>
+<button class="w-full flex items-center justify-center gap-xs border border-primary text-primary font-button-md text-button-md py-3 rounded-DEFAULT hover:bg-primary-soft/10 transition-colors scale-100 active:scale-95">
+<span class="material-symbols-outlined text-[20px]">description</span>
+                            APPLY FOR RE-EVALUATION
+                        </button>
+</div>
+</div>
+<div class="bg-cloud border border-fog rounded-xl p-xl">
+<h4 class="font-caption-bold text-caption-bold uppercase tracking-wider text-secondary mb-sm">Important Note</h4>
+<p class="font-caption-md text-caption-md text-secondary leading-relaxed">
+                        Online results are for immediate information only. These cannot be treated as original mark sheets. Original mark sheets will be issued by the University separately.
+                    </p>
+<hr class="my-md border-fog"/>
+<a class="text-primary-bright font-caption-bold text-caption-bold hover:underline flex items-center gap-xxs" href="#">
+                        View Grading System
+                        <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Support Card -->
+<div class="relative bg-primary-container rounded-xl p-xl text-on-primary-container overflow-hidden">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 bg-primary-bright opacity-20 rounded-full"></div>
+<h4 class="font-display-xs text-display-xs mb-xs relative z-10">Need Help?</h4>
+<p class="font-caption-md text-caption-md opacity-90 mb-md relative z-10">Contact the examination cell for any discrepancies in your record.</p>
+<button class="bg-on-ink text-primary px-md py-2 rounded-DEFAULT font-button-md text-button-md relative z-10">Contact Support</button>
+</div>
+</aside>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-ink dark:bg-ink-deep mt-section">
+<div class="grid grid-cols-1 md:grid-cols-5 gap-xl w-full px-lg py-xxl max-w-max-width mx-auto">
+<div class="md:col-span-2">
+<span class="text-display-xs font-display-xs text-on-ink mb-md block">NIET</span>
+<p class="text-on-ink opacity-70 font-caption-md text-caption-md max-w-xs">
+                    Empowering minds and shaping futures through academic excellence and technological innovation since 2001.
+                </p>
+</div>
+<div>
+<h5 class="text-on-ink font-bold font-caption-md text-caption-md mb-md">Quick Links</h5>
+<ul class="space-y-sm">
+<li><a class="text-on-ink opacity-70 font-caption-md text-caption-md hover:opacity-100 hover:text-primary-bright transition-opacity" href="#">Academic Calendar</a></li>
+<li><a class="text-on-ink opacity-70 font-caption-md text-caption-md hover:opacity-100 hover:text-primary-bright transition-opacity" href="#">Alumni Connect</a></li>
+<li><a class="text-on-ink opacity-70 font-caption-md text-caption-md hover:opacity-100 hover:text-primary-bright transition-opacity" href="#">Careers</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-on-ink font-bold font-caption-md text-caption-md mb-md">Legal</h5>
+<ul class="space-y-sm">
+<li><a class="text-on-ink opacity-70 font-caption-md text-caption-md hover:opacity-100 hover:text-primary-bright transition-opacity" href="#">Privacy Policy</a></li>
+<li><a class="text-on-ink opacity-70 font-caption-md text-caption-md hover:opacity-100 hover:text-primary-bright transition-opacity" href="#">Terms of Use</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-on-ink font-bold font-caption-md text-caption-md mb-md">Support</h5>
+<ul class="space-y-sm">
+<li><a class="text-on-ink opacity-70 font-caption-md text-caption-md hover:opacity-100 hover:text-primary-bright transition-opacity" href="#">Contact Us</a></li>
+<li><a class="text-on-ink opacity-70 font-caption-md text-caption-md hover:opacity-100 hover:text-primary-bright transition-opacity" href="#">Help Center</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-max-width mx-auto px-lg py-md border-t border-charcoal">
+<p class="text-on-ink opacity-50 font-caption-md text-caption-md text-center">
+                © 2024 Northvale Institute of Engineering &amp; Technology. All rights reserved.
+            </p>
+</div>
+</footer>
+</body></html>

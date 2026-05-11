@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#ffb59f",
+                        "background": "#faf8ff",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "primary-soft": "#c9e0fc",
+                        "primary-bright": "#296ef9",
+                        "steel": "#c2c2c2",
+                        "error": "#ba1a1a",
+                        "primary-deep": "#0e3191",
+                        "on-primary-fixed": "#00164f",
+                        "on-surface-variant": "#434655",
+                        "on-secondary-fixed-variant": "#474746",
+                        "on-tertiary-fixed": "#3a0a00",
+                        "surface-container-high": "#e7e7f3",
+                        "surface-bright": "#faf8ff",
+                        "on-primary-fixed-variant": "#003bb0",
+                        "on-ink": "#ffffff",
+                        "inverse-primary": "#b6c4ff",
+                        "primary": "#0036a4",
+                        "on-primary-container": "#c2ceff",
+                        "primary-fixed-dim": "#b6c4ff",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#862300",
+                        "bloom-coral": "#ff5050",
+                        "storm-sea": "#7fadbe",
+                        "surface-container": "#ededf9",
+                        "on-tertiary-container": "#ffc1b0",
+                        "surface-container-low": "#f3f2ff",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "charcoal": "#3d3d3d",
+                        "tertiary-fixed": "#ffdbd1",
+                        "on-background": "#191b23",
+                        "surface-container-highest": "#e2e1ed",
+                        "bloom-rose": "#f9d4d2",
+                        "on-primary": "#ffffff",
+                        "graphite": "#636363",
+                        "inverse-surface": "#2e3039",
+                        "primary-container": "#024ad8",
+                        "on-secondary-container": "#636262",
+                        "secondary-fixed": "#e5e2e1",
+                        "surface": "#faf8ff",
+                        "primary-fixed": "#dce1ff",
+                        "surface-container-lowest": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "secondary-container": "#e2dfde",
+                        "on-surface": "#191b23",
+                        "tertiary-container": "#a52d00",
+                        "inverse-on-surface": "#f0f0fc",
+                        "ink": "#1a1a1a",
+                        "storm-deep": "#356373",
+                        "surface-tint": "#1451de",
+                        "surface-variant": "#e2e1ed",
+                        "outline": "#747686",
+                        "bloom-deep": "#b3262b",
+                        "on-error-container": "#93000a",
+                        "ink-deep": "#000000",
+                        "canvas": "#ffffff",
+                        "outline-variant": "#c3c5d7",
+                        "secondary": "#5f5e5e",
+                        "fog": "#e8e8e8",
+                        "tertiary": "#7c2000",
+                        "on-error": "#ffffff",
+                        "surface-dim": "#d9d9e5",
+                        "paper": "#ffffff",
+                        "cloud": "#f7f7f7",
+                        "ink-soft": "#292929"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section": "80px",
+                        "xs": "8px",
+                        "xxs": "4px",
+                        "xxl": "32px",
+                        "max-width": "1366px",
+                        "sm": "12px",
+                        "md": "16px",
+                        "xl": "24px",
+                        "lg": "20px"
+                    },
+                    "fontFamily": {
+                        "caption-bold": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "display-sm": ["Manrope"],
+                        "display-lg": ["Manrope"],
+                        "display-xs": ["Manrope"],
+                        "button-md": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "body-emphasis": ["Manrope"],
+                        "display-xxl": ["Manrope"],
+                        "display-md": ["Manrope"],
+                        "price-md": ["Manrope"],
+                        "caption-md": ["Manrope"],
+                        "display-xl": ["Manrope"],
+                        "caption-sm": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "caption-bold": ["14px", {"lineHeight": "1.3", "letterSpacing": "0", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.38", "letterSpacing": "0", "fontWeight": "400"}],
+                        "display-sm": ["24px", {"lineHeight": "1.17", "letterSpacing": "0", "fontWeight": "500"}],
+                        "display-lg": ["44px", {"lineHeight": "1.0", "letterSpacing": "0", "fontWeight": "500"}],
+                        "display-xs": ["20px", {"lineHeight": "1.0", "letterSpacing": "0", "fontWeight": "500"}],
+                        "button-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.7px", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.33", "letterSpacing": "0", "fontWeight": "400"}],
+                        "body-emphasis": ["16px", {"lineHeight": "1.38", "letterSpacing": "0", "fontWeight": "500"}],
+                        "display-xxl": ["72px", {"lineHeight": "1.0", "letterSpacing": "0", "fontWeight": "500"}],
+                        "display-md": ["32px", {"lineHeight": "1.0", "letterSpacing": "0", "fontWeight": "500"}],
+                        "price-md": ["24px", {"lineHeight": "1.17", "letterSpacing": "0", "fontWeight": "500"}],
+                        "caption-md": ["14px", {"lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400"}],
+                        "display-xl": ["56px", {"lineHeight": "1.0", "letterSpacing": "0", "fontWeight": "500"}],
+                        "caption-sm": ["12px", {"lineHeight": "1.33", "letterSpacing": "0", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .chevron-mask {
+            clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+        }
+        .chevron-pair-left {
+            clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+        }
+        .chevron-pair-right {
+            clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+        }
+    </style>
+</head>
+<body class="bg-canvas text-ink font-body-md">
+<!-- TopNavBar -->
+<header class="bg-canvas sticky top-0 z-50 border-b border-fog">
+<div class="h-16 flex justify-between items-center w-full px-lg max-w-max-width mx-auto">
+<div class="flex items-center gap-xl">
+<span class="text-display-sm font-extrabold text-ink tracking-tight">NIET</span>
+<nav class="hidden md:flex items-center gap-lg">
+<a class="font-body-emphasis text-body-emphasis text-primary border-b-2 border-primary pb-1" href="#">Academics</a>
+<a class="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200" href="#">Admissions</a>
+<a class="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200" href="#">Research</a>
+<a class="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200" href="#">Placements</a>
+<a class="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200" href="#">Campus Life</a>
+<a class="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200" href="#">About Us</a>
+</nav>
+</div>
+<div class="flex items-center gap-md">
+<div class="hidden lg:flex items-center bg-cloud border border-fog px-md py-xxs rounded-lg">
+<span class="material-symbols-outlined text-graphite text-[20px]">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-caption-md py-1" placeholder="Search NIET..." type="text"/>
+</div>
+<button class="bg-primary text-on-ink px-xl py-2 font-button-md rounded-[4px] scale-100 active:scale-95 transition-transform">Apply Now</button>
+<span class="material-symbols-outlined text-ink cursor-pointer">language</span>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative h-[640px] w-full overflow-hidden flex items-center bg-ink">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-60" data-alt="A sprawling modern university campus with clean architectural lines and glass facades under a bright clear sky. The scene is illuminated by brilliant natural sunlight that highlights the pure white stone surfaces and manicured green lawns. The atmosphere is academic and elite, featuring a professional light-mode aesthetic that emphasizes clarity and future-forward engineering education." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBC1Z8BBEiZ0iUwyIIRO2Fcnawto1z5O6gXB2W-PNSBtHCZtdKS1PUoq01Qy3qb2-ADH9D2SIg0Vxq8bkXdUQ0zl4j_UCy1EfwHKwGInvdEURg5WpHH2NXGvXQKJXe_p2j_baA6vPZg_lHuQETBHK7WKVdRp4iulKmNp4ESHP-JuvEjDZUxGhig-eRNOcrDZL2AuE34bgPBWuAnnHjGROJFGQLRDZpf-Ay9qca4Vt-yHmTS99owhtFyenN9tVgnaFYciDtnxNCm1i7T"/>
+</div>
+<!-- Architectural Chevron Decoration -->
+<div class="absolute inset-0 pointer-events-none z-10 flex items-center justify-between px-section">
+<div class="w-12 h-[640px] bg-primary chevron-pair-left opacity-90 hidden lg:block"></div>
+<div class="w-12 h-[640px] bg-primary chevron-pair-right opacity-90 hidden lg:block"></div>
+</div>
+<div class="relative z-20 max-w-max-width mx-auto px-lg w-full">
+<div class="max-w-2xl bg-canvas p-xxl shadow-2xl rounded-xl relative">
+<div class="absolute top-0 right-0 w-16 h-16 bg-primary chevron-mask -mt-8 -mr-8"></div>
+<span class="text-primary font-button-md tracking-widest block mb-md uppercase">Excellence in Engineering</span>
+<h1 class="text-display-xl font-display-xl text-ink-deep mb-xl">Empowering Future Engineers</h1>
+<p class="text-body-lg text-graphite mb-xxl">Experience world-class technical education at NIET, where innovation meets tradition to create the global leaders of tomorrow.</p>
+<div class="flex gap-md">
+<button class="bg-primary text-on-ink px-xl py-3 font-button-md rounded-[4px] uppercase shadow-lg hover:brightness-110 transition-all">Apply Now</button>
+<button class="border border-ink text-ink px-xl py-3 font-button-md rounded-[4px] uppercase hover:bg-cloud transition-all">Explore Programs</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Bar -->
+<section class="bg-ink py-xl">
+<div class="max-w-max-width mx-auto px-lg flex flex-wrap justify-around gap-xl items-center">
+<div class="flex items-center gap-md">
+<span class="material-symbols-outlined text-primary-bright text-[40px]">trending_up</span>
+<div>
+<div class="text-display-sm font-extrabold text-on-ink">95%</div>
+<div class="text-caption-md text-on-ink opacity-70">Placement Record</div>
+</div>
+</div>
+<div class="w-px h-12 bg-graphite hidden md:block"></div>
+<div class="flex items-center gap-md">
+<span class="material-symbols-outlined text-primary-bright text-[40px]">science</span>
+<div>
+<div class="text-display-sm font-extrabold text-on-ink">50+</div>
+<div class="text-caption-md text-on-ink opacity-70">Advanced Labs</div>
+</div>
+</div>
+<div class="w-px h-12 bg-graphite hidden md:block"></div>
+<div class="flex items-center gap-md">
+<span class="material-symbols-outlined text-primary-bright text-[40px]">groups</span>
+<div>
+<div class="text-display-sm font-extrabold text-on-ink">10,000+</div>
+<div class="text-caption-md text-on-ink opacity-70">Global Alumni</div>
+</div>
+</div>
+<div class="w-px h-12 bg-graphite hidden md:block"></div>
+<div class="flex items-center gap-md">
+<span class="material-symbols-outlined text-primary-bright text-[40px]">workspace_premium</span>
+<div>
+<div class="text-display-sm font-extrabold text-on-ink">NAAC A+</div>
+<div class="text-caption-md text-on-ink opacity-70">Accreditation</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Programs Offered -->
+<section class="py-section bg-canvas">
+<div class="max-w-max-width mx-auto px-lg">
+<div class="flex justify-between items-end mb-xxl">
+<div>
+<h2 class="text-display-md font-display-md text-ink-deep mb-xs">Academic Excellence</h2>
+<p class="text-body-md text-graphite">Rigorous curricula designed for the modern industry demands.</p>
+</div>
+<div class="w-24 h-2 bg-primary"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-lg">
+<!-- B.Tech -->
+<div class="bg-canvas border border-fog p-xl rounded-xl shadow-[0_2px_8px_rgba(26,26,26,0.08)] hover:shadow-xl transition-shadow group">
+<div class="w-12 h-12 bg-cloud flex items-center justify-center rounded-lg mb-lg group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-on-ink">engineering</span>
+</div>
+<h3 class="text-display-xs font-display-xs mb-sm">B.Tech</h3>
+<p class="text-caption-md text-graphite mb-xl">Bachelor of Technology across 8 specialized disciplines including AI and Robotics.</p>
+<a class="text-primary font-button-md flex items-center gap-xs" href="#">VIEW CURRICULUM <span class="material-symbols-outlined text-[18px]">arrow_forward</span></a>
+</div>
+<!-- M.Tech -->
+<div class="bg-canvas border border-fog p-xl rounded-xl shadow-[0_2px_8px_rgba(26,26,26,0.08)] hover:shadow-xl transition-shadow group">
+<div class="w-12 h-12 bg-cloud flex items-center justify-center rounded-lg mb-lg group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-on-ink">school</span>
+</div>
+<h3 class="text-display-xs font-display-xs mb-sm">M.Tech</h3>
+<p class="text-caption-md text-graphite mb-xl">Postgraduate programs focusing on advanced research and technical mastery.</p>
+<a class="text-primary font-button-md flex items-center gap-xs" href="#">VIEW CURRICULUM <span class="material-symbols-outlined text-[18px]">arrow_forward</span></a>
+</div>
+<!-- MBA -->
+<div class="bg-canvas border border-fog p-xl rounded-xl shadow-[0_2px_8px_rgba(26,26,26,0.08)] hover:shadow-xl transition-shadow group">
+<div class="w-12 h-12 bg-cloud flex items-center justify-center rounded-lg mb-lg group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-on-ink">business_center</span>
+</div>
+<h3 class="text-display-xs font-display-xs mb-sm">MBA</h3>
+<p class="text-caption-md text-graphite mb-xl">Integrated management studies focusing on leadership in a tech-driven economy.</p>
+<a class="text-primary font-button-md flex items-center gap-xs" href="#">VIEW CURRICULUM <span class="material-symbols-outlined text-[18px]">arrow_forward</span></a>
+</div>
+<!-- Polytechnic -->
+<div class="bg-canvas border border-fog p-xl rounded-xl shadow-[0_2px_8px_rgba(26,26,26,0.08)] hover:shadow-xl transition-shadow group">
+<div class="w-12 h-12 bg-cloud flex items-center justify-center rounded-lg mb-lg group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-on-ink">settings_suggest</span>
+</div>
+<h3 class="text-display-xs font-display-xs mb-sm">Polytechnic</h3>
+<p class="text-caption-md text-graphite mb-xl">Foundation-level diploma courses for practical engineering skills.</p>
+<a class="text-primary font-button-md flex items-center gap-xs" href="#">VIEW CURRICULUM <span class="material-symbols-outlined text-[18px]">arrow_forward</span></a>
+</div>
+</div>
+</div>
+</section>
+<!-- Campus Highlights -->
+<section class="py-section bg-cloud">
+<div class="max-w-max-width mx-auto px-lg">
+<div class="text-center mb-xxl">
+<h2 class="text-display-md font-display-md text-ink-deep mb-xs">Life at NIET</h2>
+<p class="text-body-md text-graphite">A holistic environment built for discovery and growth.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-xl">
+<div class="relative overflow-hidden rounded-xl h-[400px] group">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A futuristic laboratory space with advanced robotics and computing hardware. Bright cool-toned lighting reflects off polished surfaces, creating a high-tech atmosphere. Engineering students in professional attire collaborate over complex machinery. The visual style is crisp, modern, and clinical, emphasizing precision and innovation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXz2z_xZRg1Zkfg-ST5o9vXx5HhDB0hDde2OjzO31e7JYHG3U1LizRDG1r4Z_6KZ03z0OQ5bjmeSxn_sLBejC2b_Pi-RMKhOeyQdtc5jTUqTxXRNm7puwlbEqUzNucRfgADgtvY3UgNXgrpe9Y9RCpcsh-87LofGDCH4QfKflz1sPP08-FFafWGZ16ohVLC-4IhqTg0SwJhibAROir1DssIaTPiMwDY7gTnFjsWQITWbqxL5H39zBJsrItQaSQYoJaN3tkos_or7OR"/>
+<div class="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-0 left-0 p-xl">
+<h4 class="text-display-xs text-on-ink mb-xxs">Advanced Labs</h4>
+<p class="text-caption-md text-on-ink opacity-80">Industry-standard equipment for hands-on learning.</p>
+</div>
+</div>
+<div class="relative overflow-hidden rounded-xl h-[400px] group">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="An expansive multi-level university library with floor-to-ceiling bookshelves and minimalist wooden study desks. Large windows let in diffused morning light, illuminating the quiet space. The aesthetic is clean and academic, utilizing a neutral color palette with high contrast between deep wood tones and bright white architecture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJ2Jam4NmxxiI_eh30aUA2EXOSr8l2E-3DNdSlSuvZmqf_PtwbYtDc-Ixddti8xGHtMeAJ8x-Dw24AdO-wM-ksPXDYJIJyPDWk-xzSVEdKYFFINmBa9Apgdhqie6lDP4Ske1gcmZ145rIBfMD2JkEgfGVTYyNpIM0U6q7_CjEnTQciCPg3ltEJ-aoBQ0nqgsbfFUItz2BesPQ_zITXbddsuoUEBWpmc81exMTENDtq_71DYq2w_-g5Wl_W3VHUOj3ZGNVX1sieQglU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-0 left-0 p-xl">
+<h4 class="text-display-xs text-on-ink mb-xxs">Digital Library</h4>
+<p class="text-caption-md text-on-ink opacity-80">Access to over 100,000 journals and digital resources.</p>
+</div>
+</div>
+<div class="relative overflow-hidden rounded-xl h-[400px] group">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A professional-grade outdoor athletics stadium on a college campus. High-contrast emerald green turf and bright red running tracks under a clear blue sky. The lighting is direct and energetic, capturing the spirit of competitive collegiate sports. The composition is wide and cinematic, reflecting modern sports infrastructure." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIsQOXwLircd2fX8uO-JSeSP37oY4j591GrvyyujEp98JHxrTUfD3sXLajf-C4iFwp20_2FmeqrpcWzpX5VxAD1vEVf-BExNBC-P7wHoASC2-wBSXchq27Qm_yCxCpGyVU7RIXAm0peYrCOeD71r45QduulSk09KRnvq6k8LIcTxYzhKIdBtfb6nGbxxqT_IHnyf2O33nPdHJn8WHdOkaaJNmxPL0_tiW3bYVEA_I4w1f26hm0kgn9-ftFm2AMbQQK9m5umXCOpWyk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-0 left-0 p-xl">
+<h4 class="text-display-xs text-on-ink mb-xxs">Sports Complex</h4>
+<p class="text-caption-md text-on-ink opacity-80">Olympic-sized facilities for comprehensive physical development.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Notices and Events -->
+<section class="py-section bg-canvas">
+<div class="max-w-max-width mx-auto px-lg">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-xxl">
+<!-- Latest Notices -->
+<div class="lg:col-span-2">
+<div class="flex items-center gap-sm mb-xl">
+<span class="material-symbols-outlined text-primary">campaign</span>
+<h2 class="text-display-sm font-display-sm text-ink-deep">Latest Notices</h2>
+</div>
+<div class="space-y-md">
+<div class="flex gap-lg p-lg bg-canvas border border-fog rounded-lg hover:border-primary transition-colors cursor-pointer">
+<div class="bg-primary text-on-ink p-md rounded-lg text-center min-w-[70px]">
+<div class="text-body-emphasis font-bold">24</div>
+<div class="text-caption-sm uppercase">MAY</div>
+</div>
+<div>
+<h5 class="text-body-emphasis font-bold mb-xxs">End Semester Examination Schedule Released</h5>
+<p class="text-caption-md text-graphite">Official dates for B.Tech/M.Tech final examinations for Spring 2024...</p>
+</div>
+</div>
+<div class="flex gap-lg p-lg bg-canvas border border-fog rounded-lg hover:border-primary transition-colors cursor-pointer">
+<div class="bg-cloud text-ink p-md rounded-lg text-center min-w-[70px]">
+<div class="text-body-emphasis font-bold">18</div>
+<div class="text-caption-sm uppercase">MAY</div>
+</div>
+<div>
+<h5 class="text-body-emphasis font-bold mb-xxs">Workshop on Quantum Computing and AI</h5>
+<p class="text-caption-md text-graphite">Department of CSE is organizing a 3-day guest lecture series...</p>
+</div>
+</div>
+<div class="flex gap-lg p-lg bg-canvas border border-fog rounded-lg hover:border-primary transition-colors cursor-pointer">
+<div class="bg-cloud text-ink p-md rounded-lg text-center min-w-[70px]">
+<div class="text-body-emphasis font-bold">12</div>
+<div class="text-caption-sm uppercase">MAY</div>
+</div>
+<div>
+<h5 class="text-body-emphasis font-bold mb-xxs">Hostel Allocation List for Academic Year 24-25</h5>
+<p class="text-caption-md text-graphite">First year students can now check their allotted room status...</p>
+</div>
+</div>
+</div>
+<button class="mt-xl text-primary font-button-md flex items-center gap-xs uppercase">View All Circulars <span class="material-symbols-outlined">chevron_right</span></button>
+</div>
+<!-- Events Preview -->
+<div>
+<div class="flex items-center gap-sm mb-xl">
+<span class="material-symbols-outlined text-primary">event</span>
+<h2 class="text-display-sm font-display-sm text-ink-deep">Upcoming Event</h2>
+</div>
+<div class="bg-ink rounded-xl overflow-hidden shadow-2xl relative">
+<img class="w-full h-48 object-cover opacity-80" data-alt="A high-energy international technology conference stage with vibrant blue neon lighting and large presentation screens. A silhouette of a professional speaker is seen against the glowing background. The mood is electric and inspirational, captured with a professional shallow depth of field. High-contrast colors of primary blue and deep ink dominate the scene." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAx6mWVxb-3V27Kg9FVUeUlK6--mNS4jImg5BQhng15WL6KPI7dZWS5FzZ8UlZK_lPPaigRz8SMf0W5lE-Jm9lfuedTFLBmMMBymqTPJs0I9A2e4Djy5fffA0n3eOVazEcAx816sbc7JDZeh_dROm4njRCkmNBDgTc5Ah4OyniOSEr-9nwH1BCkMvIsfX5OyhM_hl1fGfXJsI5w3WI3BUx1bXkYsEDpT6YDMIdvjKneR2UFUn9f7nNOpHW792gHXT03ikYn1SUh8koe"/>
+<div class="p-xl">
+<span class="bg-primary-bright text-on-ink px-sm py-xxs rounded text-caption-bold mb-md inline-block">TECH-FEST 2024</span>
+<h4 class="text-display-xs text-on-ink mb-sm font-bold">NIET Innovation Summit</h4>
+<p class="text-caption-md text-on-ink opacity-70 mb-xl">Join industry leaders and tech innovators for our annual flagship engineering festival.</p>
+<div class="flex items-center justify-between">
+<div class="text-on-ink">
+<div class="text-caption-bold">June 15-17</div>
+<div class="text-caption-sm opacity-60">Main Campus Arena</div>
+</div>
+<button class="bg-canvas text-ink px-lg py-2 rounded-lg font-button-md hover:bg-primary-soft transition-all">Register</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Placement Snapshot -->
+<section class="py-section bg-cloud">
+<div class="max-w-max-width mx-auto px-lg">
+<div class="text-center mb-xxl">
+<h2 class="text-display-md font-display-md text-ink-deep mb-xs">Industry Placements</h2>
+<p class="text-body-md text-graphite">Our graduates lead the way at top global organizations.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-xl mb-xxl opacity-50 grayscale hover:grayscale-0 transition-all">
+<div class="h-16 flex items-center justify-center bg-canvas rounded-lg border border-fog"><span class="font-bold text-graphite">MICROSOFT</span></div>
+<div class="h-16 flex items-center justify-center bg-canvas rounded-lg border border-fog"><span class="font-bold text-graphite">GOOGLE</span></div>
+<div class="h-16 flex items-center justify-center bg-canvas rounded-lg border border-fog"><span class="font-bold text-graphite">TCS</span></div>
+<div class="h-16 flex items-center justify-center bg-canvas rounded-lg border border-fog"><span class="font-bold text-graphite">INFOSYS</span></div>
+<div class="h-16 flex items-center justify-center bg-canvas rounded-lg border border-fog"><span class="font-bold text-graphite">AMAZON</span></div>
+<div class="h-16 flex items-center justify-center bg-canvas rounded-lg border border-fog"><span class="font-bold text-graphite">IBM</span></div>
+</div>
+<div class="bg-canvas p-xxl rounded-xl shadow-[0_2px_8px_rgba(26,26,26,0.08)] border-l-8 border-primary relative overflow-hidden">
+<span class="material-symbols-outlined absolute top-8 right-8 text-[80px] text-fog opacity-50">format_quote</span>
+<div class="flex flex-col md:flex-row gap-xl items-center relative z-10">
+<img class="w-32 h-32 rounded-full object-cover border-4 border-cloud" data-alt="A professional headshot of a successful young female engineer with a confident smile. She is wearing a professional blazer in a clean, brightly lit modern office setting. The lighting is soft and flattering, emphasizing a successful career trajectory. The visual style is premium corporate, clean, and optimistic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjSmqFnFvkwZuAcv9-UMnVEjc_qPvs4ksXhp0ABczeOL4RRu9e92viwr6SUDz10jIEeg2SlsOBVS3bmuTPbCZihFdA5chWuXh-sCjVL_oh-Hl6xXdrVVWihUAAz5QtUuOLScyoby_Ie1sS6buewmAen9Qr6pZ0KqgyP4JQ5dySRUvHt6SrHiNMa7Ww4laq8nCNH60l9eMbTJswfP2h8zYC5te9a6nTmCCqxZjIiafWpsSfvdRrOUGVEMhjXyMskNiqX2eU3CjfUFLD"/>
+<div>
+<p class="text-body-lg italic text-ink mb-md">"NIET's focus on practical labs and industry interaction was pivotal for my career. The faculty mentorship helped me land my dream job at Microsoft with a record-breaking package."</p>
+<div>
+<h6 class="font-bold text-ink">Ananya Sharma</h6>
+<p class="text-caption-md text-primary font-bold">B.Tech CSE, Class of 2023 | Software Engineer at Microsoft</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-ink text-on-ink pt-xxl border-t border-ink-soft">
+<div class="grid grid-cols-1 md:grid-cols-5 gap-xl w-full px-lg py-xxl max-w-max-width mx-auto">
+<div class="md:col-span-1">
+<span class="text-display-xs font-display-xs text-on-ink block mb-lg">NIET</span>
+<p class="text-caption-md opacity-70 mb-xl">Shaping the future of engineering education with innovation, research, and technical excellence.</p>
+<div class="flex gap-md">
+<span class="material-symbols-outlined cursor-pointer hover:text-primary-bright">social_leaderboard</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-primary-bright">public</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-primary-bright">share</span>
+</div>
+</div>
+<div>
+<h5 class="text-body-emphasis font-bold mb-lg">Admissions</h5>
+<ul class="space-y-sm text-caption-md">
+<li><a class="opacity-70 hover:opacity-100 hover:text-primary-bright transition-opacity" href="#">Apply Now</a></li>
+<li><a class="opacity-70 hover:opacity-100 hover:text-primary-bright transition-opacity" href="#">Eligibility</a></li>
+<li><a class="opacity-70 hover:opacity-100 hover:text-primary-bright transition-opacity" href="#">Scholarships</a></li>
+<li><a class="opacity-70 hover:opacity-100 hover:text-primary-bright transition-opacity" href="#">Fee Structure</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-body-emphasis font-bold mb-lg">Academics</h5>
+<ul class="space-y-sm text-caption-md">
+<li><a class="text-on-ink font-bold" href="#">Academic Calendar</a></li>
+<li><a class="opacity-70 hover:opacity-100 hover:text-primary-bright transition-opacity" href="#">Departments</a></li>
+<li><a class="opacity-70 hover:opacity-100 hover:text-primary-bright transition-opacity" href="#">Library</a></li>
+<li><a class="opacity-70 hover:opacity-100 hover:text-primary-bright transition-opacity" href="#">Examinations</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-body-emphasis font-bold mb-lg">Quick Links</h5>
+<ul class="space-y-sm text-caption-md">
+<li><a class="opacity-70 hover:opacity-100 hover:text-primary-bright transition-opacity" href="#">Alumni Connect</a></li>
+<li><a class="opacity-70 hover:opacity-100 hover:text-primary-bright transition-opacity" href="#">Careers</a></li>
+<li><a class="opacity-70 hover:opacity-100 hover:text-primary-bright transition-opacity" href="#">Privacy Policy</a></li>
+<li><a class="opacity-70 hover:opacity-100 hover:text-primary-bright transition-opacity" href="#">NIRF Data</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-body-emphasis font-bold mb-lg">Contact Us</h5>
+<ul class="space-y-sm text-caption-md opacity-70">
+<li class="flex items-start gap-xs"><span class="material-symbols-outlined text-[18px]">location_on</span> Knowledge Park III, Greater Noida, UP</li>
+<li class="flex items-start gap-xs"><span class="material-symbols-outlined text-[18px]">phone</span> +91 123 456 7890</li>
+<li class="flex items-start gap-xs"><span class="material-symbols-outlined text-[18px]">mail</span> info@niet.edu</li>
+</ul>
+</div>
+</div>
+<div class="bg-ink-deep py-lg border-t border-ink-soft">
+<div class="max-w-max-width mx-auto px-lg text-center md:text-left text-caption-md opacity-70">
+                © 2024 Northvale Institute of Engineering &amp; Technology. All rights reserved.
+            </div>
+</div>
+</footer>
+</body></html>

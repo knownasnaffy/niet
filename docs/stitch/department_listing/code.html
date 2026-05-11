@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Departments | NIET Academic</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "paper": "#ffffff",
+                      "ink-soft": "#292929",
+                      "cloud": "#f7f7f7",
+                      "surface-dim": "#d9d9e5",
+                      "on-error": "#ffffff",
+                      "tertiary": "#7c2000",
+                      "fog": "#e8e8e8",
+                      "secondary": "#5f5e5e",
+                      "outline-variant": "#c3c5d7",
+                      "canvas": "#ffffff",
+                      "ink-deep": "#000000",
+                      "on-error-container": "#93000a",
+                      "outline": "#747686",
+                      "bloom-deep": "#b3262b",
+                      "surface-variant": "#e2e1ed",
+                      "surface-tint": "#1451de",
+                      "storm-deep": "#356373",
+                      "inverse-on-surface": "#f0f0fc",
+                      "ink": "#1a1a1a",
+                      "tertiary-container": "#a52d00",
+                      "on-surface": "#191b23",
+                      "secondary-container": "#e2dfde",
+                      "error-container": "#ffdad6",
+                      "surface-container-lowest": "#ffffff",
+                      "surface": "#faf8ff",
+                      "primary-fixed": "#dce1ff",
+                      "secondary-fixed": "#e5e2e1",
+                      "on-secondary-container": "#636262",
+                      "primary-container": "#024ad8",
+                      "inverse-surface": "#2e3039",
+                      "graphite": "#636363",
+                      "on-primary": "#ffffff",
+                      "bloom-rose": "#f9d4d2",
+                      "surface-container-highest": "#e2e1ed",
+                      "tertiary-fixed": "#ffdbd1",
+                      "on-background": "#191b23",
+                      "charcoal": "#3d3d3d",
+                      "surface-container-low": "#f3f2ff",
+                      "on-tertiary": "#ffffff",
+                      "on-secondary-fixed": "#1c1b1b",
+                      "on-tertiary-container": "#ffc1b0",
+                      "surface-container": "#ededf9",
+                      "storm-sea": "#7fadbe",
+                      "on-tertiary-fixed-variant": "#862300",
+                      "bloom-coral": "#ff5050",
+                      "primary-fixed-dim": "#b6c4ff",
+                      "on-secondary": "#ffffff",
+                      "primary": "#0036a4",
+                      "on-primary-container": "#c2ceff",
+                      "inverse-primary": "#b6c4ff",
+                      "on-ink": "#ffffff",
+                      "on-primary-fixed-variant": "#003bb0",
+                      "surface-bright": "#faf8ff",
+                      "surface-container-high": "#e7e7f3",
+                      "on-tertiary-fixed": "#3a0a00",
+                      "on-secondary-fixed-variant": "#474746",
+                      "on-surface-variant": "#434655",
+                      "on-primary-fixed": "#00164f",
+                      "primary-deep": "#0e3191",
+                      "error": "#ba1a1a",
+                      "steel": "#c2c2c2",
+                      "primary-bright": "#296ef9",
+                      "primary-soft": "#c9e0fc",
+                      "secondary-fixed-dim": "#c8c6c5",
+                      "background": "#faf8ff",
+                      "tertiary-fixed-dim": "#ffb59f"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "max-width": "1366px",
+                      "sm": "12px",
+                      "xl": "24px",
+                      "md": "16px",
+                      "lg": "20px",
+                      "section": "80px",
+                      "xs": "8px",
+                      "xxs": "4px",
+                      "xxl": "32px"
+              },
+              "fontFamily": {
+                      "body-lg": ["Manrope"],
+                      "body-emphasis": ["Manrope"],
+                      "display-md": ["Manrope"],
+                      "price-md": ["Manrope"],
+                      "display-xxl": ["Manrope"],
+                      "display-xl": ["Manrope"],
+                      "caption-md": ["Manrope"],
+                      "caption-sm": ["Manrope"],
+                      "caption-bold": ["Manrope"],
+                      "display-sm": ["Manrope"],
+                      "body-md": ["Manrope"],
+                      "display-lg": ["Manrope"],
+                      "button-md": ["Manrope"],
+                      "display-xs": ["Manrope"]
+              },
+              "fontSize": {
+                      "body-lg": ["18px", {"lineHeight": "1.33", "letterSpacing": "0", "fontWeight": "400"}],
+                      "body-emphasis": ["16px", {"lineHeight": "1.38", "letterSpacing": "0", "fontWeight": "500"}],
+                      "display-md": ["32px", {"lineHeight": "1.0", "letterSpacing": "0", "fontWeight": "500"}],
+                      "price-md": ["24px", {"lineHeight": "1.17", "letterSpacing": "0", "fontWeight": "500"}],
+                      "display-xxl": ["72px", {"lineHeight": "1.0", "letterSpacing": "0", "fontWeight": "500"}],
+                      "display-xl": ["56px", {"lineHeight": "1.0", "letterSpacing": "0", "fontWeight": "500"}],
+                      "caption-md": ["14px", {"lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400"}],
+                      "caption-sm": ["12px", {"lineHeight": "1.33", "letterSpacing": "0", "fontWeight": "400"}],
+                      "caption-bold": ["14px", {"lineHeight": "1.3", "letterSpacing": "0", "fontWeight": "700"}],
+                      "display-sm": ["24px", {"lineHeight": "1.17", "letterSpacing": "0", "fontWeight": "500"}],
+                      "body-md": ["16px", {"lineHeight": "1.38", "letterSpacing": "0", "fontWeight": "400"}],
+                      "display-lg": ["44px", {"lineHeight": "1.0", "letterSpacing": "0", "fontWeight": "500"}],
+                      "button-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.7px", "fontWeight": "600"}],
+                      "display-xs": ["20px", {"lineHeight": "1.0", "letterSpacing": "0", "fontWeight": "500"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .chevron-mask {
+            clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+        }
+    </style>
+</head>
+<body class="bg-paper font-body-md text-ink">
+<!-- TopNavBar -->
+<header class="bg-paper border-b border-fog docked full-width top-0 z-50 sticky">
+<div class="flex justify-between items-center h-16 max-w-[1366px] mx-auto px-xl">
+<div class="text-display-xs font-display-xs font-bold text-ink tracking-tight">NIET Academic</div>
+<nav class="hidden md:flex items-center gap-xl">
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-body-emphasis text-body-emphasis hover:text-primary transition-colors duration-200" href="#">Departments</a>
+<a class="text-secondary font-medium font-body-emphasis text-body-emphasis hover:text-primary transition-colors duration-200" href="#">Faculty</a>
+<a class="text-secondary font-medium font-body-emphasis text-body-emphasis hover:text-primary transition-colors duration-200" href="#">Academic Calendar</a>
+<a class="text-secondary font-medium font-body-emphasis text-body-emphasis hover:text-primary transition-colors duration-200" href="#">Admissions</a>
+<a class="text-secondary font-medium font-body-emphasis text-body-emphasis hover:text-primary transition-colors duration-200" href="#">Research</a>
+<a class="text-secondary font-medium font-body-emphasis text-body-emphasis hover:text-primary transition-colors duration-200" href="#">About</a>
+</nav>
+<div class="flex items-center gap-md">
+<button class="bg-primary text-on-ink px-xl h-[44px] rounded-none font-button-md text-button-md uppercase active:opacity-80 transition-opacity">Apply Now</button>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative bg-ink h-[400px] flex items-center overflow-hidden">
+<!-- Decorative Chevrons -->
+<div class="absolute left-0 h-full w-24 bg-primary chevron-mask opacity-20 -translate-x-12"></div>
+<div class="absolute right-0 h-full w-24 bg-primary chevron-mask opacity-20 translate-x-12"></div>
+<div class="max-w-[1366px] mx-auto px-xl w-full relative z-10 grid md:grid-cols-2 gap-xl items-center">
+<div>
+<h1 class="font-display-xl text-display-xl text-paper mb-md">Academic Departments</h1>
+<p class="font-body-lg text-body-lg text-paper opacity-80 max-w-xl">Explore our diverse range of engineering and management disciplines designed to foster innovation, technical excellence, and future leadership.</p>
+</div>
+<div class="hidden md:block">
+<img alt="Campus" class="rounded-xl shadow-lg w-full h-[300px] object-cover border border-charcoal" data-alt="A high-angle architectural shot of a modern university campus courtyard during golden hour. The building features clean glass facades and geometric concrete structures. The lighting is warm and directional, casting long, dramatic shadows that emphasize the mechanical and structured reliability of the institution. The overall mood is prestigious and serene, aligning with a commercial-clean aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKQUi6PXD9aSuYXYcG3JzgthGjHLTAcL8hDb_UU5-WZKxIo61eNYSz70Vqtj0KtB99DSOmILbj7ts2Afrgxi6ufIMU2yY9QwdxoxB1mQC0FLnms6lyft4PylvWuPfBhyTOARfbE_6suuIkLgR-SxLQrJ7joQnHmEaq3-Y58Pga3RZnI29NRbdogsuFJIMzQeDjSVzP4uVn-7ftUD9EfvrzIaVxNBCnkcZa-qkY64u9v4ELVBjrvFqXMiA_PyIEAQwSAn-9Epo1aQtg"/>
+</div>
+</div>
+</section>
+<!-- Department Grid Section -->
+<section class="bg-paper py-section">
+<div class="max-w-[1366px] mx-auto px-xl">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-xl">
+<!-- Computer Science Card -->
+<div class="bg-canvas p-xl rounded-xl shadow-[0_2px_8px_rgba(26,26,26,0.08)] border border-fog flex flex-col group hover:border-primary transition-colors duration-300">
+<div class="w-12 h-12 bg-cloud rounded-lg flex items-center justify-center mb-lg text-primary">
+<span class="material-symbols-outlined text-[32px]" data-icon="computer">computer</span>
+</div>
+<h3 class="font-display-sm text-display-sm text-ink mb-sm">Computer Science</h3>
+<p class="font-body-md text-body-md text-secondary mb-xl flex-grow">Specializing in software engineering, cloud computing, and theoretical foundations to build the next generation of digital infrastructure.</p>
+<a class="inline-flex items-center text-primary font-button-md text-button-md uppercase group-hover:gap-xs transition-all" href="#">
+                            Explore Department <span class="material-symbols-outlined ml-xxs">arrow_forward</span>
+</a>
+</div>
+<!-- AI & Data Science Card -->
+<div class="bg-canvas p-xl rounded-xl shadow-[0_2px_8px_rgba(26,26,26,0.08)] border border-fog flex flex-col group hover:border-primary transition-colors duration-300">
+<div class="w-12 h-12 bg-cloud rounded-lg flex items-center justify-center mb-lg text-primary">
+<span class="material-symbols-outlined text-[32px]" data-icon="psychology">psychology</span>
+</div>
+<h3 class="font-display-sm text-display-sm text-ink mb-sm">AI &amp; Data Science</h3>
+<p class="font-body-md text-body-md text-secondary mb-xl flex-grow">Leveraging machine learning, big data analytics, and neural networks to solve complex global challenges through intelligent automation.</p>
+<a class="inline-flex items-center text-primary font-button-md text-button-md uppercase group-hover:gap-xs transition-all" href="#">
+                            Explore Department <span class="material-symbols-outlined ml-xxs">arrow_forward</span>
+</a>
+</div>
+<!-- Mechanical Card -->
+<div class="bg-canvas p-xl rounded-xl shadow-[0_2px_8px_rgba(26,26,26,0.08)] border border-fog flex flex-col group hover:border-primary transition-colors duration-300">
+<div class="w-12 h-12 bg-cloud rounded-lg flex items-center justify-center mb-lg text-primary">
+<span class="material-symbols-outlined text-[32px]" data-icon="settings_gear">Rectangle</span>
+</div>
+<h3 class="font-display-sm text-display-sm text-ink mb-sm">Mechanical Engineering</h3>
+<p class="font-body-md text-body-md text-secondary mb-xl flex-grow">Focusing on robotics, thermodynamics, and manufacturing systems that drive industrial progress and hardware innovation.</p>
+<a class="inline-flex items-center text-primary font-button-md text-button-md uppercase group-hover:gap-xs transition-all" href="#">
+                            Explore Department <span class="material-symbols-outlined ml-xxs">arrow_forward</span>
+</a>
+</div>
+<!-- Civil Card -->
+<div class="bg-canvas p-xl rounded-xl shadow-[0_2px_8px_rgba(26,26,26,0.08)] border border-fog flex flex-col group hover:border-primary transition-colors duration-300">
+<div class="w-12 h-12 bg-cloud rounded-lg flex items-center justify-center mb-lg text-primary">
+<span class="material-symbols-outlined text-[32px]" data-icon="architecture">architecture</span>
+</div>
+<h3 class="font-display-sm text-display-sm text-ink mb-sm">Civil Engineering</h3>
+<p class="font-body-md text-body-md text-secondary mb-xl flex-grow">Designing sustainable infrastructure and urban landscapes with a focus on structural integrity and environmental impact.</p>
+<a class="inline-flex items-center text-primary font-button-md text-button-md uppercase group-hover:gap-xs transition-all" href="#">
+                            Explore Department <span class="material-symbols-outlined ml-xxs">arrow_forward</span>
+</a>
+</div>
+<!-- ECE Card -->
+<div class="bg-canvas p-xl rounded-xl shadow-[0_2px_8px_rgba(26,26,26,0.08)] border border-fog flex flex-col group hover:border-primary transition-colors duration-300">
+<div class="w-12 h-12 bg-cloud rounded-lg flex items-center justify-center mb-lg text-primary">
+<span class="material-symbols-outlined text-[32px]" data-icon="memory">memory</span>
+</div>
+<h3 class="font-display-sm text-display-sm text-ink mb-sm">ECE</h3>
+<p class="font-body-md text-body-md text-secondary mb-xl flex-grow">Exploring electronics, telecommunications, and VLSI design to power the communication networks of tomorrow.</p>
+<a class="inline-flex items-center text-primary font-button-md text-button-md uppercase group-hover:gap-xs transition-all" href="#">
+                            Explore Department <span class="material-symbols-outlined ml-xxs">arrow_forward</span>
+</a>
+</div>
+<!-- Electrical Card -->
+<div class="bg-canvas p-xl rounded-xl shadow-[0_2px_8px_rgba(26,26,26,0.08)] border border-fog flex flex-col group hover:border-primary transition-colors duration-300">
+<div class="w-12 h-12 bg-cloud rounded-lg flex items-center justify-center mb-lg text-primary">
+<span class="material-symbols-outlined text-[32px]" data-icon="bolt">bolt</span>
+</div>
+<h3 class="font-display-sm text-display-sm text-ink mb-sm">Electrical Engineering</h3>
+<p class="font-body-md text-body-md text-secondary mb-xl flex-grow">Mastering power systems, renewable energy, and control engineering for a more efficient and electrified world.</p>
+<a class="inline-flex items-center text-primary font-button-md text-button-md uppercase group-hover:gap-xs transition-all" href="#">
+                            Explore Department <span class="material-symbols-outlined ml-xxs">arrow_forward</span>
+</a>
+</div>
+<!-- Management Card -->
+<div class="bg-canvas p-xl rounded-xl shadow-[0_2px_8px_rgba(26,26,26,0.08)] border border-fog flex flex-col group hover:border-primary transition-colors duration-300 lg:col-start-2">
+<div class="w-12 h-12 bg-cloud rounded-lg flex items-center justify-center mb-lg text-primary">
+<span class="material-symbols-outlined text-[32px]" data-icon="business_center">business_center</span>
+</div>
+<h3 class="font-display-sm text-display-sm text-ink mb-sm">Management Studies</h3>
+<p class="font-body-md text-body-md text-secondary mb-xl flex-grow">Developing strategic thinking, organizational leadership, and entrepreneurial skills for the modern corporate landscape.</p>
+<a class="inline-flex items-center text-primary font-button-md text-button-md uppercase group-hover:gap-xs transition-all" href="#">
+                            Explore Department <span class="material-symbols-outlined ml-xxs">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Section (Cloud Band) -->
+<section class="bg-cloud py-section">
+<div class="max-w-[1366px] mx-auto px-xl">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-xl text-center">
+<div>
+<div class="font-display-lg text-display-lg text-primary mb-xs">4000+</div>
+<div class="font-caption-bold text-caption-bold text-secondary uppercase">Active Students</div>
+</div>
+<div>
+<div class="font-display-lg text-display-lg text-primary mb-xs">250+</div>
+<div class="font-caption-bold text-caption-bold text-secondary uppercase">Expert Faculty</div>
+</div>
+<div>
+<div class="font-display-lg text-display-lg text-primary mb-xs">15+</div>
+<div class="font-caption-bold text-caption-bold text-secondary uppercase">Research Labs</div>
+</div>
+<div>
+<div class="font-display-lg text-display-lg text-primary mb-xs">95%</div>
+<div class="font-caption-bold text-caption-bold text-secondary uppercase">Placement Rate</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-ink py-section">
+<div class="max-w-[1366px] mx-auto px-xl">
+<div class="grid grid-cols-1 md:grid-cols-5 gap-xl">
+<div class="md:col-span-2">
+<span class="font-display-sm text-display-sm text-paper mb-4 block">NIET Academic</span>
+<p class="text-on-ink opacity-70 font-caption-md text-caption-md max-w-sm mb-lg">Empowering the next generation of engineers and leaders through rigorous academics and practical innovation.</p>
+</div>
+<div>
+<h4 class="text-paper font-bold mb-md">Departments</h4>
+<ul class="space-y-sm">
+<li><a class="text-on-ink opacity-70 hover:opacity-100 transition-opacity font-caption-md text-caption-md" href="#">Academic Departments</a></li>
+<li><a class="text-on-ink opacity-70 hover:opacity-100 transition-opacity font-caption-md text-caption-md" href="#">Faculty Directory</a></li>
+<li><a class="text-on-ink opacity-70 hover:opacity-100 transition-opacity font-caption-md text-caption-md" href="#">Research &amp; Innovation</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-paper font-bold mb-md">University</h4>
+<ul class="space-y-sm">
+<li><a class="text-on-ink opacity-70 hover:opacity-100 transition-opacity font-caption-md text-caption-md" href="#">Campus Life</a></li>
+<li><a class="text-on-ink opacity-70 hover:opacity-100 transition-opacity font-caption-md text-caption-md" href="#">Admissions</a></li>
+<li><a class="text-on-ink opacity-70 hover:opacity-100 transition-opacity font-caption-md text-caption-md" href="#">News &amp; Events</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-paper font-bold mb-md">Legal</h4>
+<ul class="space-y-sm">
+<li><a class="text-on-ink opacity-70 hover:opacity-100 transition-opacity font-caption-md text-caption-md" href="#">Privacy Policy</a></li>
+<li><a class="text-on-ink opacity-70 hover:opacity-100 transition-opacity font-caption-md text-caption-md" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<div class="mt-section pt-xl border-t border-charcoal text-center">
+<p class="text-on-ink opacity-70 font-caption-md text-caption-md">© 2024 Northvale Institute of Engineering &amp; Technology. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</body></html>

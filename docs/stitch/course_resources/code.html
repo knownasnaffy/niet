@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NIET | Course Resources Hub</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .chevron-bg {
+            clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed-variant": "#862300",
+                        "surface-tint": "#1451de",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "on-ink": "#ffffff",
+                        "surface-bright": "#faf8ff",
+                        "primary-fixed-dim": "#b6c4ff",
+                        "primary-deep": "#0e3191",
+                        "on-primary-fixed": "#00164f",
+                        "inverse-surface": "#2e3039",
+                        "ink-soft": "#292929",
+                        "on-tertiary-fixed": "#3a0a00",
+                        "bloom-coral": "#ff5050",
+                        "storm-sea": "#7fadbe",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "graphite": "#636363",
+                        "primary-container": "#024ad8",
+                        "surface-variant": "#e2e1ed",
+                        "storm-deep": "#356373",
+                        "on-secondary": "#ffffff",
+                        "on-surface": "#191b23",
+                        "surface-container-highest": "#e2e1ed",
+                        "surface-container-high": "#e7e7f3",
+                        "on-primary-fixed-variant": "#003bb0",
+                        "background": "#faf8ff",
+                        "tertiary-container": "#a52d00",
+                        "secondary-container": "#e2dfde",
+                        "tertiary-fixed-dim": "#ffb59f",
+                        "bloom-deep": "#b3262b",
+                        "secondary": "#5f5e5e",
+                        "ink": "#1a1a1a",
+                        "on-surface-variant": "#434655",
+                        "on-error-container": "#93000a",
+                        "on-background": "#191b23",
+                        "primary-soft": "#c9e0fc",
+                        "ink-deep": "#000000",
+                        "surface-container-low": "#f3f2ff",
+                        "on-primary-container": "#c2ceff",
+                        "canvas": "#ffffff",
+                        "primary": "#0036a4",
+                        "on-tertiary-container": "#ffc1b0",
+                        "on-secondary-container": "#636262",
+                        "on-tertiary": "#ffffff",
+                        "inverse-primary": "#b6c4ff",
+                        "cloud": "#f7f7f7",
+                        "tertiary-fixed": "#ffdbd1",
+                        "steel": "#c2c2c2",
+                        "surface": "#faf8ff",
+                        "on-error": "#ffffff",
+                        "primary-bright": "#296ef9",
+                        "outline-variant": "#c3c5d7",
+                        "on-secondary-fixed-variant": "#474746",
+                        "error-container": "#ffdad6",
+                        "tertiary": "#7c2000",
+                        "surface-container-lowest": "#ffffff",
+                        "bloom-rose": "#f9d4d2",
+                        "surface-container": "#ededf9",
+                        "paper": "#ffffff",
+                        "outline": "#747686",
+                        "inverse-on-surface": "#f0f0fc",
+                        "fog": "#e8e8e8",
+                        "secondary-fixed": "#e5e2e1",
+                        "primary-fixed": "#dce1ff",
+                        "on-primary": "#ffffff",
+                        "surface-dim": "#d9d9e5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xl": "24px",
+                        "xs": "8px",
+                        "max-width": "1366px",
+                        "sm": "12px",
+                        "xxs": "4px",
+                        "section": "80px",
+                        "lg": "20px",
+                        "xxl": "32px",
+                        "md": "16px"
+                    },
+                    "fontFamily": {
+                        "display-xs": ["Manrope"],
+                        "display-md": ["Manrope"],
+                        "display-xxl": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "caption-md": ["Manrope"],
+                        "button-md": ["Manrope"],
+                        "display-xl": ["Manrope"],
+                        "price-md": ["Manrope"],
+                        "body-emphasis": ["Manrope"],
+                        "display-lg": ["Manrope"],
+                        "caption-bold": ["Manrope"],
+                        "caption-sm": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "display-sm": ["Manrope"]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-canvas text-ink antialiased">
+<!-- TopNavBar -->
+<header class="bg-canvas border-b border-fog sticky top-0 z-50">
+<div class="h-16 flex justify-between items-center w-full px-lg max-w-max-width mx-auto">
+<div class="text-display-sm font-display-sm font-extrabold text-ink">NIET</div>
+<nav class="hidden md:flex gap-xl h-full items-center">
+<a class="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200" href="#">Academics</a>
+<a class="font-body-emphasis text-body-emphasis text-primary border-b-2 border-primary pb-1" href="#">Admissions</a>
+<a class="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200" href="#">Research</a>
+<a class="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200" href="#">Placements</a>
+<a class="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200" href="#">Campus Life</a>
+<a class="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200" href="#">About Us</a>
+</nav>
+<div class="flex items-center gap-md">
+<span class="material-symbols-outlined text-ink cursor-pointer hover:text-primary transition-colors">language</span>
+<span class="material-symbols-outlined text-ink cursor-pointer hover:text-primary transition-colors">search</span>
+<button class="bg-primary text-on-ink font-button-md text-button-md px-xl py-2 rounded-DEFAULT scale-100 active:scale-95 transition-transform">Apply Now</button>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Search Section -->
+<section class="bg-ink py-xxl relative overflow-hidden">
+<!-- Architectural Chevron Motif -->
+<div class="absolute left-0 top-0 h-full w-12 bg-primary chevron-bg opacity-20"></div>
+<div class="absolute right-0 top-0 h-full w-12 bg-primary chevron-bg opacity-20"></div>
+<div class="max-w-max-width mx-auto px-lg relative z-10">
+<div class="text-center mb-xl">
+<h1 class="text-display-lg font-display-lg text-on-ink mb-md">Course Resources Hub</h1>
+<p class="text-body-lg font-body-lg text-on-ink opacity-80 max-w-2xl mx-auto">Access lecture notes, assignment briefs, and reading lists for all your enrolled courses in one unified dashboard.</p>
+</div>
+<div class="max-w-3xl mx-auto relative">
+<div class="absolute inset-y-0 left-md flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-graphite">search</span>
+</div>
+<input class="w-full h-[56px] pl-[52px] pr-xl rounded-md border-none bg-canvas text-ink focus:ring-2 focus:ring-primary-bright text-body-md font-body-md shadow-lg" placeholder="Search for documents, lecture titles, or course codes..." type="text"/>
+<div class="absolute inset-y-2 right-2">
+<button class="h-full px-xl bg-primary text-on-ink rounded-md font-button-md text-button-md hover:bg-primary-container transition-colors">Search</button>
+</div>
+</div>
+</div>
+</section>
+<!-- My Enrolled Courses Section -->
+<section class="py-section bg-canvas">
+<div class="max-w-max-width mx-auto px-lg">
+<div class="flex justify-between items-end mb-xxl">
+<div>
+<h2 class="text-display-md font-display-md text-ink mb-xs">My Enrolled Courses</h2>
+<div class="h-1 w-20 bg-primary"></div>
+</div>
+<button class="text-primary font-button-md text-button-md flex items-center gap-xs hover:underline">
+                        View All Resources <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-xl">
+<!-- Course Card 1 -->
+<div class="bg-canvas rounded-xl overflow-hidden shadow-[0_2px_8px_rgba(26,26,26,0.08)] border border-fog flex flex-col group transition-all hover:translate-y-[-4px]">
+<div class="h-48 overflow-hidden relative">
+<img alt="Advanced Fluid Dynamics" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A high-angle professional photograph of a modern engineering laboratory with advanced fluid dynamics equipment. The lighting is bright and industrial, emphasizing a clean and clinical atmosphere. Precise scientific instruments and glass piping are visible in the background, creating a mood of serious academic research and technological advancement within a contemporary university setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHKHcVSgk-wdmCNSJgTE07XZydsyIUShzfvxbWJLoB4XMJDhdP_P4__eHJwQfheFCxyN2MNodIK7YkNuWttgQZ3K_c3JGoUhMCzto1Pu5KI0XvVqnQ1wgzB8kbvAODCbsUUm9FEdGroqjM5eyihzm-CeiEV3yL0Xu05vHRilfPpoClX-MMx2-TZgXKSovFIPxFzMIXU0_QgqP0K4HjAlOM-GnWwot8yW8e3gcDR4OPVCZfHLBshmujvCpksRDizW9f91ddJpjs2bey"/>
+<div class="absolute top-md left-md bg-ink-soft/90 text-on-ink px-sm py-1 rounded-DEFAULT text-caption-bold font-caption-bold">MECH-402</div>
+</div>
+<div class="p-xl flex-grow">
+<h3 class="text-display-xs font-display-xs text-ink mb-xs">Advanced Fluid Dynamics</h3>
+<p class="text-caption-md font-caption-md text-graphite mb-xl flex items-center gap-xs">
+<span class="material-symbols-outlined text-[18px]">person</span> Prof. Elena Rodriguez
+                            </p>
+<div class="space-y-sm">
+<a class="flex items-center justify-between p-sm rounded-lg hover:bg-cloud border border-transparent hover:border-fog transition-all group/link" href="#">
+<span class="flex items-center gap-sm font-body-emphasis text-body-emphasis text-ink">
+<span class="material-symbols-outlined text-primary">description</span> Lecture Notes
+                                    </span>
+<span class="material-symbols-outlined text-graphite group-hover/link:translate-x-1 transition-transform">chevron_right</span>
+</a>
+<a class="flex items-center justify-between p-sm rounded-lg hover:bg-cloud border border-transparent hover:border-fog transition-all group/link" href="#">
+<span class="flex items-center gap-sm font-body-emphasis text-body-emphasis text-ink">
+<span class="material-symbols-outlined text-primary">assignment</span> Assignment Briefs
+                                    </span>
+<span class="material-symbols-outlined text-graphite group-hover/link:translate-x-1 transition-transform">chevron_right</span>
+</a>
+<a class="flex items-center justify-between p-sm rounded-lg hover:bg-cloud border border-transparent hover:border-fog transition-all group/link" href="#">
+<span class="flex items-center gap-sm font-body-emphasis text-body-emphasis text-ink">
+<span class="material-symbols-outlined text-primary">menu_book</span> Reading List
+                                    </span>
+<span class="material-symbols-outlined text-graphite group-hover/link:translate-x-1 transition-transform">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Course Card 2 -->
+<div class="bg-canvas rounded-xl overflow-hidden shadow-[0_2px_8px_rgba(26,26,26,0.08)] border border-fog flex flex-col group transition-all hover:translate-y-[-4px]">
+<div class="h-48 overflow-hidden relative">
+<img alt="Cybersecurity Architecture" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A close-up shot of a high-tech computer server room with glowing blue and green status lights. The image is captured with a shallow depth of field, highlighting the intricate wiring and hardware. The lighting is low and moody, punctuated by vibrant LED signals, creating a futuristic and secure atmosphere suitable for a cybersecurity course theme." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9nYI3MzJlmFfMzZCjOOo0gEmgDg-0N2UWh4GNjcg1IpY7psYJGvAxhhbfcJSPou9AbaHbtoO8jmmKXmc854vN7Lhwi-5JUTrAN5cv6usFzDNQeDIgjS-oBUiy_QgNc14uZvYiNYyMVa_bEnkMj1Zsga-Gpu82N7e6P2xgnCArecxxNn8eyDNcYU2Jp_C5v-XO-ETX-4t2b1Rk6VNQSTfft5oOrH8Mr7wBl0S0t8bjyewG5m3S_uE5sH_u3RU8V0fL9MfuR_N6MxXO"/>
+<div class="absolute top-md left-md bg-ink-soft/90 text-on-ink px-sm py-1 rounded-DEFAULT text-caption-bold font-caption-bold">CS-501</div>
+</div>
+<div class="p-xl flex-grow">
+<h3 class="text-display-xs font-display-xs text-ink mb-xs">Cybersecurity Architecture</h3>
+<p class="text-caption-md font-caption-md text-graphite mb-xl flex items-center gap-xs">
+<span class="material-symbols-outlined text-[18px]">person</span> Dr. Marcus Sterling
+                            </p>
+<div class="space-y-sm">
+<a class="flex items-center justify-between p-sm rounded-lg hover:bg-cloud border border-transparent hover:border-fog transition-all group/link" href="#">
+<span class="flex items-center gap-sm font-body-emphasis text-body-emphasis text-ink">
+<span class="material-symbols-outlined text-primary">description</span> Lecture Notes
+                                    </span>
+<span class="material-symbols-outlined text-graphite group-hover/link:translate-x-1 transition-transform">chevron_right</span>
+</a>
+<a class="flex items-center justify-between p-sm rounded-lg hover:bg-cloud border border-transparent hover:border-fog transition-all group/link" href="#">
+<span class="flex items-center gap-sm font-body-emphasis text-body-emphasis text-ink">
+<span class="material-symbols-outlined text-primary">assignment</span> Assignment Briefs
+                                    </span>
+<span class="material-symbols-outlined text-graphite group-hover/link:translate-x-1 transition-transform">chevron_right</span>
+</a>
+<a class="flex items-center justify-between p-sm rounded-lg hover:bg-cloud border border-transparent hover:border-fog transition-all group/link" href="#">
+<span class="flex items-center gap-sm font-body-emphasis text-body-emphasis text-ink">
+<span class="material-symbols-outlined text-primary">menu_book</span> Reading List
+                                    </span>
+<span class="material-symbols-outlined text-graphite group-hover/link:translate-x-1 transition-transform">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Course Card 3 -->
+<div class="bg-canvas rounded-xl overflow-hidden shadow-[0_2px_8px_rgba(26,26,26,0.08)] border border-fog flex flex-col group transition-all hover:translate-y-[-4px]">
+<div class="h-48 overflow-hidden relative">
+<img alt="Sustainable Energy Systems" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A wide-angle landscape photograph featuring a large-scale wind turbine farm set against a clear blue sky during the golden hour. The sunlight is warm and directional, casting long shadows across the rolling green hills. The composition is clean and expansive, evoking a sense of hope and technological harmony with nature for a sustainable energy academic course." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLs6GEk_uLIaMQVKOcFhuajQ7vSlBmXNM6ruTjRZsNA0S0dwZFbgm5K8kxQdcU2UmThnsS6YfMRRq3FBANWdBqCGDMlD5KF8SaW9ohD7j7FSzQYqcMze3vBWAU4QK648RnBfgmg1PDPWMRJ4GvOpIrnVLbVhL0t9MIx4OjEXstIRVm8yDZuccCzrvSuc7rB8lmB3H2FD6Wmumy8TV6F7FX7Frt_vYmXSZn8zimjr1vRYKsk_w_s-_lhPRai28tuH8abrWxOKF24CdF"/>
+<div class="absolute top-md left-md bg-ink-soft/90 text-on-ink px-sm py-1 rounded-DEFAULT text-caption-bold font-caption-bold">ENV-310</div>
+</div>
+<div class="p-xl flex-grow">
+<h3 class="text-display-xs font-display-xs text-ink mb-xs">Sustainable Energy Systems</h3>
+<p class="text-caption-md font-caption-md text-graphite mb-xl flex items-center gap-xs">
+<span class="material-symbols-outlined text-[18px]">person</span> Prof. Sarah Jenkins
+                            </p>
+<div class="space-y-sm">
+<a class="flex items-center justify-between p-sm rounded-lg hover:bg-cloud border border-transparent hover:border-fog transition-all group/link" href="#">
+<span class="flex items-center gap-sm font-body-emphasis text-body-emphasis text-ink">
+<span class="material-symbols-outlined text-primary">description</span> Lecture Notes
+                                    </span>
+<span class="material-symbols-outlined text-graphite group-hover/link:translate-x-1 transition-transform">chevron_right</span>
+</a>
+<a class="flex items-center justify-between p-sm rounded-lg hover:bg-cloud border border-transparent hover:border-fog transition-all group/link" href="#">
+<span class="flex items-center gap-sm font-body-emphasis text-body-emphasis text-ink">
+<span class="material-symbols-outlined text-primary">assignment</span> Assignment Briefs
+                                    </span>
+<span class="material-symbols-outlined text-graphite group-hover/link:translate-x-1 transition-transform">chevron_right</span>
+</a>
+<a class="flex items-center justify-between p-sm rounded-lg hover:bg-cloud border border-transparent hover:border-fog transition-all group/link" href="#">
+<span class="flex items-center gap-sm font-body-emphasis text-body-emphasis text-ink">
+<span class="material-symbols-outlined text-primary">menu_book</span> Reading List
+                                    </span>
+<span class="material-symbols-outlined text-graphite group-hover/link:translate-x-1 transition-transform">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Recent Announcements / Updates Section (Cloud Banding) -->
+<section class="py-section bg-cloud border-y border-fog">
+<div class="max-w-max-width mx-auto px-lg">
+<div class="mb-xxl text-center">
+<h2 class="text-display-md font-display-md text-ink">Recent Resource Updates</h2>
+<p class="text-body-md font-body-md text-graphite mt-sm">Stay updated with the latest materials uploaded by your professors.</p>
+</div>
+<div class="bg-canvas rounded-xl p-xl shadow-[0_2px_8px_rgba(26,26,26,0.08)]">
+<div class="divide-y divide-fog">
+<div class="py-md flex flex-col md:flex-row md:items-center justify-between gap-md">
+<div class="flex items-start gap-md">
+<div class="bg-primary-soft p-sm rounded-lg">
+<span class="material-symbols-outlined text-primary">upload_file</span>
+</div>
+<div>
+<h4 class="font-body-emphasis text-body-emphasis text-ink">New Lecture Slide: "Quantum Entanglement Deep Dive"</h4>
+<p class="text-caption-md font-caption-md text-graphite">Course: PHYS-202 | Added 2 hours ago</p>
+</div>
+</div>
+<button class="text-primary font-button-md text-button-md px-xl py-2 border border-primary rounded-DEFAULT hover:bg-primary hover:text-on-ink transition-colors">Download</button>
+</div>
+<div class="py-md flex flex-col md:flex-row md:items-center justify-between gap-md">
+<div class="flex items-start gap-md">
+<div class="bg-primary-soft p-sm rounded-lg">
+<span class="material-symbols-outlined text-primary">edit_note</span>
+</div>
+<div>
+<h4 class="font-body-emphasis text-body-emphasis text-ink">Revised Assignment Brief: "Capstone Project Phase 1"</h4>
+<p class="text-caption-md font-caption-md text-graphite">Course: ENGR-499 | Added Today, 9:30 AM</p>
+</div>
+</div>
+<button class="text-primary font-button-md text-button-md px-xl py-2 border border-primary rounded-DEFAULT hover:bg-primary hover:text-on-ink transition-colors">Download</button>
+</div>
+<div class="py-md flex flex-col md:flex-row md:items-center justify-between gap-md">
+<div class="flex items-start gap-md">
+<div class="bg-primary-soft p-sm rounded-lg">
+<span class="material-symbols-outlined text-primary">library_add</span>
+</div>
+<div>
+<h4 class="font-body-emphasis text-body-emphasis text-ink">Supplementary Reading: "Ethics in AI Case Studies"</h4>
+<p class="text-caption-md font-caption-md text-graphite">Course: CS-405 | Added Yesterday</p>
+</div>
+</div>
+<button class="text-primary font-button-md text-button-md px-xl py-2 border border-primary rounded-DEFAULT hover:bg-primary hover:text-on-ink transition-colors">Download</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Access Section -->
+<section class="py-section bg-canvas">
+<div class="max-w-max-width mx-auto px-lg">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-xxl items-center">
+<div class="relative rounded-xl overflow-hidden aspect-video">
+<img alt="Student Studying" class="w-full h-full object-cover" data-alt="A candid, high-quality photograph of a university student focused on their laptop in a bright, modern library setting. Large floor-to-ceiling windows in the background provide soft natural daylight. The workspace is clean and minimalist, featuring a single cup of coffee and a notebook beside the computer. The color palette is dominated by airy whites and warm wooden tones, reflecting a peaceful yet productive academic environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZMfXJeW2zP_0600m6arrwcv3sgnV2ftC_dfySVrGsnTqm6UsEAVRY9g5DIa2J1XW5ohNGtoDLg43eOfIoaE_quGPBRRGaAFeOk3R_0yDARMPSKw-ebBaSh07ZYv0AL0ix-LwXpr5cfuCBZ1J55qjVgU8X-u_x8hKnVMjqOKOgE7U_auYzAilazf_yxeMBQXcstlSt6esBh5L1J9ezDkDGsXhRRl1VH8I8D0DvtroZa2-pZfyNqgKzKCYSB5yah_KuQwGeyYXghSX9"/>
+<div class="absolute inset-0 bg-gradient-to-r from-ink/60 to-transparent flex items-end p-xxl">
+<div class="text-on-ink max-w-sm">
+<h3 class="text-display-sm font-display-sm font-bold mb-xs">Library Integration</h3>
+<p class="text-body-md font-body-md opacity-90">Directly link your course reading lists to the NIET Digital Library for instant book reservations.</p>
+</div>
+</div>
+</div>
+<div class="space-y-xl">
+<h2 class="text-display-md font-display-md text-ink">Academic Support Tools</h2>
+<p class="text-body-lg font-body-lg text-graphite">Beyond resources, we provide the tools you need to succeed in your specialized field of study.</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-md">
+<div class="p-xl bg-cloud rounded-lg border border-fog hover:border-primary transition-colors cursor-pointer group">
+<span class="material-symbols-outlined text-primary text-[32px] mb-sm group-hover:scale-110 transition-transform">calculate</span>
+<h4 class="font-body-emphasis text-body-emphasis text-ink">Formula Sheets</h4>
+<p class="text-caption-md font-caption-md text-graphite mt-xs">Curated cheat sheets for math and science courses.</p>
+</div>
+<div class="p-xl bg-cloud rounded-lg border border-fog hover:border-primary transition-colors cursor-pointer group">
+<span class="material-symbols-outlined text-primary text-[32px] mb-sm group-hover:scale-110 transition-transform">terminal</span>
+<h4 class="font-body-emphasis text-body-emphasis text-ink">Code Repos</h4>
+<p class="text-caption-md font-caption-md text-graphite mt-xs">Official GitHub repositories for computer science labs.</p>
+</div>
+<div class="p-xl bg-cloud rounded-lg border border-fog hover:border-primary transition-colors cursor-pointer group">
+<span class="material-symbols-outlined text-primary text-[32px] mb-sm group-hover:scale-110 transition-transform">history_edu</span>
+<h4 class="font-body-emphasis text-body-emphasis text-ink">Past Papers</h4>
+<p class="text-caption-md font-caption-md text-graphite mt-xs">Archived exam papers from previous academic years.</p>
+</div>
+<div class="p-xl bg-cloud rounded-lg border border-fog hover:border-primary transition-colors cursor-pointer group">
+<span class="material-symbols-outlined text-primary text-[32px] mb-sm group-hover:scale-110 transition-transform">groups</span>
+<h4 class="font-body-emphasis text-body-emphasis text-ink">Study Groups</h4>
+<p class="text-caption-md font-caption-md text-graphite mt-xs">Connect with peers enrolled in the same modules.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-ink">
+<div class="grid grid-cols-1 md:grid-cols-5 gap-xl w-full px-lg py-xxl max-w-max-width mx-auto">
+<div class="md:col-span-2">
+<div class="text-display-xs font-display-xs text-on-ink mb-md">NIET</div>
+<p class="text-on-ink opacity-70 font-caption-md text-caption-md max-w-xs mb-xl">Empowering the next generation of engineers and technologists through rigorous academic resources and world-class faculty support.</p>
+<div class="flex gap-md">
+<span class="material-symbols-outlined text-on-ink opacity-70 hover:opacity-100 cursor-pointer">public</span>
+<span class="material-symbols-outlined text-on-ink opacity-70 hover:opacity-100 cursor-pointer">chat</span>
+<span class="material-symbols-outlined text-on-ink opacity-70 hover:opacity-100 cursor-pointer">video_library</span>
+</div>
+</div>
+<div>
+<h5 class="text-primary-bright font-button-md text-button-md mb-xl">Resources</h5>
+<ul class="space-y-sm">
+<li><a class="text-on-ink opacity-70 hover:opacity-100 hover:text-primary-bright transition-opacity font-caption-md text-caption-md" href="#">Academic Calendar</a></li>
+<li><a class="text-on-ink opacity-70 hover:opacity-100 hover:text-primary-bright transition-opacity font-caption-md text-caption-md" href="#">Exam Schedule</a></li>
+<li><a class="text-on-ink opacity-70 hover:opacity-100 hover:text-primary-bright transition-opacity font-caption-md text-caption-md" href="#">Library Catalog</a></li>
+<li><a class="text-on-ink opacity-70 hover:opacity-100 hover:text-primary-bright transition-opacity font-caption-md text-caption-md" href="#">IT Helpdesk</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-primary-bright font-button-md text-button-md mb-xl">Connect</h5>
+<ul class="space-y-sm">
+<li><a class="text-on-ink opacity-70 hover:opacity-100 hover:text-primary-bright transition-opacity font-caption-md text-caption-md" href="#">Alumni Connect</a></li>
+<li><a class="text-on-ink opacity-70 hover:opacity-100 hover:text-primary-bright transition-opacity font-caption-md text-caption-md" href="#">Careers</a></li>
+<li><a class="text-on-ink opacity-70 hover:opacity-100 hover:text-primary-bright transition-opacity font-caption-md text-caption-md" href="#">Campus Events</a></li>
+<li><a class="text-on-ink opacity-70 hover:opacity-100 hover:text-primary-bright transition-opacity font-caption-md text-caption-md" href="#">Staff Directory</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-primary-bright font-button-md text-button-md mb-xl">Legal</h5>
+<ul class="space-y-sm">
+<li><a class="text-on-ink opacity-70 hover:opacity-100 hover:text-primary-bright transition-opacity font-caption-md text-caption-md" href="#">Privacy Policy</a></li>
+<li><a class="text-on-ink opacity-70 hover:opacity-100 hover:text-primary-bright transition-opacity font-caption-md text-caption-md" href="#">Contact Us</a></li>
+<li><a class="text-on-ink opacity-70 hover:opacity-100 hover:text-primary-bright transition-opacity font-caption-md text-caption-md" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-ink-soft py-xl px-lg max-w-max-width mx-auto flex flex-col md:flex-row justify-between items-center gap-md">
+<p class="text-on-ink opacity-70 font-caption-md text-caption-md">© 2024 Northvale Institute of Engineering &amp; Technology. All rights reserved.</p>
+<div class="flex items-center gap-xl">
+<span class="text-on-ink opacity-70 font-caption-md text-caption-md flex items-center gap-xs"><span class="material-symbols-outlined text-[16px]">language</span> English (Global)</span>
+<span class="text-on-ink opacity-70 font-caption-md text-caption-md flex items-center gap-xs"><span class="material-symbols-outlined text-[16px]">location_on</span> Northvale, UK</span>
+</div>
+</div>
+</footer>
+</body></html>
