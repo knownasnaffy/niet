@@ -1,0 +1,29 @@
+import Link from 'next/link';
+
+export default function TopNav() {
+  return (
+    <header className="bg-canvas sticky top-0 z-50 border-b border-fog">
+      <div className="h-16 flex justify-between items-center w-full px-lg max-w-max-width mx-auto">
+        <div className="flex items-center gap-xl">
+          <Link href="/" className="text-display-sm font-extrabold text-ink tracking-tight">NIET</Link>
+          <nav className="hidden md:flex items-center gap-lg">
+            <Link className="font-body-emphasis text-body-emphasis text-primary border-b-2 border-primary pb-1" href="/programs-courses">Academics</Link>
+            <Link className="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200" href="/admissions-overview">Admissions</Link>
+            <Link className="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200" href="#">Research</Link>
+            <Link className="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200" href="/placement-overview">Placements</Link>
+            <Link className="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200" href="#">Campus Life</Link>
+            <Link className="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200" href="/about-niet">About Us</Link>
+          </nav>
+        </div>
+        <div className="flex items-center gap-md">
+          <div className="hidden lg:flex items-center bg-cloud border border-fog px-md py-xxs rounded-lg">
+            <span className="material-symbols-outlined text-graphite text-[20px]">search</span>
+            <input className="bg-transparent border-none focus:ring-0 text-caption-md py-1" placeholder="Search NIET..." type="text"/>
+          </div>
+          <Link href="/apply-online" className="bg-primary text-on-ink px-xl py-2 font-button-md rounded-[4px] scale-100 active:scale-95 transition-transform inline-block">Apply Now</Link>
+          <span className="material-symbols-outlined text-ink cursor-pointer">language</span>
+        </div>
+      </div>
+    </header>
+  );
+}
