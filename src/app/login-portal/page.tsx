@@ -54,7 +54,7 @@ export default function LoginPortal() {
 <div className="space-y-xxs">
 <div className="flex justify-between items-center">
 <label className="font-caption-bold text-caption-bold text-ink" htmlFor="password">Password</label>
-<a className="font-caption-md text-caption-md text-primary hover:text-primary-deep font-semibold" href="#">Forgot password?</a>
+<a className="font-caption-md text-caption-md text-primary hover:text-primary-deep font-semibold" href="/forgot-password">Forgot password?</a>
 </div>
 <div className="relative">
 <input className="w-full h-11 px-md border border-steel rounded-md focus:ring-0 focus:border-ink transition-colors outline-none font-body-md text-ink placeholder:text-secondary-fixed-dim pr-10" id="password" placeholder="••••••••" type="password"/>

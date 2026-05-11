@@ -144,22 +144,22 @@ export default function AdmissionsOverview() {
 <div className="grid grid-cols-3 p-md items-center">
 <div className="font-body-emphasis">Early Bird Registration</div>
 <div className="text-bloom-coral font-bold">March 15, 2024</div>
-<div><a className="text-primary hover:underline text-caption-md" href="#">Apply Now</a></div>
+<div><a className="text-primary hover:underline text-caption-md" href="/apply-online">Apply Now</a></div>
 </div>
 <div className="grid grid-cols-3 p-md items-center bg-white">
 <div className="font-body-emphasis">NIETEE Entrance Test</div>
 <div className="text-ink">April 20, 2024</div>
-<div><a className="text-primary hover:underline text-caption-md" href="#">View Slots</a></div>
+<div><a className="text-primary hover:underline text-caption-md" href="/academic-calendar">View Slots</a></div>
 </div>
 <div className="grid grid-cols-3 p-md items-center">
 <div className="font-body-emphasis">Scholarship Deadline</div>
 <div className="text-bloom-coral font-bold">May 10, 2024</div>
-<div><a className="text-primary hover:underline text-caption-md" href="#">Rules</a></div>
+<div><a className="text-primary hover:underline text-caption-md" href="/downloads-documents">Rules</a></div>
 </div>
 <div className="grid grid-cols-3 p-md items-center bg-white">
 <div className="font-body-emphasis">Final Counseling Phase</div>
 <div className="text-ink">June 30, 2024</div>
-<div><a className="text-primary hover:underline text-caption-md" href="#">Join Queue</a></div>
+<div><a className="text-primary hover:underline text-caption-md" href="/apply-online">Join Queue</a></div>
 </div>
 </div>
 </div>

@@ -39,7 +39,7 @@ export default function ForgotPassword() {
 </form>
 
 <div className="mt-xl pt-xl border-t border-fog text-center">
-<a className="inline-flex items-center gap-xs font-button-md text-button-md text-primary hover:text-primary-deep transition-colors" href="/login">
+<a className="inline-flex items-center gap-xs font-button-md text-button-md text-primary hover:text-primary-deep transition-colors" href="/login-portal">
 <span className="material-symbols-outlined text-lg" data-icon="arrow_back">arrow_back</span>
                             Back to Login
                         </a>

@@ -87,7 +87,7 @@ export default function NietHomePage() {
 </div>
 <h3 className="text-display-xs font-display-xs mb-sm">B.Tech</h3>
 <p className="text-caption-md text-graphite mb-xl">Bachelor of Technology across 8 specialized disciplines including AI and Robotics.</p>
-<a className="text-primary font-button-md flex items-center gap-xs" href="#">VIEW CURRICULUM <span className="material-symbols-outlined text-[18px]">arrow_forward</span></a>
+<a className="text-primary font-button-md flex items-center gap-xs" href="/programs-courses">VIEW CURRICULUM <span className="material-symbols-outlined text-[18px]">arrow_forward</span></a>
 </div>
 
 <div className="bg-canvas border border-fog p-xl rounded-xl shadow-[0_2px_8px_rgba(26,26,26,0.08)] hover:shadow-xl transition-shadow group">
@@ -96,7 +96,7 @@ export default function NietHomePage() {
 </div>
 <h3 className="text-display-xs font-display-xs mb-sm">M.Tech</h3>
 <p className="text-caption-md text-graphite mb-xl">Postgraduate programs focusing on advanced research and technical mastery.</p>
-<a className="text-primary font-button-md flex items-center gap-xs" href="#">VIEW CURRICULUM <span className="material-symbols-outlined text-[18px]">arrow_forward</span></a>
+<a className="text-primary font-button-md flex items-center gap-xs" href="/programs-courses">VIEW CURRICULUM <span className="material-symbols-outlined text-[18px]">arrow_forward</span></a>
 </div>
 
 <div className="bg-canvas border border-fog p-xl rounded-xl shadow-[0_2px_8px_rgba(26,26,26,0.08)] hover:shadow-xl transition-shadow group">
@@ -105,7 +105,7 @@ export default function NietHomePage() {
 </div>
 <h3 className="text-display-xs font-display-xs mb-sm">MBA</h3>
 <p className="text-caption-md text-graphite mb-xl">Integrated management studies focusing on leadership in a tech-driven economy.</p>
-<a className="text-primary font-button-md flex items-center gap-xs" href="#">VIEW CURRICULUM <span className="material-symbols-outlined text-[18px]">arrow_forward</span></a>
+<a className="text-primary font-button-md flex items-center gap-xs" href="/programs-courses">VIEW CURRICULUM <span className="material-symbols-outlined text-[18px]">arrow_forward</span></a>
 </div>
 
 <div className="bg-canvas border border-fog p-xl rounded-xl shadow-[0_2px_8px_rgba(26,26,26,0.08)] hover:shadow-xl transition-shadow group">
@@ -114,7 +114,7 @@ export default function NietHomePage() {
 </div>
 <h3 className="text-display-xs font-display-xs mb-sm">Polytechnic</h3>
 <p className="text-caption-md text-graphite mb-xl">Foundation-level diploma courses for practical engineering skills.</p>
-<a className="text-primary font-button-md flex items-center gap-xs" href="#">VIEW CURRICULUM <span className="material-symbols-outlined text-[18px]">arrow_forward</span></a>
+<a className="text-primary font-button-md flex items-center gap-xs" href="/programs-courses">VIEW CURRICULUM <span className="material-symbols-outlined text-[18px]">arrow_forward</span></a>
 </div>
 </div>
 </div>

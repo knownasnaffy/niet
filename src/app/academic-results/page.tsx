@@ -138,7 +138,7 @@ export default function AcademicResults() {
                         Online results are for immediate information only. These cannot be treated as original mark sheets. Original mark sheets will be issued by the University separately.
                     </p>
 <hr className="my-md border-fog"/>
-<a className="text-primary-bright font-caption-bold text-caption-bold hover:underline flex items-center gap-xxs" href="#">
+<a className="text-primary-bright font-caption-bold text-caption-bold hover:underline flex items-center gap-xxs" href="/downloads-documents">
                         View Grading System
                         <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
 </a>

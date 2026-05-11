@@ -32,7 +32,7 @@ export default function NewsBlog() {
 <h2 className="font-display-md text-display-md text-ink mb-md leading-tight">NIET Ranks Top 10 in Regional Innovation Index 2024</h2>
 <p className="font-body-md text-body-md text-secondary mb-xl">Our commitment to pioneering research and industrial collaboration has secured NIET a premier position among technical institutes nationwide. Learn how our new R&amp;D framework is driving these results.</p>
 <div>
-<a className="inline-flex items-center gap-xs font-button-md text-button-md text-primary uppercase tracking-widest hover:gap-md transition-all duration-300" href="#">
+<a className="inline-flex items-center gap-xs font-button-md text-button-md text-primary uppercase tracking-widest hover:gap-md transition-all duration-300" href="/student-success-stories">
                             Read Full Story
                             <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
 </a>
@@ -59,7 +59,7 @@ export default function NewsBlog() {
 </div>
 <h3 className="font-display-sm text-display-sm text-ink mb-xs group-hover:text-primary transition-colors">Next-Gen Robotics Lab Inaugurated</h3>
 <p className="font-body-md text-body-md text-secondary mb-md line-clamp-2">Partnering with leading tech giants to provide students with hands-on experience in autonomous systems.</p>
-<a className="font-button-md text-button-md text-ink uppercase tracking-wider border-b border-ink pb-xxs hover:text-primary hover:border-primary transition-all" href="#">Read More</a>
+<a className="font-button-md text-button-md text-ink uppercase tracking-wider border-b border-ink pb-xxs hover:text-primary hover:border-primary transition-all" href="/student-success-stories">Read More</a>
 </article>
 
 <article className="group">
@@ -72,7 +72,7 @@ export default function NewsBlog() {
 </div>
 <h3 className="font-display-sm text-display-sm text-ink mb-xs group-hover:text-primary transition-colors">Alumni Spotlight: Building Unicorns</h3>
 <p className="font-body-md text-body-md text-secondary mb-md line-clamp-2">How three NIET graduates turned their final year project into a multi-million dollar logistics startup.</p>
-<a className="font-button-md text-button-md text-ink uppercase tracking-wider border-b border-ink pb-xxs hover:text-primary hover:border-primary transition-all" href="#">Read More</a>
+<a className="font-button-md text-button-md text-ink uppercase tracking-wider border-b border-ink pb-xxs hover:text-primary hover:border-primary transition-all" href="/student-success-stories">Read More</a>
 </article>
 </div>
 
@@ -84,7 +84,7 @@ export default function NewsBlog() {
 </div>
 <div className="font-caption-bold text-caption-bold text-secondary mb-xxs uppercase tracking-tighter">Research</div>
 <h4 className="font-body-emphasis text-body-emphasis text-ink mb-xs">Breakthrough in Nanomaterials</h4>
-<a className="font-caption-bold text-caption-bold text-primary hover:underline" href="#">View Case Study</a>
+<a className="font-caption-bold text-caption-bold text-primary hover:underline" href="/student-success-stories">View Case Study</a>
 </article>
 
 <article className="group">
@@ -93,7 +93,7 @@ export default function NewsBlog() {
 </div>
 <div className="font-caption-bold text-caption-bold text-secondary mb-xxs uppercase tracking-tighter">Campus Life</div>
 <h4 className="font-body-emphasis text-body-emphasis text-ink mb-xs">Library Hours Extended for Finals</h4>
-<a className="font-caption-bold text-caption-bold text-primary hover:underline" href="#">Check Schedule</a>
+<a className="font-caption-bold text-caption-bold text-primary hover:underline" href="/academic-calendar">Check Schedule</a>
 </article>
 
 <article className="group">
@@ -102,7 +102,7 @@ export default function NewsBlog() {
 </div>
 <div className="font-caption-bold text-caption-bold text-secondary mb-xxs uppercase tracking-tighter">Placements</div>
 <h4 className="font-body-emphasis text-body-emphasis text-ink mb-xs">Placement Record: 98% in Q3</h4>
-<a className="font-caption-bold text-caption-bold text-primary hover:underline" href="#">Recruiter List</a>
+<a className="font-caption-bold text-caption-bold text-primary hover:underline" href="/placement-overview">Recruiter List</a>
 </article>
 </div>
 
@@ -123,25 +123,25 @@ export default function NewsBlog() {
 <h3 className="font-caption-bold text-caption-bold text-ink uppercase tracking-widest mb-lg">Categories</h3>
 <ul className="space-y-md">
 <li>
-<a className="flex justify-between items-center group" href="#">
+<a className="flex justify-between items-center group" href="/student-success-stories">
 <span className="font-body-md text-body-md text-on-surface-variant group-hover:text-primary transition-colors">Campus Life</span>
 <span className="font-caption-sm text-caption-sm bg-cloud px-xs py-[2px] rounded-full group-hover:bg-primary-soft transition-colors">24</span>
 </a>
 </li>
 <li>
-<a className="flex justify-between items-center group" href="#">
+<a className="flex justify-between items-center group" href="/student-success-stories">
 <span className="font-body-md text-body-md text-on-surface-variant group-hover:text-primary transition-colors">Research Highlights</span>
 <span className="font-caption-sm text-caption-sm bg-cloud px-xs py-[2px] rounded-full group-hover:bg-primary-soft transition-colors">18</span>
 </a>
 </li>
 <li>
-<a className="flex justify-between items-center group" href="#">
+<a className="flex justify-between items-center group" href="/student-success-stories">
 <span className="font-body-md text-body-md text-on-surface-variant group-hover:text-primary transition-colors">Alumni News</span>
 <span className="font-caption-sm text-caption-sm bg-cloud px-xs py-[2px] rounded-full group-hover:bg-primary-soft transition-colors">12</span>
 </a>
 </li>
 <li>
-<a className="flex justify-between items-center group" href="#">
+<a className="flex justify-between items-center group" href="/student-success-stories">
 <span className="font-body-md text-body-md text-on-surface-variant group-hover:text-primary transition-colors">Placement Success</span>
 <span className="font-caption-sm text-caption-sm bg-cloud px-xs py-[2px] rounded-full group-hover:bg-primary-soft transition-colors">31</span>
 </a>
@@ -180,7 +180,7 @@ export default function NewsBlog() {
 <div className="absolute inset-0 bg-primary/80 flex flex-col justify-end p-xl">
 <h4 className="text-on-ink font-display-sm text-display-sm font-bold mb-xs">Join our Research Fellows</h4>
 <p className="text-on-ink/80 font-caption-md text-caption-md mb-md">Applications open for the Spring 2025 PhD cohorts.</p>
-<a className="bg-on-ink text-primary text-center py-xs rounded-xxs font-button-md text-button-md uppercase tracking-wider hover:bg-cloud transition-colors" href="#">Apply Now</a>
+<a className="bg-on-ink text-primary text-center py-xs rounded-xxs font-button-md text-button-md uppercase tracking-wider hover:bg-cloud transition-colors" href="/apply-online">Apply Now</a>
 </div>
 </div>
 </aside>

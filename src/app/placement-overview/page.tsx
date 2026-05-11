@@ -110,7 +110,7 @@ export default function PlacementOverview() {
 <span className="material-symbols-outlined absolute -right-4 -bottom-4 text-[120px] text-fog opacity-50">workspace_premium</span>
 <h3 className="font-display-sm text-display-sm text-ink mb-md">Dream Offers</h3>
 <p className="font-body-md text-body-md text-secondary mb-md">Over 450+ "Dream Offers" (Salary &gt; 10 LPA) were secured by our students in the 2023 session alone.</p>
-<a className="inline-flex items-center text-primary font-button-md hover:underline" href="#">
+<a className="inline-flex items-center text-primary font-button-md hover:underline" href="/student-success-stories">
                             View List of Selected Students
                             <span className="material-symbols-outlined ml-xs">arrow_forward</span>
 </a>

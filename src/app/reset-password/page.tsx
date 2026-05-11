@@ -70,7 +70,7 @@ export default function ResetPassword() {
 </button>
 </div>
 <div className="text-center pt-md">
-<a className="font-caption-bold text-caption-bold text-primary hover:text-primary-deep transition-colors flex items-center justify-center gap-xxs" href="#">
+<a className="font-caption-bold text-caption-bold text-primary hover:text-primary-deep transition-colors flex items-center justify-center gap-xxs" href="/login-portal">
 <span className="material-symbols-outlined text-[16px]" data-icon="arrow_back">arrow_back</span>
                         Back to Login
                     </a>

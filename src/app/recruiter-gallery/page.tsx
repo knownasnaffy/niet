@@ -188,7 +188,7 @@ export default function RecruiterGallery() {
                         Looking to scale your team with India&apos;s most driven technical and management minds? Join our hiring consortium and gain exclusive access to our annual placement drives.
                     </p>
 <div className="flex flex-wrap gap-md">
-<a className="bg-primary text-on-ink flex items-center gap-sm px-xxl h-[52px] rounded-[4px] font-button-md transition-all hover:bg-primary-bright" href="#">
+<a className="bg-primary text-on-ink flex items-center gap-sm px-xxl h-[52px] rounded-[4px] font-button-md transition-all hover:bg-primary-bright" href="/downloads-documents">
 <span className="material-symbols-outlined">download</span>
                             Download Placement Brochure
                         </a>

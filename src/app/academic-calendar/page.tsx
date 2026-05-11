@@ -185,7 +185,7 @@ export default function AcademicCalendar() {
 </div>
 <h4 className="font-display-xs text-display-xs mb-xs">Spring Prep Session</h4>
 <p className="text-secondary font-caption-md mb-md">Join our webinar on course selection for the upcoming Spring semester. Get expert advice from department heads.</p>
-<a className="text-primary font-button-md text-button-md uppercase flex items-center gap-xxs group" href="#">
+<a className="text-primary font-button-md text-button-md uppercase flex items-center gap-xxs group" href="/events-page">
                             Register Now
                             <span className="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
 </a>

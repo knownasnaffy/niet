@@ -44,14 +44,14 @@ export default function CheckEmailConfirmation() {
 </div>
 
 <div className="pt-md border-t border-fog">
-<a className="w-full h-[44px] bg-ink hover:bg-ink-deep text-on-ink font-button-md text-button-md flex items-center justify-center px-xl rounded-[4px] transition-all uppercase tracking-wider" href="#">
+<a className="w-full h-[44px] bg-ink hover:bg-ink-deep text-on-ink font-button-md text-button-md flex items-center justify-center px-xl rounded-[4px] transition-all uppercase tracking-wider" href="/login-portal">
                             Back to Login
                         </a>
 </div>
 </div>
 
 <div className="mt-xxl">
-<a className="font-caption-md text-caption-md text-graphite hover:text-ink transition-colors underline flex items-center gap-xs" href="#">
+<a className="font-caption-md text-caption-md text-graphite hover:text-ink transition-colors underline flex items-center gap-xs" href="/contact-niet">
 <span className="material-symbols-outlined text-[16px]" data-icon="help_outline">help_outline</span>
                         Contact IT Support
                     </a>
