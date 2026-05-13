@@ -1,0 +1,239 @@
+{
+  "faculty": [
+    {
+      "id": 1,
+      "name": "Prof. Sarah Jenkins",
+      "role": "Senior Faculty, Robotics",
+      "department": "Robotics & Control",
+      "tags": ["Autonomous Systems", "Mechatronics"],
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDgkUPhHjc73VQFYGYabBCuVuW9ifSv9LmBzO7JyWw8X4idkALOrOjRIbzEuUA4ZYJklm3fIvOHyqpX_GIOlUgLWqxB4LUEnvOQdPSx3oIz5ZQxgaCvnj_TCRzjVXpxBTYrauFGfcodjDpkFkmTaPft9w-mHdCU4IvkBHrTjX8b7NU4zQdyBuS9wolpSZSzknkjAjGB_11EW6iidP7wRuZAzaaDinZkrlh33PLtcWQc4PQrLkafrINSX_zoch2qjh9-zOll2mIEtKCx"
+    },
+    {
+      "id": 2,
+      "name": "Dr. James Wilson",
+      "role": "Director, Deep Learning Lab",
+      "department": "Artificial Intelligence",
+      "tags": ["Computer Vision", "NLP"],
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuA5Tb-TGo4gfeXJmxWhbEePLs_uday7lYcMJt2-O2MRnFRiuON0ljwxA85A1f2CFKEAi6Z9jbzBHwc9YV-mcFvUrj3-PUuwwwzVCs9ut-sCd_0V0w95_2nRQfgTEbiWD1zoUcXRKFmUk0typlIJw6tSk4CdTocj2ukFE5JUOzrreumd82x0tf1SgrEZiLRNWqFwxtWd_XjiZ4VvVhQHT7ERzKSfdVemhH3dbL0al7dQThoT6sJM7RdF8MuiOFFB1orVZoEG6m_De81E"
+    },
+    {
+      "id": 3,
+      "name": "Dr. Robert Halloway",
+      "role": "Structural Design Lead",
+      "department": "Civil Engineering",
+      "tags": ["Sustainability", "Seismic Resilience"],
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBCv9l7yIzDwlGzY1jBV9fxJ565sG4FMHofYl8M-V_CgMO9IONPt3uRO3v9ELFrgg3PKY0KnFs8T0xAhBpCk2AbalAbspIPCAPvYjH2kXfQSMNPxgqbBE1xHaR_NDwW1YzCk4aDpXt4r_JnAxiISXCIJ0Xz5Ybpl4XC85hkY_AOBAqKQjvX5LneJBz3MbOp8XtkbOpWonAyQzBOFj6wOlA88oI8whvvWPFSkJhIEkCm8unEI28w1-JlPOLFy7HhnFR7ntqyQh4dmWKy"
+    },
+    {
+      "id": 4,
+      "name": "Dr. Linda Sterling",
+      "role": "Professor of Applied Math",
+      "department": "Mathematics",
+      "tags": ["Graph Theory", "Stochastic Process"],
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDNY5L3Csxhhd6O6dwC4Cc1lye2ieSImK6WZp6qLyiK2XqGirMu4tKK2UyxhxR79hg5ovtWm3oTjp73oIMZdzORoW_64pKChMoBg4TiCnej9zI9lrR0OsuGh62UbAl79Blc4bf9L2-j9OJbWNwfulNanyN41BBfY4vdRyTxaeN52HUXQaYTsjqdil9i-L97AByWO0x0qSSaSTWfFoG5mtocpHfvSPfRsb6qRHA7SPpPDMyuXeKdJUNgt6bVBEauwp4Umd1xj-LVqGmW"
+    }
+  ],
+  "announcements": [
+    {
+      "id": 1,
+      "title": "Registration for International Exchange Program 2025",
+      "date": "14 OCT 24",
+      "day": "14",
+      "month": "OCT 24",
+      "category": "Admissions",
+      "views": "1.2k",
+      "description": "Applications are invited from 3rd-year engineering students for the semester-abroad programs in partnership with our European affiliate universities...",
+      "size": "420 KB"
+    },
+    {
+      "id": 2,
+      "title": "On-Campus Recruitment Drive: Global Tech Solutions",
+      "date": "12 OCT 24",
+      "day": "12",
+      "month": "OCT 24",
+      "category": "Placements",
+      "views": "4.5k",
+      "description": "All final year B.Tech and MCA students are required to register on the placement portal for the upcoming recruitment drive scheduled for late October...",
+      "size": "1.2 MB"
+    },
+    {
+      "id": 3,
+      "title": "Revised Academic Calendar for Winter Session",
+      "date": "08 OCT 24",
+      "day": "08",
+      "month": "OCT 24",
+      "category": "Academic",
+      "views": "890",
+      "description": "Please take note of the slight adjustments in the winter session dates including pre-board examinations and the commencement of the new semester...",
+      "size": "245 KB"
+    }
+  ],
+  "courses": [
+    {
+      "id": 1,
+      "title": "B.Tech Computer Science & Engineering",
+      "category": "B.Tech",
+      "duration": "4 Years",
+      "description": "Advanced training in algorithms, software engineering, and full-stack development. Prepares students for leadership roles in the tech industry.",
+      "tags": ["AI/ML Track", "Cloud Computing"]
+    },
+    {
+      "id": 2,
+      "title": "B.Tech Artificial Intelligence",
+      "category": "B.Tech",
+      "duration": "4 Years",
+      "description": "Specialized curriculum focusing on neural networks, deep learning, and intelligent systems design for next-generation applications.",
+      "tags": ["Neural Networks", "Robotics"]
+    },
+    {
+      "id": 3,
+      "title": "MBA Tech Management",
+      "category": "MBA",
+      "duration": "2 Years",
+      "description": "Bridging the gap between technological innovation and business strategy. Designed for aspiring tech entrepreneurs and corporate leaders.",
+      "tags": ["Innovation", "Strategy"]
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "title": "Global Tech Symposium 2024",
+      "date": "24 NOV 24",
+      "month": "NOV",
+      "day": "24",
+      "location": "Main Auditorium, Block A",
+      "time": "09:00 AM - 05:00 PM",
+      "category": "Academic",
+      "type": "Technical",
+      "description": "Join industry leaders and leading researchers for a 2-day conference exploring the future of artificial intelligence and sustainable engineering.",
+      "image": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": 2,
+      "title": "Autumn Career Fair",
+      "date": "10 DEC 24",
+      "month": "DEC",
+      "day": "10",
+      "location": "Campus Grounds",
+      "time": "10:00 AM - 04:00 PM",
+      "category": "Placements",
+      "type": "Networking",
+      "description": "Over 50+ multinational companies visiting campus for recruitment and internship opportunities. Mandatory for final year students.",
+      "image": "https://images.unsplash.com/photo-1556761175-5973dc0f32b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "stories": [
+    {
+      "id": 1,
+      "name": "Sarah Chen",
+      "company": "Google",
+      "role": "Senior Software Engineer",
+      "batch": "Class of 2020",
+      "course": "B.Tech - Computer Science",
+      "quote": "The rigorous curriculum and hands-on projects at NIET prepared me perfectly for the challenges at Google. The faculty support was exceptional.",
+      "image": "https://lh3.googleusercontent.com/aida-public/AOn4s_TjLsz_r108wX87K1L8R_L80A8o-JzH6654b988f_5q60-6v09f_j46059_A3l1l0T77h-p0r36Qk44R2w45H89A1N5q4r9-P3v3z3h29683N31g9P-E0G_1k4r7B3x1c-Q0b06A3-6l0K2p-1O-8V_84n4A0d6D0j_0n637-2l0O5g8O_2N-M_L34p3X0m_2I",
+      "category": "Computer Science"
+    },
+    {
+      "id": 2,
+      "name": "Rahul Verma",
+      "company": "Tesla",
+      "role": "Robotics Engineer",
+      "batch": "Class of 2021",
+      "course": "B.Tech - Mechanical Engineering",
+      "quote": "My time in the Mechatronics lab was the turning point of my career. The practical exposure to automation systems gave me the edge I needed.",
+      "image": "https://lh3.googleusercontent.com/aida-public/AOn4s_TWj1-f9D_Jk2f5-J23f_h9G1h-9f5b2w3P-Q868Q_1D_w0b_f07P0b_5L_z3j3x2_E5t3-8-4Z-E02D5u2E4c2J_w-E_6r-J3h2G-N8K5n6n_Q4g2W6A_V3d_r3p_K_b9v5P-V_u0L_W2C_t6V_z-T4a_N5M5v4D4G_x8J2C4v_G_Q0S1E_h3o_B8v9t6h_m2c9K3G",
+      "category": "Mechanical"
+    }
+  ],
+  "faqs": [
+    {
+      "id": 1,
+      "question": "What is the admission process?",
+      "answer": "The admission process involves applying online, submitting your academic transcripts, and appearing for a counseling session."
+    },
+    {
+      "id": 2,
+      "question": "Are scholarships available?",
+      "answer": "Yes, we offer merit-based and need-based scholarships. Please visit the scholarships page for detailed criteria."
+    }
+  ],
+  "departments": [
+    {
+      "id": "computer-science",
+      "name": "Computer Science & Engineering",
+      "head": "Dr. Alan Turing"
+    },
+    {
+      "id": "mechanical",
+      "name": "Mechanical Engineering",
+      "head": "Dr. Nikola Tesla"
+    }
+  ],
+  "results": [
+    {
+      "id": 1,
+      "semester": "Semester 6",
+      "subject": "Compiler Design",
+      "grade": "A"
+    },
+    {
+      "id": 2,
+      "semester": "Semester 6",
+      "subject": "Computer Networks",
+      "grade": "B+"
+    }
+  ],
+  "resources": [
+    {
+      "id": 1,
+      "title": "Academic Calendar 2024-25",
+      "type": "PDF",
+      "size": "1.5 MB",
+      "category": "Academic",
+      "date": "Aug 2024"
+    },
+    {
+      "id": 2,
+      "title": "Student Handbook",
+      "type": "PDF",
+      "size": "4.2 MB",
+      "category": "General",
+      "date": "Jul 2024"
+    },
+    {
+      "id": 3,
+      "title": "B.Tech CS Syllabus",
+      "type": "PDF",
+      "size": "2.1 MB",
+      "category": "Course Material",
+      "date": "Sep 2024"
+    }
+  ],
+  "timetable": [
+    {
+      "day": "Monday",
+      "time": "09:00 AM - 10:00 AM",
+      "subject": "Data Structures",
+      "room": "Room 301",
+      "faculty": "Dr. James Wilson",
+      "type": "Lecture"
+    },
+    {
+      "day": "Monday",
+      "time": "10:00 AM - 11:00 AM",
+      "subject": "Operating Systems",
+      "room": "Room 302",
+      "faculty": "Prof. Sarah Jenkins",
+      "type": "Lecture"
+    },
+    {
+      "day": "Tuesday",
+      "time": "11:00 AM - 01:00 PM",
+      "subject": "AI Lab",
+      "room": "Lab 4",
+      "faculty": "Dr. James Wilson",
+      "type": "Lab"
+    }
+  ]
+}

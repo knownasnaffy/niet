@@ -1,361 +1,648 @@
-<!DOCTYPE html>
+<!doctype html>
 
-<html lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "paper": "#ffffff",
-                        "ink-soft": "#292929",
-                        "cloud": "#f7f7f7",
-                        "surface-dim": "#d9d9e5",
-                        "on-error": "#ffffff",
-                        "tertiary": "#7c2000",
-                        "fog": "#e8e8e8",
-                        "secondary": "#5f5e5e",
-                        "outline-variant": "#c3c5d7",
-                        "canvas": "#ffffff",
-                        "ink-deep": "#000000",
-                        "on-error-container": "#93000a",
-                        "outline": "#747686",
-                        "bloom-deep": "#b3262b",
-                        "surface-variant": "#e2e1ed",
-                        "surface-tint": "#1451de",
-                        "storm-deep": "#356373",
-                        "inverse-on-surface": "#f0f0fc",
-                        "ink": "#1a1a1a",
-                        "tertiary-container": "#a52d00",
-                        "on-surface": "#191b23",
-                        "secondary-container": "#e2dfde",
-                        "error-container": "#ffdad6",
-                        "surface-container-lowest": "#ffffff",
-                        "surface": "#faf8ff",
-                        "primary-fixed": "#dce1ff",
-                        "secondary-fixed": "#e5e2e1",
-                        "on-secondary-container": "#636262",
-                        "primary-container": "#024ad8",
-                        "inverse-surface": "#2e3039",
-                        "graphite": "#636363",
-                        "on-primary": "#ffffff",
-                        "bloom-rose": "#f9d4d2",
-                        "surface-container-highest": "#e2e1ed",
-                        "tertiary-fixed": "#ffdbd1",
-                        "on-background": "#191b23",
-                        "charcoal": "#3d3d3d",
-                        "surface-container-low": "#f3f2ff",
-                        "on-tertiary": "#ffffff",
-                        "on-secondary-fixed": "#1c1b1b",
-                        "on-tertiary-container": "#ffc1b0",
-                        "surface-container": "#ededf9",
-                        "storm-sea": "#7fadbe",
-                        "on-tertiary-fixed-variant": "#862300",
-                        "bloom-coral": "#ff5050",
-                        "primary-fixed-dim": "#b6c4ff",
-                        "on-secondary": "#ffffff",
-                        "primary": "#0036a4",
-                        "on-primary-container": "#c2ceff",
-                        "inverse-primary": "#b6c4ff",
-                        "on-ink": "#ffffff",
-                        "on-primary-fixed-variant": "#003bb0",
-                        "surface-bright": "#faf8ff",
-                        "surface-container-high": "#e7e7f3",
-                        "on-tertiary-fixed": "#3a0a00",
-                        "on-secondary-fixed-variant": "#474746",
-                        "on-surface-variant": "#434655",
-                        "on-primary-fixed": "#00164f",
-                        "primary-deep": "#0e3191",
-                        "error": "#ba1a1a",
-                        "steel": "#c2c2c2",
-                        "primary-bright": "#296ef9",
-                        "primary-soft": "#c9e0fc",
-                        "secondary-fixed-dim": "#c8c6c5",
-                        "background": "#faf8ff",
-                        "tertiary-fixed-dim": "#ffb59f"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "max-width": "1366px",
-                        "sm": "12px",
-                        "xl": "24px",
-                        "md": "16px",
-                        "lg": "20px",
-                        "section": "80px",
-                        "xs": "8px",
-                        "xxs": "4px",
-                        "xxl": "32px"
-                    },
-                    "fontFamily": {
-                        "body-lg": ["Manrope"],
-                        "body-emphasis": ["Manrope"],
-                        "display-md": ["Manrope"],
-                        "price-md": ["Manrope"],
-                        "display-xxl": ["Manrope"],
-                        "display-xl": ["Manrope"],
-                        "caption-md": ["Manrope"],
-                        "caption-sm": ["Manrope"],
-                        "caption-bold": ["Manrope"],
-                        "display-sm": ["Manrope"],
-                        "body-md": ["Manrope"],
-                        "display-lg": ["Manrope"],
-                        "button-md": ["Manrope"],
-                        "display-xs": ["Manrope"]
-                    }
-                }
-            }
-        }
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              paper: "#ffffff",
+              "ink-soft": "#292929",
+              cloud: "#f7f7f7",
+              "surface-dim": "#d9d9e5",
+              "on-error": "#ffffff",
+              tertiary: "#7c2000",
+              fog: "#e8e8e8",
+              secondary: "#5f5e5e",
+              "outline-variant": "#c3c5d7",
+              canvas: "#ffffff",
+              "ink-deep": "#000000",
+              "on-error-container": "#93000a",
+              outline: "#747686",
+              "bloom-deep": "#b3262b",
+              "surface-variant": "#e2e1ed",
+              "surface-tint": "#1451de",
+              "storm-deep": "#356373",
+              "inverse-on-surface": "#f0f0fc",
+              ink: "#1a1a1a",
+              "tertiary-container": "#a52d00",
+              "on-surface": "#191b23",
+              "secondary-container": "#e2dfde",
+              "error-container": "#ffdad6",
+              "surface-container-lowest": "#ffffff",
+              surface: "#faf8ff",
+              "primary-fixed": "#dce1ff",
+              "secondary-fixed": "#e5e2e1",
+              "on-secondary-container": "#636262",
+              "primary-container": "#024ad8",
+              "inverse-surface": "#2e3039",
+              graphite: "#636363",
+              "on-primary": "#ffffff",
+              "bloom-rose": "#f9d4d2",
+              "surface-container-highest": "#e2e1ed",
+              "tertiary-fixed": "#ffdbd1",
+              "on-background": "#191b23",
+              charcoal: "#3d3d3d",
+              "surface-container-low": "#f3f2ff",
+              "on-tertiary": "#ffffff",
+              "on-secondary-fixed": "#1c1b1b",
+              "on-tertiary-container": "#ffc1b0",
+              "surface-container": "#ededf9",
+              "storm-sea": "#7fadbe",
+              "on-tertiary-fixed-variant": "#862300",
+              "bloom-coral": "#ff5050",
+              "primary-fixed-dim": "#b6c4ff",
+              "on-secondary": "#ffffff",
+              primary: "#0036a4",
+              "on-primary-container": "#c2ceff",
+              "inverse-primary": "#b6c4ff",
+              "on-ink": "#ffffff",
+              "on-primary-fixed-variant": "#003bb0",
+              "surface-bright": "#faf8ff",
+              "surface-container-high": "#e7e7f3",
+              "on-tertiary-fixed": "#3a0a00",
+              "on-secondary-fixed-variant": "#474746",
+              "on-surface-variant": "#434655",
+              "on-primary-fixed": "#00164f",
+              "primary-deep": "#0e3191",
+              error: "#ba1a1a",
+              steel: "#c2c2c2",
+              "primary-bright": "#296ef9",
+              "primary-soft": "#c9e0fc",
+              "secondary-fixed-dim": "#c8c6c5",
+              background: "#faf8ff",
+              "tertiary-fixed-dim": "#ffb59f",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              "max-width": "1366px",
+              sm: "12px",
+              xl: "24px",
+              md: "16px",
+              lg: "20px",
+              section: "80px",
+              xs: "8px",
+              xxs: "4px",
+              xxl: "32px",
+            },
+            fontFamily: {
+              "body-lg": ["Manrope"],
+              "body-emphasis": ["Manrope"],
+              "display-md": ["Manrope"],
+              "price-md": ["Manrope"],
+              "display-xxl": ["Manrope"],
+              "display-xl": ["Manrope"],
+              "caption-md": ["Manrope"],
+              "caption-sm": ["Manrope"],
+              "caption-bold": ["Manrope"],
+              "display-sm": ["Manrope"],
+              "body-md": ["Manrope"],
+              "display-lg": ["Manrope"],
+              "button-md": ["Manrope"],
+              "display-xs": ["Manrope"],
+            },
+          },
+        },
+      };
     </script>
-<style>
-        .chevron-mask {
-            clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-        }
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
+    <style>
+      .chevron-mask {
+        clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+      }
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
     </style>
-</head>
-<body class="bg-paper text-ink font-body-md overflow-x-hidden">
-<!-- Top Navigation Shell -->
-<nav class="bg-paper border-b border-fog fixed top-0 w-full z-50">
-<div class="flex justify-between items-center h-16 max-w-[1366px] mx-auto px-xl">
-<div class="flex items-center gap-xl">
-<span class="text-display-xs font-bold text-ink tracking-tight">NIET Academic</span>
-<div class="hidden md:flex items-center gap-lg">
-<a class="text-primary font-bold border-b-2 border-primary pb-1 font-body-emphasis text-body-emphasis" href="#">Departments</a>
-<a class="text-secondary font-medium hover:text-primary transition-colors duration-200 font-body-emphasis text-body-emphasis" href="#">Faculty</a>
-<a class="text-secondary font-medium hover:text-primary transition-colors duration-200 font-body-emphasis text-body-emphasis" href="#">Academic Calendar</a>
-<a class="text-secondary font-medium hover:text-primary transition-colors duration-200 font-body-emphasis text-body-emphasis" href="#">Admissions</a>
-<a class="text-secondary font-medium hover:text-primary transition-colors duration-200 font-body-emphasis text-body-emphasis" href="#">Research</a>
-</div>
-</div>
-<div class="flex items-center gap-md">
-<button class="bg-primary text-on-ink px-xl py-xs font-button-md rounded-md uppercase">Apply Now</button>
-</div>
-</div>
-</nav>
-<!-- Hero Banner Section -->
-<header class="relative pt-16 h-[520px] bg-ink-deep flex items-center overflow-hidden">
-<div class="absolute inset-0 opacity-40">
-<img class="w-full h-full object-cover" data-alt="A high-tech computer science laboratory featuring rows of sleek, modern workstations with multiple monitors glowing in a cool blue hue. The environment is minimalist and clinical, characterized by white surfaces and architectural glass partitions. The lighting is crisp and overhead, casting soft shadows that emphasize the professional, academic atmosphere of a top-tier institute. This visual represents innovation and engineering excellence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKot753Oa0kwrpSvFDPYCmtBDKfqNuZT4wnX5CW_KeevVQPFcLaxr-SkMzo7meW4rc83i3AD3y_fpdKhznPfgb47_ybjivhFWT6pbdZIOeV967-kXYbLGCixJomd_Z8Gkl1SoTP5zEx7xxIB4BY6B_rAmdazhun7uACsJuZ43M5JqTDnujaqVPAYg9BVoDHmGWLZgrd0TTQUXSSQIdHD8piwLrGZB18eQog6xkO7gBqnNjzs-zjOMc2BDWnV7r7lSqmu78v6EiZyh2"/>
-</div>
-<!-- Signature Chevron Motif -->
-<div class="absolute right-0 top-0 bottom-0 w-1/3 flex gap-xxs overflow-hidden pointer-events-none">
-<div class="h-full w-24 bg-primary opacity-80 chevron-mask -mr-12"></div>
-<div class="h-full w-24 bg-primary opacity-60 chevron-mask"></div>
-</div>
-<div class="relative max-w-[1366px] mx-auto px-xl w-full z-10">
-<div class="max-w-2xl">
-<h4 class="text-primary-soft font-button-md uppercase tracking-[2px] mb-sm">Department of Engineering</h4>
-<h1 class="text-display-xl font-display-xl text-paper mb-lg leading-tight">Computer Science &amp; Engineering</h1>
-<p class="text-body-lg font-body-lg text-paper opacity-90 mb-xl max-w-xl">Architecting the future through rigorous computational research, algorithmic excellence, and industry-aligned technical training.</p>
-<div class="flex gap-md">
-<button class="bg-primary text-on-ink px-xl h-11 font-button-md rounded-[4px] uppercase flex items-center gap-xs">
-                        View Curriculum
-                        <span class="material-symbols-outlined text-[18px]">download</span>
-</button>
-<button class="border border-paper text-paper px-xl h-11 font-button-md rounded-[4px] uppercase hover:bg-paper hover:text-ink transition-all">
-                        Explore Research
-                    </button>
-</div>
-</div>
-</div>
-</header>
-<!-- Message from HOD Section -->
-<section class="py-section bg-paper">
-<div class="max-w-[1366px] mx-auto px-xl grid grid-cols-1 md:grid-cols-12 gap-xxl items-center">
-<div class="md:col-span-5 relative">
-<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
-<img class="w-full h-full object-cover" data-alt="A professional portrait of a senior male professor in a formal charcoal suit, standing confidently in a bright, modern university hall. He has a warm yet authoritative expression, representing academic leadership and wisdom. The background shows soft-focus architectural details of a campus building with natural light streaming through large windows, creating a clean, high-key commercial aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCp1chTjTOpxITTdygTPGw21kuAPDp84yMVzdIcaTJwoiGLHi8aRAtmqL6BLJDzqxFxJHMy_ZWBCrybE4alYCX5XVsW8jFbQtc4e-PvjK4uquK37W6jEd0GO-Md1H8uq8YRmePYOnzeE96zdvzG_THi90aFDcqXvkiTZnYro-JvKcs2vBaaheAovxkky3hv00451zqWBEw6CDwdKanX82kLa1AyXAXzOvu1RIazMue5R6ogGDylvdypofS61NYwfn8CSegy7RhdZT-L"/>
-</div>
-<div class="absolute -bottom-8 -right-8 bg-ink p-xl rounded-xl text-paper hidden lg:block border-l-4 border-primary">
-<p class="font-display-xs font-bold">Dr. Arjan V. Singh</p>
-<p class="text-caption-md opacity-70">Head of Department, CSE</p>
-<p class="text-caption-sm mt-xs text-primary-soft">Ph.D. Stanford University</p>
-</div>
-</div>
-<div class="md:col-span-7">
-<span class="text-primary font-bold font-button-md uppercase tracking-widest block mb-sm">Leadership Insight</span>
-<h2 class="text-display-lg font-display-lg text-ink mb-xl">Message from the HOD</h2>
-<div class="space-y-md text-secondary font-body-md leading-relaxed italic">
-<p class="text-body-lg">"At NIET, our Computer Science Department isn't just about coding; it's about cultivation. We nurture the next generation of engineers to think beyond the syntax and understand the societal impact of the systems they build."</p>
-<p>Our curriculum is designed in collaboration with global tech giants, ensuring that our students are not just industry-ready, but industry-leading. From Artificial Intelligence to Cybersecurity, we provide the tools and the mentorship necessary to excel in an ever-evolving digital landscape.</p>
-</div>
-<div class="mt-xxl flex items-center gap-xl">
-<div class="flex flex-col">
-<span class="text-display-sm font-bold text-primary">15+</span>
-<span class="text-caption-bold uppercase text-secondary">Patents Filed</span>
-</div>
-<div class="w-px h-12 bg-fog"></div>
-<div class="flex flex-col">
-<span class="text-display-sm font-bold text-primary">98%</span>
-<span class="text-caption-bold uppercase text-secondary">Placement Rate</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Advanced Labs Section - Bento Grid -->
-<section class="py-section bg-cloud">
-<div class="max-w-[1366px] mx-auto px-xl">
-<div class="flex justify-between items-end mb-xxl">
-<div>
-<span class="text-primary font-bold font-button-md uppercase tracking-widest block mb-sm">Infrastructure</span>
-<h2 class="text-display-lg font-display-lg text-ink">Advanced Labs</h2>
-</div>
-<p class="max-w-md text-secondary text-right hidden md:block">State-of-the-art facilities equipped with the latest hardware and enterprise-grade software stacks.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-4 gap-xl h-auto md:h-[600px]">
-<!-- AI Lab - Featured -->
-<div class="md:col-span-2 md:row-span-2 bg-canvas p-xl rounded-xl shadow-[0_2px_8px_rgba(26,26,26,0.08)] flex flex-col relative overflow-hidden group">
-<div class="relative z-10">
-<span class="material-symbols-outlined text-primary text-[40px] mb-lg">psychology</span>
-<h3 class="text-display-sm font-bold text-ink mb-md">AI &amp; Machine Learning Lab</h3>
-<p class="text-secondary mb-xl">High-performance computing clusters powered by NVIDIA A100 GPUs for deep learning and neural network training.</p>
-</div>
-<div class="mt-auto relative z-10">
-<button class="flex items-center gap-xs font-button-md text-primary group-hover:gap-md transition-all">
-                            EXPLORE FACILITY <span class="material-symbols-outlined">arrow_forward</span>
-</button>
-</div>
-<div class="absolute bottom-0 right-0 w-2/3 h-2/3 opacity-5 pointer-events-none group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-[200px]">hub</span>
-</div>
-</div>
-<!-- Network Security -->
-<div class="md:col-span-2 bg-ink p-xl rounded-xl flex items-center justify-between group">
-<div class="max-w-xs">
-<h3 class="text-display-xs font-bold text-paper mb-sm">Network Security Hub</h3>
-<p class="text-paper opacity-70 text-caption-md">Simulating enterprise-level security breaches and defense mechanisms.</p>
-</div>
-<div class="bg-primary-deep p-lg rounded-full">
-<span class="material-symbols-outlined text-paper" data-weight="fill">shield</span>
-</div>
-</div>
-<!-- IoT Lab -->
-<div class="bg-canvas p-xl rounded-xl shadow-[0_2px_8px_rgba(26,26,26,0.08)] group hover:border-primary border border-transparent transition-colors">
-<span class="material-symbols-outlined text-ink-soft mb-md">sensors</span>
-<h4 class="text-body-emphasis font-bold mb-xs">IoT Innovation</h4>
-<p class="text-caption-md text-secondary">Embedded systems and sensor network prototyping.</p>
-</div>
-<!-- Cloud Computing -->
-<div class="bg-canvas p-xl rounded-xl shadow-[0_2px_8px_rgba(26,26,26,0.08)] group hover:border-primary border border-transparent transition-colors">
-<span class="material-symbols-outlined text-ink-soft mb-md">cloud</span>
-<h4 class="text-body-emphasis font-bold mb-xs">Cloud Architecture</h4>
-<p class="text-caption-md text-secondary">AWS and Azure integrated development environments.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Faculty Highlights -->
-<section class="py-section bg-paper">
-<div class="max-w-[1366px] mx-auto px-xl">
-<h2 class="text-display-md font-display-md text-ink mb-xxl text-center">Faculty Highlights</h2>
-<div class="grid grid-cols-1 md:grid-cols-4 gap-xl">
-<!-- Faculty 1 -->
-<div class="group">
-<div class="aspect-square bg-cloud rounded-xl mb-md overflow-hidden relative">
-<img class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A professional headshot of a middle-aged female professor with short dark hair and glasses, wearing a tailored navy blazer. She has a serene and intellectual expression. The lighting is soft and studio-quality, emphasizing a professional academic aesthetic. The background is a clean, neutral white, maintaining a modern and sophisticated corporate look." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5Hs5dewbXVdUgBnSOKoTFlg2zMrp1E5vDgWIq-1RGaZzj6Y9S7rnzAWED3o61loMcKDI7-OMQP-L_vEUeselHEqBk5ZGkFHXgFnrNBoM5sT45rkZQ-ozE4p8a4tQsZtLEUzTfYHVHiY3GSlpHoOeIQYI2zr-lvlsNrD1FCKjy5Y0jS9ludIFycSY-y3tJ48Ru-DBUncJBfrfECMQU38BRSa_PmFRacxFgvqDH4Gsk2UhLwYXywzWwh-0Q_ucspKY55g0FliHVDZHF"/>
-</div>
-<h4 class="text-body-emphasis font-bold text-ink">Prof. Elena Moretti</h4>
-<p class="text-caption-md text-primary font-bold mb-xs">Data Science &amp; Ethics</p>
-<p class="text-caption-sm text-secondary">Senior Researcher with 12 publications in IEEE Transactions.</p>
-</div>
-<!-- Faculty 2 -->
-<div class="group">
-<div class="aspect-square bg-cloud rounded-xl mb-md overflow-hidden relative">
-<img class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A portrait of a young, professional male computer science lecturer in a crisp white shirt, leaning against a clean white wall. He is smiling warmly, representing modern, approachable academia. The lighting is natural and bright, creating a high-key, fresh visual style consistent with a premium educational institution's marketing material." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqzUYHJ7A92K9Xlnd5rzh5Nzl_zb1nXAa0PDwUBiqZDWaOF783U-wSPmGULP7DoASiZo30nlS_vvPUV22S4hVL0LijII2S2x2n_57v_tTDFwtAg4jtrxptUIvwH8bv2g6JBB2hcOzlXo9QbmALZFKT4MAc5NDgpviDfv22VFGGW1De19_XAMHtNN-qvd5xiB2sHucpo_iq14xwQ6M4_WUHNXevVkwHWBDqTXKZk-fzNuVWnAH7jm42I72JzcQm_FUYetJ4M3uI5Jk6"/>
-</div>
-<h4 class="text-body-emphasis font-bold text-ink">Dr. Julian Thorne</h4>
-<p class="text-caption-md text-primary font-bold mb-xs">Quantum Algorithms</p>
-<p class="text-caption-sm text-secondary">Leading the university's initiative in post-quantum cryptography.</p>
-</div>
-<!-- Faculty 3 -->
-<div class="group">
-<div class="aspect-square bg-cloud rounded-xl mb-md overflow-hidden relative">
-<img class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A professional portrait of an experienced male engineering professor with graying hair, wearing a light blue dress shirt. He has a focused and visionary expression. The setting is a bright, modern academic office with a blurred shelf of books in the background. The lighting is professional and clear, following a commercial-clean aesthetic with high contrast and sharp detail." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9w4MbPmaW5kgMqQ2BRF5Z0QOX22-xF2khGUR981uEw86m6Acu7qiOt-FwteoFIhjcDlBLOSWAqVI0PGj-541kwGpgLkwuykQf0ZaWYvYlSRgIXFeFB1VnK8Lx-y8SOZ5LDf9HDmaOdnFJGMv-20n7Mr_ru9c-9jfHmrkg3R_1z-wms4ZDhCKdC9UaVdOTOCiNgCnfoUGQpLEkCBVov6l5r09N9Rh1mQPm-0c1IqXUSwZgx2oHDcry3jjrs3wxBfENgpc6EYmWX9F1"/>
-</div>
-<h4 class="text-body-emphasis font-bold text-ink">Prof. David Chen</h4>
-<p class="text-caption-md text-primary font-bold mb-xs">Distributed Systems</p>
-<p class="text-caption-sm text-secondary">Former Lead Engineer at a Tier-1 tech company with 20 years experience.</p>
-</div>
-<!-- Faculty 4 -->
-<div class="group">
-<div class="aspect-square bg-cloud rounded-xl mb-md overflow-hidden relative">
-<img class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A headshot of a female computer science professor in her thirties, wearing a professional black turtleneck. She has a confident, innovative look. The background is a minimalist grey, and the lighting is sharp and architectural, casting elegant shadows. This visual communicates expertise, modernity, and a high-end academic focus on emerging technologies." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWRMP9AZ9J1G3F66SvPtChIlIlnFBs4h7EfQmmcunIqu8ZGpfPGJb28p6qzLdKPc48Pl2fQUwopJP3P5ci2XzVaNUin1PRTuT7V2rHwLfKUQEkxkdZitf9CqFYu2WJ9p_yAc5q1GypfDlEYI9yoU930cBHRIoQbKCO42hTjuGNpvVOvXfPho8-q7YAEwPBi3m93IvTRGauBgLUXYjY01FaJb5QmbS-Up3jjTYSi5jiBCUlhsEyMdQ1hVUT57rQZf9CNrprMpYmwBpK"/>
-</div>
-<h4 class="text-body-emphasis font-bold text-ink">Dr. Sarah Vance</h4>
-<p class="text-caption-md text-primary font-bold mb-xs">Human-Computer Interaction</p>
-<p class="text-caption-sm text-secondary">Specializing in accessible design and gesture-based computing.</p>
-</div>
-</div>
-<div class="mt-xxl text-center">
-<button class="text-secondary font-button-md uppercase border-b border-secondary hover:text-primary hover:border-primary transition-all">View All Faculty</button>
-</div>
-</div>
-</section>
-<!-- Download Syllabus CTA -->
-<section class="py-xl bg-primary relative overflow-hidden">
-<div class="absolute inset-0 opacity-10 flex gap-xxs">
-<div class="h-full w-full bg-paper chevron-mask"></div>
-<div class="h-full w-full bg-paper chevron-mask -ml-32"></div>
-</div>
-<div class="max-w-[1366px] mx-auto px-xl relative z-10 flex flex-col md:flex-row items-center justify-between gap-xl">
-<div class="text-center md:text-left">
-<h3 class="text-display-sm font-bold text-paper mb-xxs">Ready to architect your career?</h3>
-<p class="text-on-primary opacity-80">Download the detailed 2024-25 CSE Curriculum and Syllabus.</p>
-</div>
-<button class="bg-ink text-paper px-xxl h-14 rounded-[4px] font-button-md uppercase flex items-center gap-md shadow-xl hover:bg-paper hover:text-ink transition-all group">
-                Download Syllabus 
-                <span class="material-symbols-outlined group-hover:translate-y-1 transition-transform">download_for_offline</span>
-</button>
-</div>
-</section>
-<!-- Footer Shell -->
-<footer class="bg-ink text-on-ink py-section">
-<div class="grid grid-cols-1 md:grid-cols-5 gap-xl max-w-[1366px] mx-auto px-xl">
-<div class="md:col-span-2">
-<span class="font-display-sm text-display-sm text-paper mb-4 block">NIET Academic</span>
-<p class="opacity-70 text-caption-md max-w-sm">The Northvale Institute of Engineering &amp; Technology is a leading center for technical education and research excellence, fostering innovation since 1994.</p>
-</div>
-<div>
-<h5 class="font-bold text-paper mb-lg uppercase tracking-wider text-caption-sm">Quick Links</h5>
-<ul class="space-y-sm">
-<li><a class="text-on-ink opacity-70 hover:opacity-100 transition-opacity text-caption-md" href="#">Academic Departments</a></li>
-<li><a class="text-on-ink opacity-70 hover:opacity-100 transition-opacity text-caption-md" href="#">Faculty Directory</a></li>
-<li><a class="text-on-ink opacity-70 hover:opacity-100 transition-opacity text-caption-md" href="#">Campus Life</a></li>
-</ul>
-</div>
-<div>
-<h5 class="font-bold text-paper mb-lg uppercase tracking-wider text-caption-sm">Resources</h5>
-<ul class="space-y-sm">
-<li><a class="text-on-ink opacity-70 hover:opacity-100 transition-opacity text-caption-md" href="#">Research &amp; Innovation</a></li>
-<li><a class="text-on-ink opacity-70 hover:opacity-100 transition-opacity text-caption-md" href="#">Privacy Policy</a></li>
-<li><a class="text-on-ink opacity-70 hover:opacity-100 transition-opacity text-caption-md" href="#">Terms of Service</a></li>
-</ul>
-</div>
-<div>
-<h5 class="font-bold text-paper mb-lg uppercase tracking-wider text-caption-sm">Contact</h5>
-<p class="text-on-ink opacity-70 text-caption-md mb-md">info@niet.edu</p>
-<div class="flex gap-md">
-<span class="material-symbols-outlined opacity-70 hover:opacity-100 cursor-pointer">public</span>
-<span class="material-symbols-outlined opacity-70 hover:opacity-100 cursor-pointer">mail</span>
-</div>
-</div>
-</div>
-<div class="max-w-[1366px] mx-auto px-xl mt-xxl pt-xl border-t border-charcoal">
-<p class="text-caption-md opacity-50">© 2024 Northvale Institute of Engineering &amp; Technology. All rights reserved.</p>
-</div>
-</footer>
-</body></html>
+  </head>
+  <body class="bg-paper text-ink font-body-md overflow-x-hidden">
+    <!-- Top Navigation Shell -->
+    <nav class="bg-paper border-b border-fog fixed top-0 w-full z-50">
+      <div
+        class="flex justify-between items-center h-16 max-w-[1366px] mx-auto px-xl"
+      >
+        <div class="flex items-center gap-xl">
+          <span class="text-display-xs font-bold text-ink tracking-tight"
+            >NIET Academic</span
+          >
+          <div class="hidden md:flex items-center gap-lg">
+            <a
+              class="text-primary font-bold border-b-2 border-primary pb-1 font-body-emphasis text-body-emphasis"
+              href="#"
+              >Departments</a
+            >
+            <a
+              class="text-secondary font-medium hover:text-primary transition-colors duration-200 font-body-emphasis text-body-emphasis"
+              href="#"
+              >Faculty</a
+            >
+            <a
+              class="text-secondary font-medium hover:text-primary transition-colors duration-200 font-body-emphasis text-body-emphasis"
+              href="#"
+              >Academic Calendar</a
+            >
+            <a
+              class="text-secondary font-medium hover:text-primary transition-colors duration-200 font-body-emphasis text-body-emphasis"
+              href="#"
+              >Admissions</a
+            >
+            <a
+              class="text-secondary font-medium hover:text-primary transition-colors duration-200 font-body-emphasis text-body-emphasis"
+              href="#"
+              >Research</a
+            >
+          </div>
+        </div>
+        <div class="flex items-center gap-md">
+          <button
+            class="bg-primary text-on-ink px-xl py-xs font-button-md rounded-md uppercase"
+          >
+            Apply Now
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Banner Section -->
+    <header
+      class="relative pt-16 h-[520px] bg-ink-deep flex items-center overflow-hidden"
+    >
+      <div class="absolute inset-0 opacity-40">
+        <img
+          class="w-full h-full object-cover"
+          data-alt="A high-tech computer science laboratory featuring rows of sleek, modern workstations with multiple monitors glowing in a cool blue hue. The environment is minimalist and clinical, characterized by white surfaces and architectural glass partitions. The lighting is crisp and overhead, casting soft shadows that emphasize the professional, academic atmosphere of a top-tier institute. This visual represents innovation and engineering excellence."
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKot753Oa0kwrpSvFDPYCmtBDKfqNuZT4wnX5CW_KeevVQPFcLaxr-SkMzo7meW4rc83i3AD3y_fpdKhznPfgb47_ybjivhFWT6pbdZIOeV967-kXYbLGCixJomd_Z8Gkl1SoTP5zEx7xxIB4BY6B_rAmdazhun7uACsJuZ43M5JqTDnujaqVPAYg9BVoDHmGWLZgrd0TTQUXSSQIdHD8piwLrGZB18eQog6xkO7gBqnNjzs-zjOMc2BDWnV7r7lSqmu78v6EiZyh2"
+        />
+      </div>
+      <!-- Signature Chevron Motif -->
+      <div
+        class="absolute right-0 top-0 bottom-0 w-1/3 flex gap-xxs overflow-hidden pointer-events-none"
+      >
+        <div
+          class="h-full w-24 bg-primary opacity-80 chevron-mask -mr-12"
+        ></div>
+        <div class="h-full w-24 bg-primary opacity-60 chevron-mask"></div>
+      </div>
+      <div class="relative max-w-[1366px] mx-auto px-xl w-full z-10">
+        <div class="max-w-2xl">
+          <h4
+            class="text-primary-soft font-button-md uppercase tracking-[2px] mb-sm"
+          >
+            Department of Engineering
+          </h4>
+          <h1
+            class="text-display-xl font-display-xl text-paper mb-lg leading-tight"
+          >
+            Computer Science &amp; Engineering
+          </h1>
+          <p
+            class="text-body-lg font-body-lg text-paper opacity-90 mb-xl max-w-xl"
+          >
+            Architecting the future through rigorous computational research,
+            algorithmic excellence, and industry-aligned technical training.
+          </p>
+          <div class="flex gap-md">
+            <button
+              class="bg-primary text-on-ink px-xl h-11 font-button-md rounded-[4px] uppercase flex items-center gap-xs"
+            >
+              View Curriculum
+              <span class="material-symbols-outlined text-[18px]"
+                >download</span
+              >
+            </button>
+            <button
+              class="border border-paper text-paper px-xl h-11 font-button-md rounded-[4px] uppercase hover:bg-paper hover:text-ink transition-all"
+            >
+              Explore Research
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Message from HOD Section -->
+    <section class="py-section bg-paper">
+      <div
+        class="max-w-[1366px] mx-auto px-xl grid grid-cols-1 md:grid-cols-12 gap-xxl items-center"
+      >
+        <div class="md:col-span-5 relative">
+          <div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
+            <img
+              class="w-full h-full object-cover"
+              data-alt="A professional portrait of a senior male professor in a formal charcoal suit, standing confidently in a bright, modern university hall. He has a warm yet authoritative expression, representing academic leadership and wisdom. The background shows soft-focus architectural details of a campus building with natural light streaming through large windows, creating a clean, high-key commercial aesthetic."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCp1chTjTOpxITTdygTPGw21kuAPDp84yMVzdIcaTJwoiGLHi8aRAtmqL6BLJDzqxFxJHMy_ZWBCrybE4alYCX5XVsW8jFbQtc4e-PvjK4uquK37W6jEd0GO-Md1H8uq8YRmePYOnzeE96zdvzG_THi90aFDcqXvkiTZnYro-JvKcs2vBaaheAovxkky3hv00451zqWBEw6CDwdKanX82kLa1AyXAXzOvu1RIazMue5R6ogGDylvdypofS61NYwfn8CSegy7RhdZT-L"
+            />
+          </div>
+          <div
+            class="absolute -bottom-8 -right-8 bg-ink p-xl rounded-xl text-paper hidden lg:block border-l-4 border-primary"
+          >
+            <p class="font-display-xs font-bold">Dr. Arjan V. Singh</p>
+            <p class="text-caption-md opacity-70">Head of Department, CSE</p>
+            <p class="text-caption-sm mt-xs text-primary-soft">
+              Ph.D. Stanford University
+            </p>
+          </div>
+        </div>
+        <div class="md:col-span-7">
+          <span
+            class="text-primary font-bold font-button-md uppercase tracking-widest block mb-sm"
+            >Leadership Insight</span
+          >
+          <h2 class="text-display-lg font-display-lg text-ink mb-xl">
+            Message from the HOD
+          </h2>
+          <div
+            class="space-y-md text-secondary font-body-md leading-relaxed italic"
+          >
+            <p class="text-body-lg">
+              "At NIET, our Computer Science Department isn't just about coding;
+              it's about cultivation. We nurture the next generation of
+              engineers to think beyond the syntax and understand the societal
+              impact of the systems they build."
+            </p>
+            <p>
+              Our curriculum is designed in collaboration with global tech
+              giants, ensuring that our students are not just industry-ready,
+              but industry-leading. From Artificial Intelligence to
+              Cybersecurity, we provide the tools and the mentorship necessary
+              to excel in an ever-evolving digital landscape.
+            </p>
+          </div>
+          <div class="mt-xxl flex items-center gap-xl">
+            <div class="flex flex-col">
+              <span class="text-display-sm font-bold text-primary">15+</span>
+              <span class="text-caption-bold uppercase text-secondary"
+                >Patents Filed</span
+              >
+            </div>
+            <div class="w-px h-12 bg-fog"></div>
+            <div class="flex flex-col">
+              <span class="text-display-sm font-bold text-primary">98%</span>
+              <span class="text-caption-bold uppercase text-secondary"
+                >Placement Rate</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Advanced Labs Section - Bento Grid -->
+    <section class="py-section bg-cloud">
+      <div class="max-w-[1366px] mx-auto px-xl">
+        <div class="flex justify-between items-end mb-xxl">
+          <div>
+            <span
+              class="text-primary font-bold font-button-md uppercase tracking-widest block mb-sm"
+              >Infrastructure</span
+            >
+            <h2 class="text-display-lg font-display-lg text-ink">
+              Advanced Labs
+            </h2>
+          </div>
+          <p class="max-w-md text-secondary text-right hidden md:block">
+            State-of-the-art facilities equipped with the latest hardware and
+            enterprise-grade software stacks.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-xl h-auto md:h-[600px]">
+          <!-- AI Lab - Featured -->
+          <div
+            class="md:col-span-2 md:row-span-2 bg-canvas p-xl rounded-xl shadow-[0_2px_8px_rgba(26,26,26,0.08)] flex flex-col relative overflow-hidden group"
+          >
+            <div class="relative z-10">
+              <span
+                class="material-symbols-outlined text-primary text-[40px] mb-lg"
+                >psychology</span
+              >
+              <h3 class="text-display-sm font-bold text-ink mb-md">
+                AI &amp; Machine Learning Lab
+              </h3>
+              <p class="text-secondary mb-xl">
+                High-performance computing clusters powered by NVIDIA A100 GPUs
+                for deep learning and neural network training.
+              </p>
+            </div>
+            <div class="mt-auto relative z-10">
+              <button
+                class="flex items-center gap-xs font-button-md text-primary group-hover:gap-md transition-all"
+              >
+                EXPLORE FACILITY
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </button>
+            </div>
+            <div
+              class="absolute bottom-0 right-0 w-2/3 h-2/3 opacity-5 pointer-events-none group-hover:scale-110 transition-transform"
+            >
+              <span class="material-symbols-outlined text-[200px]">hub</span>
+            </div>
+          </div>
+          <!-- Network Security -->
+          <div
+            class="md:col-span-2 bg-ink p-xl rounded-xl flex items-center justify-between group"
+          >
+            <div class="max-w-xs">
+              <h3 class="text-display-xs font-bold text-paper mb-sm">
+                Network Security Hub
+              </h3>
+              <p class="text-paper opacity-70 text-caption-md">
+                Simulating enterprise-level security breaches and defense
+                mechanisms.
+              </p>
+            </div>
+            <div class="bg-primary-deep p-lg rounded-full">
+              <span
+                class="material-symbols-outlined text-paper"
+                data-weight="fill"
+                >shield</span
+              >
+            </div>
+          </div>
+          <!-- IoT Lab -->
+          <div
+            class="bg-canvas p-xl rounded-xl shadow-[0_2px_8px_rgba(26,26,26,0.08)] group hover:border-primary border border-transparent transition-colors"
+          >
+            <span class="material-symbols-outlined text-ink-soft mb-md"
+              >sensors</span
+            >
+            <h4 class="text-body-emphasis font-bold mb-xs">IoT Innovation</h4>
+            <p class="text-caption-md text-secondary">
+              Embedded systems and sensor network prototyping.
+            </p>
+          </div>
+          <!-- Cloud Computing -->
+          <div
+            class="bg-canvas p-xl rounded-xl shadow-[0_2px_8px_rgba(26,26,26,0.08)] group hover:border-primary border border-transparent transition-colors"
+          >
+            <span class="material-symbols-outlined text-ink-soft mb-md"
+              >cloud</span
+            >
+            <h4 class="text-body-emphasis font-bold mb-xs">
+              Cloud Architecture
+            </h4>
+            <p class="text-caption-md text-secondary">
+              AWS and Azure integrated development environments.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Faculty Highlights -->
+    <section class="py-section bg-paper">
+      <div class="max-w-[1366px] mx-auto px-xl">
+        <h2 class="text-display-md font-display-md text-ink mb-xxl text-center">
+          Faculty Highlights
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-xl">
+          <!-- Faculty 1 -->
+          <div class="group">
+            <div
+              class="aspect-square bg-cloud rounded-xl mb-md overflow-hidden relative"
+            >
+              <img
+                class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500"
+                data-alt="A professional headshot of a middle-aged female professor with short dark hair and glasses, wearing a tailored navy blazer. She has a serene and intellectual expression. The lighting is soft and studio-quality, emphasizing a professional academic aesthetic. The background is a clean, neutral white, maintaining a modern and sophisticated corporate look."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5Hs5dewbXVdUgBnSOKoTFlg2zMrp1E5vDgWIq-1RGaZzj6Y9S7rnzAWED3o61loMcKDI7-OMQP-L_vEUeselHEqBk5ZGkFHXgFnrNBoM5sT45rkZQ-ozE4p8a4tQsZtLEUzTfYHVHiY3GSlpHoOeIQYI2zr-lvlsNrD1FCKjy5Y0jS9ludIFycSY-y3tJ48Ru-DBUncJBfrfECMQU38BRSa_PmFRacxFgvqDH4Gsk2UhLwYXywzWwh-0Q_ucspKY55g0FliHVDZHF"
+              />
+            </div>
+            <h4 class="text-body-emphasis font-bold text-ink">
+              Prof. Elena Moretti
+            </h4>
+            <p class="text-caption-md text-primary font-bold mb-xs">
+              Data Science &amp; Ethics
+            </p>
+            <p class="text-caption-sm text-secondary">
+              Senior Researcher with 12 publications in IEEE Transactions.
+            </p>
+          </div>
+          <!-- Faculty 2 -->
+          <div class="group">
+            <div
+              class="aspect-square bg-cloud rounded-xl mb-md overflow-hidden relative"
+            >
+              <img
+                class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500"
+                data-alt="A portrait of a young, professional male computer science lecturer in a crisp white shirt, leaning against a clean white wall. He is smiling warmly, representing modern, approachable academia. The lighting is natural and bright, creating a high-key, fresh visual style consistent with a premium educational institution's marketing material."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqzUYHJ7A92K9Xlnd5rzh5Nzl_zb1nXAa0PDwUBiqZDWaOF783U-wSPmGULP7DoASiZo30nlS_vvPUV22S4hVL0LijII2S2x2n_57v_tTDFwtAg4jtrxptUIvwH8bv2g6JBB2hcOzlXo9QbmALZFKT4MAc5NDgpviDfv22VFGGW1De19_XAMHtNN-qvd5xiB2sHucpo_iq14xwQ6M4_WUHNXevVkwHWBDqTXKZk-fzNuVWnAH7jm42I72JzcQm_FUYetJ4M3uI5Jk6"
+              />
+            </div>
+            <h4 class="text-body-emphasis font-bold text-ink">
+              Dr. Julian Thorne
+            </h4>
+            <p class="text-caption-md text-primary font-bold mb-xs">
+              Quantum Algorithms
+            </p>
+            <p class="text-caption-sm text-secondary">
+              Leading the university's initiative in post-quantum cryptography.
+            </p>
+          </div>
+          <!-- Faculty 3 -->
+          <div class="group">
+            <div
+              class="aspect-square bg-cloud rounded-xl mb-md overflow-hidden relative"
+            >
+              <img
+                class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500"
+                data-alt="A professional portrait of an experienced male engineering professor with graying hair, wearing a light blue dress shirt. He has a focused and visionary expression. The setting is a bright, modern academic office with a blurred shelf of books in the background. The lighting is professional and clear, following a commercial-clean aesthetic with high contrast and sharp detail."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9w4MbPmaW5kgMqQ2BRF5Z0QOX22-xF2khGUR981uEw86m6Acu7qiOt-FwteoFIhjcDlBLOSWAqVI0PGj-541kwGpgLkwuykQf0ZaWYvYlSRgIXFeFB1VnK8Lx-y8SOZ5LDf9HDmaOdnFJGMv-20n7Mr_ru9c-9jfHmrkg3R_1z-wms4ZDhCKdC9UaVdOTOCiNgCnfoUGQpLEkCBVov6l5r09N9Rh1mQPm-0c1IqXUSwZgx2oHDcry3jjrs3wxBfENgpc6EYmWX9F1"
+              />
+            </div>
+            <h4 class="text-body-emphasis font-bold text-ink">
+              Prof. David Chen
+            </h4>
+            <p class="text-caption-md text-primary font-bold mb-xs">
+              Distributed Systems
+            </p>
+            <p class="text-caption-sm text-secondary">
+              Former Lead Engineer at a Tier-1 tech company with 20 years
+              experience.
+            </p>
+          </div>
+          <!-- Faculty 4 -->
+          <div class="group">
+            <div
+              class="aspect-square bg-cloud rounded-xl mb-md overflow-hidden relative"
+            >
+              <img
+                class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500"
+                data-alt="A headshot of a female computer science professor in her thirties, wearing a professional black turtleneck. She has a confident, innovative look. The background is a minimalist grey, and the lighting is sharp and architectural, casting elegant shadows. This visual communicates expertise, modernity, and a high-end academic focus on emerging technologies."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWRMP9AZ9J1G3F66SvPtChIlIlnFBs4h7EfQmmcunIqu8ZGpfPGJb28p6qzLdKPc48Pl2fQUwopJP3P5ci2XzVaNUin1PRTuT7V2rHwLfKUQEkxkdZitf9CqFYu2WJ9p_yAc5q1GypfDlEYI9yoU930cBHRIoQbKCO42hTjuGNpvVOvXfPho8-q7YAEwPBi3m93IvTRGauBgLUXYjY01FaJb5QmbS-Up3jjTYSi5jiBCUlhsEyMdQ1hVUT57rQZf9CNrprMpYmwBpK"
+              />
+            </div>
+            <h4 class="text-body-emphasis font-bold text-ink">
+              Dr. Sarah Vance
+            </h4>
+            <p class="text-caption-md text-primary font-bold mb-xs">
+              Human-Computer Interaction
+            </p>
+            <p class="text-caption-sm text-secondary">
+              Specializing in accessible design and gesture-based computing.
+            </p>
+          </div>
+        </div>
+        <div class="mt-xxl text-center">
+          <button
+            class="text-secondary font-button-md uppercase border-b border-secondary hover:text-primary hover:border-primary transition-all"
+          >
+            View All Faculty
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Download Syllabus CTA -->
+    <section class="py-xl bg-primary relative overflow-hidden">
+      <div class="absolute inset-0 opacity-10 flex gap-xxs">
+        <div class="h-full w-full bg-paper chevron-mask"></div>
+        <div class="h-full w-full bg-paper chevron-mask -ml-32"></div>
+      </div>
+      <div
+        class="max-w-[1366px] mx-auto px-xl relative z-10 flex flex-col md:flex-row items-center justify-between gap-xl"
+      >
+        <div class="text-center md:text-left">
+          <h3 class="text-display-sm font-bold text-paper mb-xxs">
+            Ready to architect your career?
+          </h3>
+          <p class="text-on-primary opacity-80">
+            Download the detailed 2024-25 CSE Curriculum and Syllabus.
+          </p>
+        </div>
+        <button
+          class="bg-ink text-paper px-xxl h-14 rounded-[4px] font-button-md uppercase flex items-center gap-md shadow-xl hover:bg-paper hover:text-ink transition-all group"
+        >
+          Download Syllabus
+          <span
+            class="material-symbols-outlined group-hover:translate-y-1 transition-transform"
+            >download_for_offline</span
+          >
+        </button>
+      </div>
+    </section>
+    <!-- Footer Shell -->
+    <footer class="bg-ink text-on-ink py-section">
+      <div
+        class="grid grid-cols-1 md:grid-cols-5 gap-xl max-w-[1366px] mx-auto px-xl"
+      >
+        <div class="md:col-span-2">
+          <span class="font-display-sm text-display-sm text-paper mb-4 block"
+            >NIET Academic</span
+          >
+          <p class="opacity-70 text-caption-md max-w-sm">
+            The Northvale Institute of Engineering &amp; Technology is a leading
+            center for technical education and research excellence, fostering
+            innovation since 1994.
+          </p>
+        </div>
+        <div>
+          <h5
+            class="font-bold text-paper mb-lg uppercase tracking-wider text-caption-sm"
+          >
+            Quick Links
+          </h5>
+          <ul class="space-y-sm">
+            <li>
+              <a
+                class="text-on-ink opacity-70 hover:opacity-100 transition-opacity text-caption-md"
+                href="#"
+                >Academic Departments</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-on-ink opacity-70 hover:opacity-100 transition-opacity text-caption-md"
+                href="#"
+                >Faculty Directory</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-on-ink opacity-70 hover:opacity-100 transition-opacity text-caption-md"
+                href="#"
+                >Campus Life</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5
+            class="font-bold text-paper mb-lg uppercase tracking-wider text-caption-sm"
+          >
+            Resources
+          </h5>
+          <ul class="space-y-sm">
+            <li>
+              <a
+                class="text-on-ink opacity-70 hover:opacity-100 transition-opacity text-caption-md"
+                href="#"
+                >Research &amp; Innovation</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-on-ink opacity-70 hover:opacity-100 transition-opacity text-caption-md"
+                href="#"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-on-ink opacity-70 hover:opacity-100 transition-opacity text-caption-md"
+                href="#"
+                >Terms of Service</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5
+            class="font-bold text-paper mb-lg uppercase tracking-wider text-caption-sm"
+          >
+            Contact
+          </h5>
+          <p class="text-on-ink opacity-70 text-caption-md mb-md">
+            info@niet.edu
+          </p>
+          <div class="flex gap-md">
+            <span
+              class="material-symbols-outlined opacity-70 hover:opacity-100 cursor-pointer"
+              >public</span
+            >
+            <span
+              class="material-symbols-outlined opacity-70 hover:opacity-100 cursor-pointer"
+              >mail</span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-w-[1366px] mx-auto px-xl mt-xxl pt-xl border-t border-charcoal"
+      >
+        <p class="text-caption-md opacity-50">
+          © 2024 Northvale Institute of Engineering &amp; Technology. All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
