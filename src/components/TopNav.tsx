@@ -1,6 +1,20 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+const NAV_LINKS = [
+  { name: "Academics", href: "/programs-courses" },
+  { name: "Admissions", href: "/admissions-overview" },
+  { name: "Research", href: "/course-resources" },
+  { name: "Placements", href: "/placement-overview" },
+  { name: "Campus Life", href: "/events-page" },
+  { name: "About Us", href: "/about-niet" },
+];
 
 export default function TopNav() {
+  const pathname = usePathname();
+
   return (
     <header className="bg-canvas sticky top-0 z-50 border-b border-fog">
       <div className="h-16 flex justify-between items-center w-full px-lg max-w-max-width mx-auto">
@@ -12,42 +26,26 @@ export default function TopNav() {
             NIET
           </Link>
           <nav className="hidden md:flex items-center gap-lg">
-            <Link
-              className="font-body-emphasis text-body-emphasis text-primary border-b-2 border-primary py-1"
-              href="/programs-courses"
-            >
-              Academics
-            </Link>
-            <Link
-              className="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200"
-              href="/admissions-overview"
-            >
-              Admissions
-            </Link>
-            <Link
-              className="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200"
-              href="/course-resources"
-            >
-              Research
-            </Link>
-            <Link
-              className="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200"
-              href="/placement-overview"
-            >
-              Placements
-            </Link>
-            <Link
-              className="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200"
-              href="/events-page"
-            >
-              Campus Life
-            </Link>
-            <Link
-              className="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200"
-              href="/about-niet"
-            >
-              About Us
-            </Link>
+            {NAV_LINKS.map((link) => {
+              const isActive = pathname === link.href || pathname.startsWith(link.href + "/");
+
+              // If we are at the root, default to highlighting Academics (since it was previously the default)
+              const isHighlighted = isActive || (pathname === "/" && link.name === "Academics");
+
+              return (
+                <Link
+                  key={link.name}
+                  className={
+                    isHighlighted
+                      ? "font-body-emphasis text-body-emphasis text-primary border-b-2 border-primary py-1"
+                      : "font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200"
+                  }
+                  href={link.href}
+                >
+                  {link.name}
+                </Link>
+              );
+            })}
           </nav>
         </div>
         <div className="flex items-center gap-md">
