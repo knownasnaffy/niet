@@ -29,15 +29,12 @@ export default function TopNav() {
             {NAV_LINKS.map((link) => {
               const isActive = pathname === link.href || pathname.startsWith(link.href + "/");
 
-              // If we are at the root, default to highlighting Academics (since it was previously the default)
-              const isHighlighted = isActive || (pathname === "/" && link.name === "Academics");
-
               return (
                 <Link
                   key={link.name}
                   className={
-                    isHighlighted
-                      ? "font-body-emphasis text-body-emphasis text-primary border-b-2 border-primary py-1"
+                    isActive
+                      ? "font-body-emphasis text-body-emphasis text-primary border-b-2 border-primary pb-0.5 pt-1"
                       : "font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200"
                   }
                   href={link.href}
