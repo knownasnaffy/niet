@@ -43,7 +43,7 @@ bun run lint
 
 ## License
 
-This project is released under the **Unlicense**. See [`UNLICENSE`](/UNLICENSE) for details.
+This project is released under the **Unlicense**. See [`UNLICENSE`](./UNLICENSE) for details.
 
 ## Open-source readiness suggestions
 
