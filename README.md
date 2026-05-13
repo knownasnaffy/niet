@@ -8,47 +8,41 @@ This repository contains a multi-page demo website for a college/institute, buil
 
 ### Prerequisites
 
-- [Bun](https://bun.sh/) (primary workflow; recommended)
-- Node.js 20+ (optional fallback for npm)
+- [Node.js](https://nodejs.org/) v18 or later
+- A package manager — [Bun](https://bun.sh/) was used throughout development and is recommended, though npm, pnpm, or yarn will also work
 
 ### Setup
 
+Install dependencies:
+
 ```bash
 bun install
+# or: npm install
 ```
 
-### Run locally
+### Running locally
+
+Start the development server:
 
 ```bash
 bun run dev
+# or: npm run dev
 ```
 
-### Build for production
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the site.
 
-```bash
-bun run build
-```
+### Other commands
 
-### Start production build
+| Command | Description |
+|---|---|
+| `bun run build` | Create a production build |
+| `bun run start` | Start the production server |
+| `bun run lint` | Run ESLint |
 
-```bash
-bun run start
-```
+## Contributing
 
-### Lint
-
-```bash
-bun run lint
-```
+Contributions are welcome! Feel free to open an issue to report a bug or suggest an improvement, or submit a pull request with your changes. Since this is a demo project there are no strict contribution guidelines — just keep changes focused and descriptive.
 
 ## License
 
-This project is released under the **Unlicense**. See [`UNLICENSE`](./UNLICENSE) for details.
-
-## Open-source readiness suggestions
-
-- Add a `CONTRIBUTING.md` to define contribution flow, branch naming, and PR expectations.
-- Add issue/PR templates under `.github/` to standardize bug reports and feature requests.
-- Add a short roadmap section in the README so contributors know current priorities.
-- Add a `CODE_OF_CONDUCT.md` for community standards.
-- Keep CI checks (lint + build) mandatory for pull requests.
+This project is released into the public domain under the [Unlicense](./UNLICENSE). You are free to use, copy, modify, and distribute it for any purpose, with no restrictions.
