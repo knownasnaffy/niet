@@ -1,371 +1,695 @@
-<!DOCTYPE html>
+<!doctype html>
 
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
         theme: {
           extend: {
-            "colors": {
-                    "on-background": "#191b23",
-                    "on-surface-variant": "#434655",
-                    "on-secondary-fixed": "#1c1b1b",
-                    "on-error-container": "#93000a",
-                    "inverse-surface": "#2e3039",
-                    "background": "#faf8ff",
-                    "primary-fixed-dim": "#b6c4ff",
-                    "on-surface": "#191b23",
-                    "on-primary": "#ffffff",
-                    "surface-variant": "#e2e1ed",
-                    "primary-deep": "#0e3191",
-                    "error": "#ba1a1a",
-                    "surface-bright": "#faf8ff",
-                    "on-secondary": "#ffffff",
-                    "on-tertiary-fixed-variant": "#862300",
-                    "inverse-primary": "#b6c4ff",
-                    "storm-sea": "#7fadbe",
-                    "on-tertiary-container": "#ffc1b0",
-                    "on-primary-fixed": "#00164f",
-                    "canvas": "#ffffff",
-                    "primary-fixed": "#dce1ff",
-                    "primary-container": "#024ad8",
-                    "surface-tint": "#1451de",
-                    "bloom-coral": "#ff5050",
-                    "ink-deep": "#000000",
-                    "ink-soft": "#292929",
-                    "primary": "#0036a4",
-                    "tertiary-fixed": "#ffdbd1",
-                    "paper": "#ffffff",
-                    "surface": "#faf8ff",
-                    "error-container": "#ffdad6",
-                    "tertiary-container": "#a52d00",
-                    "bloom-deep": "#b3262b",
-                    "tertiary": "#7c2000",
-                    "outline-variant": "#c3c5d7",
-                    "surface-container-high": "#e7e7f3",
-                    "outline": "#747686",
-                    "tertiary-fixed-dim": "#ffb59f",
-                    "on-primary-container": "#c2ceff",
-                    "surface-container-low": "#f3f2ff",
-                    "graphite": "#636363",
-                    "secondary": "#5f5e5e",
-                    "cloud": "#f7f7f7",
-                    "on-primary-fixed-variant": "#003bb0",
-                    "bloom-rose": "#f9d4d2",
-                    "surface-container-highest": "#e2e1ed",
-                    "on-tertiary-fixed": "#3a0a00",
-                    "on-ink": "#ffffff",
-                    "ink": "#1a1a1a",
-                    "primary-bright": "#296ef9",
-                    "storm-deep": "#356373",
-                    "fog": "#e8e8e8",
-                    "surface-container-lowest": "#ffffff",
-                    "surface-container": "#ededf9",
-                    "on-tertiary": "#ffffff",
-                    "on-secondary-container": "#636262",
-                    "charcoal": "#3d3d3d",
-                    "surface-dim": "#d9d9e5",
-                    "steel": "#c2c2c2",
-                    "secondary-fixed": "#e5e2e1",
-                    "on-error": "#ffffff",
-                    "inverse-on-surface": "#f0f0fc",
-                    "on-secondary-fixed-variant": "#474746",
-                    "secondary-fixed-dim": "#c8c6c5",
-                    "secondary-container": "#e2dfde",
-                    "primary-soft": "#c9e0fc"
+            colors: {
+              "on-background": "#191b23",
+              "on-surface-variant": "#434655",
+              "on-secondary-fixed": "#1c1b1b",
+              "on-error-container": "#93000a",
+              "inverse-surface": "#2e3039",
+              background: "#faf8ff",
+              "primary-fixed-dim": "#b6c4ff",
+              "on-surface": "#191b23",
+              "on-primary": "#ffffff",
+              "surface-variant": "#e2e1ed",
+              "primary-deep": "#0e3191",
+              error: "#ba1a1a",
+              "surface-bright": "#faf8ff",
+              "on-secondary": "#ffffff",
+              "on-tertiary-fixed-variant": "#862300",
+              "inverse-primary": "#b6c4ff",
+              "storm-sea": "#7fadbe",
+              "on-tertiary-container": "#ffc1b0",
+              "on-primary-fixed": "#00164f",
+              canvas: "#ffffff",
+              "primary-fixed": "#dce1ff",
+              "primary-container": "#024ad8",
+              "surface-tint": "#1451de",
+              "bloom-coral": "#ff5050",
+              "ink-deep": "#000000",
+              "ink-soft": "#292929",
+              primary: "#0036a4",
+              "tertiary-fixed": "#ffdbd1",
+              paper: "#ffffff",
+              surface: "#faf8ff",
+              "error-container": "#ffdad6",
+              "tertiary-container": "#a52d00",
+              "bloom-deep": "#b3262b",
+              tertiary: "#7c2000",
+              "outline-variant": "#c3c5d7",
+              "surface-container-high": "#e7e7f3",
+              outline: "#747686",
+              "tertiary-fixed-dim": "#ffb59f",
+              "on-primary-container": "#c2ceff",
+              "surface-container-low": "#f3f2ff",
+              graphite: "#636363",
+              secondary: "#5f5e5e",
+              cloud: "#f7f7f7",
+              "on-primary-fixed-variant": "#003bb0",
+              "bloom-rose": "#f9d4d2",
+              "surface-container-highest": "#e2e1ed",
+              "on-tertiary-fixed": "#3a0a00",
+              "on-ink": "#ffffff",
+              ink: "#1a1a1a",
+              "primary-bright": "#296ef9",
+              "storm-deep": "#356373",
+              fog: "#e8e8e8",
+              "surface-container-lowest": "#ffffff",
+              "surface-container": "#ededf9",
+              "on-tertiary": "#ffffff",
+              "on-secondary-container": "#636262",
+              charcoal: "#3d3d3d",
+              "surface-dim": "#d9d9e5",
+              steel: "#c2c2c2",
+              "secondary-fixed": "#e5e2e1",
+              "on-error": "#ffffff",
+              "inverse-on-surface": "#f0f0fc",
+              "on-secondary-fixed-variant": "#474746",
+              "secondary-fixed-dim": "#c8c6c5",
+              "secondary-container": "#e2dfde",
+              "primary-soft": "#c9e0fc",
             },
-            "borderRadius": {
-                    "DEFAULT": "0.25rem",
-                    "lg": "0.5rem",
-                    "xl": "0.75rem",
-                    "full": "9999px"
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
             },
-            "spacing": {
-                    "xl": "24px",
-                    "lg": "20px",
-                    "section": "80px",
-                    "max-width": "1366px",
-                    "xxs": "4px",
-                    "xs": "8px",
-                    "sm": "12px",
-                    "md": "16px",
-                    "xxl": "32px"
+            spacing: {
+              xl: "24px",
+              lg: "20px",
+              section: "80px",
+              "max-width": "1366px",
+              xxs: "4px",
+              xs: "8px",
+              sm: "12px",
+              md: "16px",
+              xxl: "32px",
             },
-            "fontFamily": {
-                    "display-lg": ["Manrope"],
-                    "display-sm": ["Manrope"],
-                    "caption-md": ["Manrope"],
-                    "caption-bold": ["Manrope"],
-                    "display-xxl": ["Manrope"],
-                    "display-xs": ["Manrope"],
-                    "price-md": ["Manrope"],
-                    "display-md": ["Manrope"],
-                    "caption-sm": ["Manrope"],
-                    "body-md": ["Manrope"],
-                    "body-lg": ["Manrope"],
-                    "body-emphasis": ["Manrope"],
-                    "button-md": ["Manrope"],
-                    "display-xl": ["Manrope"]
+            fontFamily: {
+              "display-lg": ["Manrope"],
+              "display-sm": ["Manrope"],
+              "caption-md": ["Manrope"],
+              "caption-bold": ["Manrope"],
+              "display-xxl": ["Manrope"],
+              "display-xs": ["Manrope"],
+              "price-md": ["Manrope"],
+              "display-md": ["Manrope"],
+              "caption-sm": ["Manrope"],
+              "body-md": ["Manrope"],
+              "body-lg": ["Manrope"],
+              "body-emphasis": ["Manrope"],
+              "button-md": ["Manrope"],
+              "display-xl": ["Manrope"],
             },
-            "fontSize": {
-                    "display-lg": ["44px", {"lineHeight": "1.0", "letterSpacing": "0", "fontWeight": "500"}],
-                    "display-sm": ["24px", {"lineHeight": "1.17", "letterSpacing": "0", "fontWeight": "500"}],
-                    "caption-md": ["14px", {"lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400"}],
-                    "caption-bold": ["14px", {"lineHeight": "1.3", "letterSpacing": "0", "fontWeight": "700"}],
-                    "display-xxl": ["72px", {"lineHeight": "1.0", "letterSpacing": "0", "fontWeight": "500"}],
-                    "display-xs": ["20px", {"lineHeight": "1.0", "letterSpacing": "0", "fontWeight": "500"}],
-                    "price-md": ["24px", {"lineHeight": "1.17", "letterSpacing": "0", "fontWeight": "500"}],
-                    "display-md": ["32px", {"lineHeight": "1.0", "letterSpacing": "0", "fontWeight": "500"}],
-                    "caption-sm": ["12px", {"lineHeight": "1.33", "letterSpacing": "0", "fontWeight": "400"}],
-                    "body-md": ["16px", {"lineHeight": "1.38", "letterSpacing": "0", "fontWeight": "400"}],
-                    "body-lg": ["18px", {"lineHeight": "1.33", "letterSpacing": "0", "fontWeight": "400"}],
-                    "body-emphasis": ["16px", {"lineHeight": "1.38", "letterSpacing": "0", "fontWeight": "500"}],
-                    "button-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.7px", "fontWeight": "600"}],
-                    "display-xl": ["56px", {"lineHeight": "1.0", "letterSpacing": "0", "fontWeight": "500"}]
-            }
+            fontSize: {
+              "display-lg": [
+                "44px",
+                { lineHeight: "1.0", letterSpacing: "0", fontWeight: "500" },
+              ],
+              "display-sm": [
+                "24px",
+                { lineHeight: "1.17", letterSpacing: "0", fontWeight: "500" },
+              ],
+              "caption-md": [
+                "14px",
+                { lineHeight: "1.5", letterSpacing: "0", fontWeight: "400" },
+              ],
+              "caption-bold": [
+                "14px",
+                { lineHeight: "1.3", letterSpacing: "0", fontWeight: "700" },
+              ],
+              "display-xxl": [
+                "72px",
+                { lineHeight: "1.0", letterSpacing: "0", fontWeight: "500" },
+              ],
+              "display-xs": [
+                "20px",
+                { lineHeight: "1.0", letterSpacing: "0", fontWeight: "500" },
+              ],
+              "price-md": [
+                "24px",
+                { lineHeight: "1.17", letterSpacing: "0", fontWeight: "500" },
+              ],
+              "display-md": [
+                "32px",
+                { lineHeight: "1.0", letterSpacing: "0", fontWeight: "500" },
+              ],
+              "caption-sm": [
+                "12px",
+                { lineHeight: "1.33", letterSpacing: "0", fontWeight: "400" },
+              ],
+              "body-md": [
+                "16px",
+                { lineHeight: "1.38", letterSpacing: "0", fontWeight: "400" },
+              ],
+              "body-lg": [
+                "18px",
+                { lineHeight: "1.33", letterSpacing: "0", fontWeight: "400" },
+              ],
+              "body-emphasis": [
+                "16px",
+                { lineHeight: "1.38", letterSpacing: "0", fontWeight: "500" },
+              ],
+              "button-md": [
+                "14px",
+                {
+                  lineHeight: "1.4",
+                  letterSpacing: "0.7px",
+                  fontWeight: "600",
+                },
+              ],
+              "display-xl": [
+                "56px",
+                { lineHeight: "1.0", letterSpacing: "0", fontWeight: "500" },
+              ],
+            },
           },
         },
-      }
+      };
     </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .chevron-bg {
-            clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-        }
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      .chevron-bg {
+        clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+      }
     </style>
-</head>
-<body class="bg-canvas text-ink font-body-md">
-<!-- Top Navigation Bar -->
-<header class="bg-canvas sticky top-0 z-50 border-b border-fog">
-<div class="h-16 flex justify-between items-center w-full px-lg max-w-max-width mx-auto">
-<div class="text-display-sm font-display-sm font-extrabold text-ink">NIET</div>
-<nav class="hidden md:flex items-center gap-xl">
-<a class="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200" href="#">Academics</a>
-<a class="font-body-emphasis text-body-emphasis text-primary border-b-2 border-primary pb-1" href="#">Admissions</a>
-<a class="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200" href="#">Research</a>
-<a class="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200" href="#">Placements</a>
-<a class="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200" href="#">Campus Life</a>
-<a class="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200" href="#">About Us</a>
-</nav>
-<div class="flex items-center gap-md">
-<button class="material-symbols-outlined text-ink opacity-80 hover:text-primary p-xs">search</button>
-<button class="material-symbols-outlined text-ink opacity-80 hover:text-primary p-xs">language</button>
-<button class="bg-primary text-on-ink px-xl py-xs font-button-md text-button-md uppercase transition-transform active:scale-95">Apply Now</button>
-</div>
-</div>
-</header>
-<!-- Hero Search Section -->
-<section class="relative bg-ink overflow-hidden py-section">
-<div class="absolute inset-0 opacity-20">
-<div class="chevron-bg bg-primary w-64 h-full absolute -left-12 top-0"></div>
-<div class="chevron-bg bg-primary w-64 h-full absolute -right-12 top-0"></div>
-</div>
-<div class="relative z-10 max-w-max-width mx-auto px-lg text-center">
-<h1 class="font-display-xl text-display-xl text-on-ink mb-md">Admissions Help Center</h1>
-<p class="font-body-lg text-body-lg text-on-ink opacity-80 mb-xxl max-w-2xl mx-auto">Find answers to your questions about the application process, eligibility criteria, and campus life at NIET.</p>
-<div class="max-w-2xl mx-auto relative">
-<span class="material-symbols-outlined absolute left-md top-1/2 -translate-y-1/2 text-steel">search</span>
-<input class="w-full h-14 pl-xxl pr-md bg-canvas border-none rounded-md text-ink font-body-md focus:ring-2 focus:ring-primary-bright" placeholder="Search for application, documents, scholarships..." type="text"/>
-</div>
-</div>
-</section>
-<!-- FAQ Categories & List -->
-<section class="bg-canvas py-section">
-<div class="max-w-max-width mx-auto px-lg">
-<div class="flex flex-col md:flex-row gap-section">
-<!-- Sidebar Categories -->
-<aside class="md:w-1/4">
-<h3 class="font-display-xs text-display-xs text-ink mb-xl">Categories</h3>
-<nav class="flex flex-col gap-xs">
-<button class="flex items-center gap-sm px-md py-sm bg-cloud text-primary font-body-emphasis rounded-lg text-left">
-<span class="material-symbols-outlined" data-weight="fill">description</span>
-                            Application
-                        </button>
-<button class="flex items-center gap-sm px-md py-sm text-ink opacity-70 hover:bg-cloud hover:opacity-100 transition-all rounded-lg text-left">
-<span class="material-symbols-outlined">assignment</span>
-                            Entrance Exams
-                        </button>
-<button class="flex items-center gap-sm px-md py-sm text-ink opacity-70 hover:bg-cloud hover:opacity-100 transition-all rounded-lg text-left">
-<span class="material-symbols-outlined">folder_shared</span>
-                            Documents
-                        </button>
-<button class="flex items-center gap-sm px-md py-sm text-ink opacity-70 hover:bg-cloud hover:opacity-100 transition-all rounded-lg text-left">
-<span class="material-symbols-outlined">apartment</span>
-                            Hostel
-                        </button>
-<button class="flex items-center gap-sm px-md py-sm text-ink opacity-70 hover:bg-cloud hover:opacity-100 transition-all rounded-lg text-left">
-<span class="material-symbols-outlined">payments</span>
-                            Fees &amp; Scholarships
-                        </button>
-</nav>
-</aside>
-<!-- FAQ Accordions -->
-<main class="md:w-3/4">
-<div class="space-y-md">
-<!-- FAQ Item 1 -->
-<div class="border border-fog rounded-xl overflow-hidden shadow-sm">
-<button class="w-full flex items-center justify-between p-xl text-left bg-canvas hover:bg-cloud transition-colors group">
-<span class="font-body-emphasis text-body-emphasis text-ink">What is the deadline for the 2024 Application cycle?</span>
-<span class="material-symbols-outlined text-primary group-hover:rotate-180 transition-transform">expand_more</span>
-</button>
-<div class="px-xl pb-xl bg-canvas">
-<p class="text-secondary font-body-md">The priority application deadline for the Fall 2024 intake is July 15th. However, we accept rolling applications for certain engineering programs until seats are filled.</p>
-</div>
-</div>
-<!-- FAQ Item 2 -->
-<div class="border border-fog rounded-xl overflow-hidden shadow-sm">
-<button class="w-full flex items-center justify-between p-xl text-left bg-canvas hover:bg-cloud transition-colors group">
-<span class="font-body-emphasis text-body-emphasis text-ink">Which entrance exams are accepted for B.Tech?</span>
-<span class="material-symbols-outlined text-primary">expand_more</span>
-</button>
-</div>
-<!-- FAQ Item 3 -->
-<div class="border border-fog rounded-xl overflow-hidden shadow-sm">
-<button class="w-full flex items-center justify-between p-xl text-left bg-canvas hover:bg-cloud transition-colors group">
-<span class="font-body-emphasis text-body-emphasis text-ink">How do I upload missing documents after submission?</span>
-<span class="material-symbols-outlined text-primary">expand_more</span>
-</button>
-</div>
-<!-- FAQ Item 4 -->
-<div class="border border-fog rounded-xl overflow-hidden shadow-sm">
-<button class="w-full flex items-center justify-between p-xl text-left bg-canvas hover:bg-cloud transition-colors group">
-<span class="font-body-emphasis text-body-emphasis text-ink">Are there separate hostel facilities for international students?</span>
-<span class="material-symbols-outlined text-primary">expand_more</span>
-</button>
-</div>
-<!-- FAQ Item 5 -->
-<div class="border border-fog rounded-xl overflow-hidden shadow-sm">
-<button class="w-full flex items-center justify-between p-xl text-left bg-canvas hover:bg-cloud transition-colors group">
-<span class="font-body-emphasis text-body-emphasis text-ink">Can I apply for a scholarship before my admission is confirmed?</span>
-<span class="material-symbols-outlined text-primary">expand_more</span>
-</button>
-</div>
-</div>
-</main>
-</div>
-</div>
-</section>
-<!-- Helpdesk Section -->
-<section class="bg-cloud py-section">
-<div class="max-w-max-width mx-auto px-lg">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-section">
-<!-- Submit a Ticket Form -->
-<div class="bg-canvas p-xxl rounded-xl shadow-lg border border-fog">
-<h2 class="font-display-md text-display-md text-ink mb-md">Submit a Ticket</h2>
-<p class="font-body-md text-secondary mb-xl">Can't find what you're looking for? Open a support ticket and our team will get back to you within 24 hours.</p>
-<form class="space-y-md">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
-<div class="space-y-xxs">
-<label class="font-caption-bold text-caption-bold text-ink uppercase">Full Name</label>
-<input class="w-full h-11 px-md border border-steel rounded-md focus:border-ink outline-none" placeholder="John Doe" type="text"/>
-</div>
-<div class="space-y-xxs">
-<label class="font-caption-bold text-caption-bold text-ink uppercase">Application ID</label>
-<input class="w-full h-11 px-md border border-steel rounded-md focus:border-ink outline-none" placeholder="NIET-2024-XXXX" type="text"/>
-</div>
-</div>
-<div class="space-y-xxs">
-<label class="font-caption-bold text-caption-bold text-ink uppercase">Subject</label>
-<input class="w-full h-11 px-md border border-steel rounded-md focus:border-ink outline-none" placeholder="e.g. Document Verification Status" type="text"/>
-</div>
-<div class="space-y-xxs">
-<label class="font-caption-bold text-caption-bold text-ink uppercase">Description</label>
-<textarea class="w-full p-md border border-steel rounded-md focus:border-ink outline-none resize-none" placeholder="Detailed explanation of your query..." rows="4"></textarea>
-</div>
-<button class="w-full bg-primary text-on-ink h-11 font-button-md text-button-md uppercase rounded-md hover:bg-primary-deep transition-colors" type="submit">Submit Request</button>
-</form>
-</div>
-<!-- Direct Contact Cards -->
-<div class="flex flex-col justify-center space-y-xl">
-<div>
-<h2 class="font-display-md text-display-md text-ink mb-md">Direct Support</h2>
-<p class="font-body-md text-secondary mb-xl">Reach out to our specialized departments for urgent matters or specific administrative guidance.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
-<!-- Contact Card 1 -->
-<div class="bg-canvas p-xl rounded-xl border border-fog hover:shadow-md transition-shadow">
-<div class="w-12 h-12 bg-primary-soft text-primary rounded-full flex items-center justify-center mb-md">
-<span class="material-symbols-outlined">person</span>
-</div>
-<h4 class="font-display-xs text-display-xs text-ink mb-xxs">Admission HOD</h4>
-<p class="font-caption-md text-caption-md text-secondary mb-xl">Escalated queries and policy clarifications.</p>
-<button class="w-full border border-primary text-primary py-sm font-button-md text-button-md uppercase hover:bg-primary hover:text-on-ink transition-colors">Contact HOD</button>
-</div>
-<!-- Contact Card 2 -->
-<div class="bg-canvas p-xl rounded-xl border border-fog hover:shadow-md transition-shadow">
-<div class="w-12 h-12 bg-storm-sea/20 text-storm-deep rounded-full flex items-center justify-center mb-md">
-<span class="material-symbols-outlined">support_agent</span>
-</div>
-<h4 class="font-display-xs text-display-xs text-ink mb-xxs">General Support</h4>
-<p class="font-caption-md text-caption-md text-secondary mb-xl">General help with the application portal.</p>
-<button class="w-full border border-ink text-ink py-sm font-button-md text-button-md uppercase hover:bg-ink hover:text-on-ink transition-colors">Call Support</button>
-</div>
-</div>
-<div class="bg-primary/5 p-xl rounded-xl border border-primary/10">
-<div class="flex items-start gap-md">
-<span class="material-symbols-outlined text-primary mt-xxs">info</span>
-<div>
-<p class="font-body-emphasis text-ink">Admissions Office Hours</p>
-<p class="font-caption-md text-secondary">Monday - Saturday: 09:00 AM - 05:00 PM IST</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Visual Divider -->
-<div class="h-1 bg-primary w-full"></div>
-<!-- Footer -->
-<footer class="bg-ink">
-<div class="grid grid-cols-1 md:grid-cols-5 gap-xl w-full px-lg py-xxl max-w-max-width mx-auto">
-<div class="md:col-span-2">
-<div class="text-display-xs font-display-xs text-on-ink mb-md">NIET</div>
-<p class="text-on-ink opacity-70 font-caption-md max-w-sm">
-                    Northvale Institute of Engineering &amp; Technology is committed to excellence in education, research, and innovation for a better tomorrow.
+  </head>
+  <body class="bg-canvas text-ink font-body-md">
+    <!-- Top Navigation Bar -->
+    <header class="bg-canvas sticky top-0 z-50 border-b border-fog">
+      <div
+        class="h-16 flex justify-between items-center w-full px-lg max-w-max-width mx-auto"
+      >
+        <div class="text-display-sm font-display-sm font-extrabold text-ink">
+          NIET
+        </div>
+        <nav class="hidden md:flex items-center gap-xl">
+          <a
+            class="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200"
+            href="#"
+            >Academics</a
+          >
+          <a
+            class="font-body-emphasis text-body-emphasis text-primary border-b-2 border-primary pb-1"
+            href="#"
+            >Admissions</a
+          >
+          <a
+            class="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200"
+            href="#"
+            >Research</a
+          >
+          <a
+            class="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200"
+            href="#"
+            >Placements</a
+          >
+          <a
+            class="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200"
+            href="#"
+            >Campus Life</a
+          >
+          <a
+            class="font-body-emphasis text-body-emphasis text-ink opacity-80 hover:text-primary transition-colors duration-200"
+            href="#"
+            >About Us</a
+          >
+        </nav>
+        <div class="flex items-center gap-md">
+          <button
+            class="material-symbols-outlined text-ink opacity-80 hover:text-primary p-xs"
+          >
+            search
+          </button>
+          <button
+            class="material-symbols-outlined text-ink opacity-80 hover:text-primary p-xs"
+          >
+            language
+          </button>
+          <button
+            class="bg-primary text-on-ink px-xl py-xs font-button-md text-button-md uppercase transition-transform active:scale-95"
+          >
+            Apply Now
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Hero Search Section -->
+    <section class="relative bg-ink overflow-hidden py-section">
+      <div class="absolute inset-0 opacity-20">
+        <div
+          class="chevron-bg bg-primary w-64 h-full absolute -left-12 top-0"
+        ></div>
+        <div
+          class="chevron-bg bg-primary w-64 h-full absolute -right-12 top-0"
+        ></div>
+      </div>
+      <div class="relative z-10 max-w-max-width mx-auto px-lg text-center">
+        <h1 class="font-display-xl text-display-xl text-on-ink mb-md">
+          Admissions Help Center
+        </h1>
+        <p
+          class="font-body-lg text-body-lg text-on-ink opacity-80 mb-xxl max-w-2xl mx-auto"
+        >
+          Find answers to your questions about the application process,
+          eligibility criteria, and campus life at NIET.
+        </p>
+        <div class="max-w-2xl mx-auto relative">
+          <span
+            class="material-symbols-outlined absolute left-md top-1/2 -translate-y-1/2 text-steel"
+            >search</span
+          >
+          <input
+            class="w-full h-14 pl-xxl pr-md bg-canvas border-none rounded-md text-ink font-body-md focus:ring-2 focus:ring-primary-bright"
+            placeholder="Search for application, documents, scholarships..."
+            type="text"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- FAQ Categories & List -->
+    <section class="bg-canvas py-section">
+      <div class="max-w-max-width mx-auto px-lg">
+        <div class="flex flex-col md:flex-row gap-section">
+          <!-- Sidebar Categories -->
+          <aside class="md:w-1/4">
+            <h3 class="font-display-xs text-display-xs text-ink mb-xl">
+              Categories
+            </h3>
+            <nav class="flex flex-col gap-xs">
+              <button
+                class="flex items-center gap-sm px-md py-sm bg-cloud text-primary font-body-emphasis rounded-lg text-left"
+              >
+                <span class="material-symbols-outlined" data-weight="fill"
+                  >description</span
+                >
+                Application
+              </button>
+              <button
+                class="flex items-center gap-sm px-md py-sm text-ink opacity-70 hover:bg-cloud hover:opacity-100 transition-all rounded-lg text-left"
+              >
+                <span class="material-symbols-outlined">assignment</span>
+                Entrance Exams
+              </button>
+              <button
+                class="flex items-center gap-sm px-md py-sm text-ink opacity-70 hover:bg-cloud hover:opacity-100 transition-all rounded-lg text-left"
+              >
+                <span class="material-symbols-outlined">folder_shared</span>
+                Documents
+              </button>
+              <button
+                class="flex items-center gap-sm px-md py-sm text-ink opacity-70 hover:bg-cloud hover:opacity-100 transition-all rounded-lg text-left"
+              >
+                <span class="material-symbols-outlined">apartment</span>
+                Hostel
+              </button>
+              <button
+                class="flex items-center gap-sm px-md py-sm text-ink opacity-70 hover:bg-cloud hover:opacity-100 transition-all rounded-lg text-left"
+              >
+                <span class="material-symbols-outlined">payments</span>
+                Fees &amp; Scholarships
+              </button>
+            </nav>
+          </aside>
+          <!-- FAQ Accordions -->
+          <main class="md:w-3/4">
+            <div class="space-y-md">
+              <!-- FAQ Item 1 -->
+              <div
+                class="border border-fog rounded-xl overflow-hidden shadow-sm"
+              >
+                <button
+                  class="w-full flex items-center justify-between p-xl text-left bg-canvas hover:bg-cloud transition-colors group"
+                >
+                  <span class="font-body-emphasis text-body-emphasis text-ink"
+                    >What is the deadline for the 2024 Application cycle?</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-primary group-hover:rotate-180 transition-transform"
+                    >expand_more</span
+                  >
+                </button>
+                <div class="px-xl pb-xl bg-canvas">
+                  <p class="text-secondary font-body-md">
+                    The priority application deadline for the Fall 2024 intake
+                    is July 15th. However, we accept rolling applications for
+                    certain engineering programs until seats are filled.
+                  </p>
+                </div>
+              </div>
+              <!-- FAQ Item 2 -->
+              <div
+                class="border border-fog rounded-xl overflow-hidden shadow-sm"
+              >
+                <button
+                  class="w-full flex items-center justify-between p-xl text-left bg-canvas hover:bg-cloud transition-colors group"
+                >
+                  <span class="font-body-emphasis text-body-emphasis text-ink"
+                    >Which entrance exams are accepted for B.Tech?</span
+                  >
+                  <span class="material-symbols-outlined text-primary"
+                    >expand_more</span
+                  >
+                </button>
+              </div>
+              <!-- FAQ Item 3 -->
+              <div
+                class="border border-fog rounded-xl overflow-hidden shadow-sm"
+              >
+                <button
+                  class="w-full flex items-center justify-between p-xl text-left bg-canvas hover:bg-cloud transition-colors group"
+                >
+                  <span class="font-body-emphasis text-body-emphasis text-ink"
+                    >How do I upload missing documents after submission?</span
+                  >
+                  <span class="material-symbols-outlined text-primary"
+                    >expand_more</span
+                  >
+                </button>
+              </div>
+              <!-- FAQ Item 4 -->
+              <div
+                class="border border-fog rounded-xl overflow-hidden shadow-sm"
+              >
+                <button
+                  class="w-full flex items-center justify-between p-xl text-left bg-canvas hover:bg-cloud transition-colors group"
+                >
+                  <span class="font-body-emphasis text-body-emphasis text-ink"
+                    >Are there separate hostel facilities for international
+                    students?</span
+                  >
+                  <span class="material-symbols-outlined text-primary"
+                    >expand_more</span
+                  >
+                </button>
+              </div>
+              <!-- FAQ Item 5 -->
+              <div
+                class="border border-fog rounded-xl overflow-hidden shadow-sm"
+              >
+                <button
+                  class="w-full flex items-center justify-between p-xl text-left bg-canvas hover:bg-cloud transition-colors group"
+                >
+                  <span class="font-body-emphasis text-body-emphasis text-ink"
+                    >Can I apply for a scholarship before my admission is
+                    confirmed?</span
+                  >
+                  <span class="material-symbols-outlined text-primary"
+                    >expand_more</span
+                  >
+                </button>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </section>
+    <!-- Helpdesk Section -->
+    <section class="bg-cloud py-section">
+      <div class="max-w-max-width mx-auto px-lg">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-section">
+          <!-- Submit a Ticket Form -->
+          <div class="bg-canvas p-xxl rounded-xl shadow-lg border border-fog">
+            <h2 class="font-display-md text-display-md text-ink mb-md">
+              Submit a Ticket
+            </h2>
+            <p class="font-body-md text-secondary mb-xl">
+              Can't find what you're looking for? Open a support ticket and our
+              team will get back to you within 24 hours.
+            </p>
+            <form class="space-y-md">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+                <div class="space-y-xxs">
+                  <label
+                    class="font-caption-bold text-caption-bold text-ink uppercase"
+                    >Full Name</label
+                  >
+                  <input
+                    class="w-full h-11 px-md border border-steel rounded-md focus:border-ink outline-none"
+                    placeholder="John Doe"
+                    type="text"
+                  />
+                </div>
+                <div class="space-y-xxs">
+                  <label
+                    class="font-caption-bold text-caption-bold text-ink uppercase"
+                    >Application ID</label
+                  >
+                  <input
+                    class="w-full h-11 px-md border border-steel rounded-md focus:border-ink outline-none"
+                    placeholder="NIET-2024-XXXX"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <div class="space-y-xxs">
+                <label
+                  class="font-caption-bold text-caption-bold text-ink uppercase"
+                  >Subject</label
+                >
+                <input
+                  class="w-full h-11 px-md border border-steel rounded-md focus:border-ink outline-none"
+                  placeholder="e.g. Document Verification Status"
+                  type="text"
+                />
+              </div>
+              <div class="space-y-xxs">
+                <label
+                  class="font-caption-bold text-caption-bold text-ink uppercase"
+                  >Description</label
+                >
+                <textarea
+                  class="w-full p-md border border-steel rounded-md focus:border-ink outline-none resize-none"
+                  placeholder="Detailed explanation of your query..."
+                  rows="4"
+                ></textarea>
+              </div>
+              <button
+                class="w-full bg-primary text-on-ink h-11 font-button-md text-button-md uppercase rounded-md hover:bg-primary-deep transition-colors"
+                type="submit"
+              >
+                Submit Request
+              </button>
+            </form>
+          </div>
+          <!-- Direct Contact Cards -->
+          <div class="flex flex-col justify-center space-y-xl">
+            <div>
+              <h2 class="font-display-md text-display-md text-ink mb-md">
+                Direct Support
+              </h2>
+              <p class="font-body-md text-secondary mb-xl">
+                Reach out to our specialized departments for urgent matters or
+                specific administrative guidance.
+              </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+              <!-- Contact Card 1 -->
+              <div
+                class="bg-canvas p-xl rounded-xl border border-fog hover:shadow-md transition-shadow"
+              >
+                <div
+                  class="w-12 h-12 bg-primary-soft text-primary rounded-full flex items-center justify-center mb-md"
+                >
+                  <span class="material-symbols-outlined">person</span>
+                </div>
+                <h4 class="font-display-xs text-display-xs text-ink mb-xxs">
+                  Admission HOD
+                </h4>
+                <p class="font-caption-md text-caption-md text-secondary mb-xl">
+                  Escalated queries and policy clarifications.
                 </p>
-</div>
-<div>
-<h5 class="text-on-ink font-bold font-caption-md mb-md uppercase tracking-wider">Quick Links</h5>
-<ul class="space-y-sm">
-<li><a class="text-on-ink opacity-70 font-caption-md hover:opacity-100 hover:text-primary-bright transition-opacity" href="#">Academic Calendar</a></li>
-<li><a class="text-on-ink opacity-70 font-caption-md hover:opacity-100 hover:text-primary-bright transition-opacity" href="#">Alumni Connect</a></li>
-<li><a class="text-on-ink opacity-70 font-caption-md hover:opacity-100 hover:text-primary-bright transition-opacity" href="#">Careers</a></li>
-</ul>
-</div>
-<div>
-<h5 class="text-on-ink font-bold font-caption-md mb-md uppercase tracking-wider">Legal</h5>
-<ul class="space-y-sm">
-<li><a class="text-on-ink opacity-70 font-caption-md hover:opacity-100 hover:text-primary-bright transition-opacity" href="#">Privacy Policy</a></li>
-<li><a class="text-on-ink opacity-70 font-caption-md hover:opacity-100 hover:text-primary-bright transition-opacity" href="#">Terms of Use</a></li>
-<li><a class="text-on-ink opacity-70 font-caption-md hover:opacity-100 hover:text-primary-bright transition-opacity" href="#">Contact Us</a></li>
-</ul>
-</div>
-<div>
-<h5 class="text-on-ink font-bold font-caption-md mb-md uppercase tracking-wider">Connect</h5>
-<div class="flex gap-md">
-<button class="material-symbols-outlined text-on-ink opacity-70 hover:opacity-100">share</button>
-<button class="material-symbols-outlined text-on-ink opacity-70 hover:opacity-100">mail</button>
-<button class="material-symbols-outlined text-on-ink opacity-70 hover:opacity-100">location_on</button>
-</div>
-</div>
-</div>
-<div class="border-t border-ink-soft py-md">
-<div class="max-w-max-width mx-auto px-lg flex justify-between items-center text-on-ink opacity-50 font-caption-sm">
-<span>© 2024 Northvale Institute of Engineering &amp; Technology. All rights reserved.</span>
-<span class="flex gap-xl">
-<a href="#">Security</a>
-<a href="#">Sitemap</a>
-</span>
-</div>
-</div>
-</footer>
-</body></html>
+                <button
+                  class="w-full border border-primary text-primary py-sm font-button-md text-button-md uppercase hover:bg-primary hover:text-on-ink transition-colors"
+                >
+                  Contact HOD
+                </button>
+              </div>
+              <!-- Contact Card 2 -->
+              <div
+                class="bg-canvas p-xl rounded-xl border border-fog hover:shadow-md transition-shadow"
+              >
+                <div
+                  class="w-12 h-12 bg-storm-sea/20 text-storm-deep rounded-full flex items-center justify-center mb-md"
+                >
+                  <span class="material-symbols-outlined">support_agent</span>
+                </div>
+                <h4 class="font-display-xs text-display-xs text-ink mb-xxs">
+                  General Support
+                </h4>
+                <p class="font-caption-md text-caption-md text-secondary mb-xl">
+                  General help with the application portal.
+                </p>
+                <button
+                  class="w-full border border-ink text-ink py-sm font-button-md text-button-md uppercase hover:bg-ink hover:text-on-ink transition-colors"
+                >
+                  Call Support
+                </button>
+              </div>
+            </div>
+            <div class="bg-primary/5 p-xl rounded-xl border border-primary/10">
+              <div class="flex items-start gap-md">
+                <span class="material-symbols-outlined text-primary mt-xxs"
+                  >info</span
+                >
+                <div>
+                  <p class="font-body-emphasis text-ink">
+                    Admissions Office Hours
+                  </p>
+                  <p class="font-caption-md text-secondary">
+                    Monday - Saturday: 09:00 AM - 05:00 PM IST
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Visual Divider -->
+    <div class="h-1 bg-primary w-full"></div>
+    <!-- Footer -->
+    <footer class="bg-ink">
+      <div
+        class="grid grid-cols-1 md:grid-cols-5 gap-xl w-full px-lg py-xxl max-w-max-width mx-auto"
+      >
+        <div class="md:col-span-2">
+          <div class="text-display-xs font-display-xs text-on-ink mb-md">
+            NIET
+          </div>
+          <p class="text-on-ink opacity-70 font-caption-md max-w-sm">
+            Northvale Institute of Engineering &amp; Technology is committed to
+            excellence in education, research, and innovation for a better
+            tomorrow.
+          </p>
+        </div>
+        <div>
+          <h5
+            class="text-on-ink font-bold font-caption-md mb-md uppercase tracking-wider"
+          >
+            Quick Links
+          </h5>
+          <ul class="space-y-sm">
+            <li>
+              <a
+                class="text-on-ink opacity-70 font-caption-md hover:opacity-100 hover:text-primary-bright transition-opacity"
+                href="#"
+                >Academic Calendar</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-on-ink opacity-70 font-caption-md hover:opacity-100 hover:text-primary-bright transition-opacity"
+                href="#"
+                >Alumni Connect</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-on-ink opacity-70 font-caption-md hover:opacity-100 hover:text-primary-bright transition-opacity"
+                href="#"
+                >Careers</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5
+            class="text-on-ink font-bold font-caption-md mb-md uppercase tracking-wider"
+          >
+            Legal
+          </h5>
+          <ul class="space-y-sm">
+            <li>
+              <a
+                class="text-on-ink opacity-70 font-caption-md hover:opacity-100 hover:text-primary-bright transition-opacity"
+                href="#"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-on-ink opacity-70 font-caption-md hover:opacity-100 hover:text-primary-bright transition-opacity"
+                href="#"
+                >Terms of Use</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-on-ink opacity-70 font-caption-md hover:opacity-100 hover:text-primary-bright transition-opacity"
+                href="#"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5
+            class="text-on-ink font-bold font-caption-md mb-md uppercase tracking-wider"
+          >
+            Connect
+          </h5>
+          <div class="flex gap-md">
+            <button
+              class="material-symbols-outlined text-on-ink opacity-70 hover:opacity-100"
+            >
+              share
+            </button>
+            <button
+              class="material-symbols-outlined text-on-ink opacity-70 hover:opacity-100"
+            >
+              mail
+            </button>
+            <button
+              class="material-symbols-outlined text-on-ink opacity-70 hover:opacity-100"
+            >
+              location_on
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-ink-soft py-md">
+        <div
+          class="max-w-max-width mx-auto px-lg flex justify-between items-center text-on-ink opacity-50 font-caption-sm"
+        >
+          <span
+            >© 2024 Northvale Institute of Engineering &amp; Technology. All
+            rights reserved.</span
+          >
+          <span class="flex gap-xl">
+            <a href="#">Security</a>
+            <a href="#">Sitemap</a>
+          </span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

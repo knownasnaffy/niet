@@ -1,327 +1,562 @@
-<!DOCTYPE html>
+<!doctype html>
 
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Apply Online | NIET</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Apply Online | NIET</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
         theme: {
           extend: {
-            "colors": {
-                    "on-background": "#191b23",
-                    "on-surface-variant": "#434655",
-                    "on-secondary-fixed": "#1c1b1b",
-                    "on-error-container": "#93000a",
-                    "inverse-surface": "#2e3039",
-                    "background": "#faf8ff",
-                    "primary-fixed-dim": "#b6c4ff",
-                    "on-surface": "#191b23",
-                    "on-primary": "#ffffff",
-                    "surface-variant": "#e2e1ed",
-                    "primary-deep": "#0e3191",
-                    "error": "#ba1a1a",
-                    "surface-bright": "#faf8ff",
-                    "on-secondary": "#ffffff",
-                    "on-tertiary-fixed-variant": "#862300",
-                    "inverse-primary": "#b6c4ff",
-                    "storm-sea": "#7fadbe",
-                    "on-tertiary-container": "#ffc1b0",
-                    "on-primary-fixed": "#00164f",
-                    "canvas": "#ffffff",
-                    "primary-fixed": "#dce1ff",
-                    "primary-container": "#024ad8",
-                    "surface-tint": "#1451de",
-                    "bloom-coral": "#ff5050",
-                    "ink-deep": "#000000",
-                    "ink-soft": "#292929",
-                    "primary": "#0036a4",
-                    "tertiary-fixed": "#ffdbd1",
-                    "paper": "#ffffff",
-                    "surface": "#faf8ff",
-                    "error-container": "#ffdad6",
-                    "tertiary-container": "#a52d00",
-                    "bloom-deep": "#b3262b",
-                    "tertiary": "#7c2000",
-                    "outline-variant": "#c3c5d7",
-                    "surface-container-high": "#e7e7f3",
-                    "outline": "#747686",
-                    "tertiary-fixed-dim": "#ffb59f",
-                    "on-primary-container": "#c2ceff",
-                    "surface-container-low": "#f3f2ff",
-                    "graphite": "#636363",
-                    "secondary": "#5f5e5e",
-                    "cloud": "#f7f7f7",
-                    "on-primary-fixed-variant": "#003bb0",
-                    "bloom-rose": "#f9d4d2",
-                    "surface-container-highest": "#e2e1ed",
-                    "on-tertiary-fixed": "#3a0a00",
-                    "on-ink": "#ffffff",
-                    "ink": "#1a1a1a",
-                    "primary-bright": "#296ef9",
-                    "storm-deep": "#356373",
-                    "fog": "#e8e8e8",
-                    "surface-container-lowest": "#ffffff",
-                    "surface-container": "#ededf9",
-                    "on-tertiary": "#ffffff",
-                    "on-secondary-container": "#636262",
-                    "charcoal": "#3d3d3d",
-                    "steel": "#c2c2c2",
-                    "secondary-fixed": "#e5e2e1",
-                    "on-error": "#ffffff",
-                    "inverse-on-surface": "#f0f0fc",
-                    "on-secondary-fixed-variant": "#474746",
-                    "secondary-fixed-dim": "#c8c6c5",
-                    "secondary-container": "#e2dfde",
-                    "primary-soft": "#c9e0fc"
+            colors: {
+              "on-background": "#191b23",
+              "on-surface-variant": "#434655",
+              "on-secondary-fixed": "#1c1b1b",
+              "on-error-container": "#93000a",
+              "inverse-surface": "#2e3039",
+              background: "#faf8ff",
+              "primary-fixed-dim": "#b6c4ff",
+              "on-surface": "#191b23",
+              "on-primary": "#ffffff",
+              "surface-variant": "#e2e1ed",
+              "primary-deep": "#0e3191",
+              error: "#ba1a1a",
+              "surface-bright": "#faf8ff",
+              "on-secondary": "#ffffff",
+              "on-tertiary-fixed-variant": "#862300",
+              "inverse-primary": "#b6c4ff",
+              "storm-sea": "#7fadbe",
+              "on-tertiary-container": "#ffc1b0",
+              "on-primary-fixed": "#00164f",
+              canvas: "#ffffff",
+              "primary-fixed": "#dce1ff",
+              "primary-container": "#024ad8",
+              "surface-tint": "#1451de",
+              "bloom-coral": "#ff5050",
+              "ink-deep": "#000000",
+              "ink-soft": "#292929",
+              primary: "#0036a4",
+              "tertiary-fixed": "#ffdbd1",
+              paper: "#ffffff",
+              surface: "#faf8ff",
+              "error-container": "#ffdad6",
+              "tertiary-container": "#a52d00",
+              "bloom-deep": "#b3262b",
+              tertiary: "#7c2000",
+              "outline-variant": "#c3c5d7",
+              "surface-container-high": "#e7e7f3",
+              outline: "#747686",
+              "tertiary-fixed-dim": "#ffb59f",
+              "on-primary-container": "#c2ceff",
+              "surface-container-low": "#f3f2ff",
+              graphite: "#636363",
+              secondary: "#5f5e5e",
+              cloud: "#f7f7f7",
+              "on-primary-fixed-variant": "#003bb0",
+              "bloom-rose": "#f9d4d2",
+              "surface-container-highest": "#e2e1ed",
+              "on-tertiary-fixed": "#3a0a00",
+              "on-ink": "#ffffff",
+              ink: "#1a1a1a",
+              "primary-bright": "#296ef9",
+              "storm-deep": "#356373",
+              fog: "#e8e8e8",
+              "surface-container-lowest": "#ffffff",
+              "surface-container": "#ededf9",
+              "on-tertiary": "#ffffff",
+              "on-secondary-container": "#636262",
+              charcoal: "#3d3d3d",
+              steel: "#c2c2c2",
+              "secondary-fixed": "#e5e2e1",
+              "on-error": "#ffffff",
+              "inverse-on-surface": "#f0f0fc",
+              "on-secondary-fixed-variant": "#474746",
+              "secondary-fixed-dim": "#c8c6c5",
+              "secondary-container": "#e2dfde",
+              "primary-soft": "#c9e0fc",
             },
-            "borderRadius": {
-                    "DEFAULT": "0.25rem",
-                    "lg": "0.5rem",
-                    "xl": "0.75rem",
-                    "full": "9999px"
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
             },
-            "spacing": {
-                    "xl": "24px",
-                    "lg": "20px",
-                    "section": "80px",
-                    "max-width": "1366px",
-                    "xxs": "4px",
-                    "xs": "8px",
-                    "sm": "12px",
-                    "md": "16px",
-                    "xxl": "32px"
+            spacing: {
+              xl: "24px",
+              lg: "20px",
+              section: "80px",
+              "max-width": "1366px",
+              xxs: "4px",
+              xs: "8px",
+              sm: "12px",
+              md: "16px",
+              xxl: "32px",
             },
-            "fontFamily": {
-                    "display-lg": ["Manrope"],
-                    "display-sm": ["Manrope"],
-                    "caption-md": ["Manrope"],
-                    "caption-bold": ["Manrope"],
-                    "display-xxl": ["Manrope"],
-                    "display-xs": ["Manrope"],
-                    "price-md": ["Manrope"],
-                    "display-md": ["Manrope"],
-                    "caption-sm": ["Manrope"],
-                    "body-md": ["Manrope"],
-                    "body-lg": ["Manrope"],
-                    "body-emphasis": ["Manrope"],
-                    "button-md": ["Manrope"],
-                    "display-xl": ["Manrope"]
+            fontFamily: {
+              "display-lg": ["Manrope"],
+              "display-sm": ["Manrope"],
+              "caption-md": ["Manrope"],
+              "caption-bold": ["Manrope"],
+              "display-xxl": ["Manrope"],
+              "display-xs": ["Manrope"],
+              "price-md": ["Manrope"],
+              "display-md": ["Manrope"],
+              "caption-sm": ["Manrope"],
+              "body-md": ["Manrope"],
+              "body-lg": ["Manrope"],
+              "body-emphasis": ["Manrope"],
+              "button-md": ["Manrope"],
+              "display-xl": ["Manrope"],
             },
-            "fontSize": {
-                    "display-lg": ["44px", {"lineHeight": "1.0", "letterSpacing": "0", "fontWeight": "500"}],
-                    "display-sm": ["24px", {"lineHeight": "1.17", "letterSpacing": "0", "fontWeight": "500"}],
-                    "caption-md": ["14px", {"lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400"}],
-                    "caption-bold": ["14px", {"lineHeight": "1.3", "letterSpacing": "0", "fontWeight": "700"}],
-                    "display-xxl": ["72px", {"lineHeight": "1.0", "letterSpacing": "0", "fontWeight": "500"}],
-                    "display-xs": ["20px", {"lineHeight": "1.0", "letterSpacing": "0", "fontWeight": "500"}],
-                    "price-md": ["24px", {"lineHeight": "1.17", "letterSpacing": "0", "fontWeight": "500"}],
-                    "display-md": ["32px", {"lineHeight": "1.0", "letterSpacing": "0", "fontWeight": "500"}],
-                    "caption-sm": ["12px", {"lineHeight": "1.33", "letterSpacing": "0", "fontWeight": "400"}],
-                    "body-md": ["16px", {"lineHeight": "1.38", "letterSpacing": "0", "fontWeight": "400"}],
-                    "body-lg": ["18px", {"lineHeight": "1.33", "letterSpacing": "0", "fontWeight": "400"}],
-                    "body-emphasis": ["16px", {"lineHeight": "1.38", "letterSpacing": "0", "fontWeight": "500"}],
-                    "button-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.7px", "fontWeight": "600"}],
-                    "display-xl": ["56px", {"lineHeight": "1.0", "letterSpacing": "0", "fontWeight": "500"}]
-            }
+            fontSize: {
+              "display-lg": [
+                "44px",
+                { lineHeight: "1.0", letterSpacing: "0", fontWeight: "500" },
+              ],
+              "display-sm": [
+                "24px",
+                { lineHeight: "1.17", letterSpacing: "0", fontWeight: "500" },
+              ],
+              "caption-md": [
+                "14px",
+                { lineHeight: "1.5", letterSpacing: "0", fontWeight: "400" },
+              ],
+              "caption-bold": [
+                "14px",
+                { lineHeight: "1.3", letterSpacing: "0", fontWeight: "700" },
+              ],
+              "display-xxl": [
+                "72px",
+                { lineHeight: "1.0", letterSpacing: "0", fontWeight: "500" },
+              ],
+              "display-xs": [
+                "20px",
+                { lineHeight: "1.0", letterSpacing: "0", fontWeight: "500" },
+              ],
+              "price-md": [
+                "24px",
+                { lineHeight: "1.17", letterSpacing: "0", fontWeight: "500" },
+              ],
+              "display-md": [
+                "32px",
+                { lineHeight: "1.0", letterSpacing: "0", fontWeight: "500" },
+              ],
+              "caption-sm": [
+                "12px",
+                { lineHeight: "1.33", letterSpacing: "0", fontWeight: "400" },
+              ],
+              "body-md": [
+                "16px",
+                { lineHeight: "1.38", letterSpacing: "0", fontWeight: "400" },
+              ],
+              "body-lg": [
+                "18px",
+                { lineHeight: "1.33", letterSpacing: "0", fontWeight: "400" },
+              ],
+              "body-emphasis": [
+                "16px",
+                { lineHeight: "1.38", letterSpacing: "0", fontWeight: "500" },
+              ],
+              "button-md": [
+                "14px",
+                {
+                  lineHeight: "1.4",
+                  letterSpacing: "0.7px",
+                  fontWeight: "600",
+                },
+              ],
+              "display-xl": [
+                "56px",
+                { lineHeight: "1.0", letterSpacing: "0", fontWeight: "500" },
+              ],
+            },
           },
         },
-      }
+      };
     </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .chevron-motif {
-            clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-        }
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      .chevron-motif {
+        clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+      }
     </style>
-</head>
-<body class="bg-background text-on-background font-body-md selection:bg-primary-soft">
-<!-- Transactional Header -->
-<header class="h-16 bg-canvas border-b border-fog flex items-center justify-center sticky top-0 z-50">
-<div class="max-w-max-width w-full px-lg flex items-center justify-between">
-<span class="text-display-sm font-display-sm font-extrabold text-ink">NIET</span>
-<div class="hidden md:flex items-center gap-md">
-<span class="text-caption-md text-secondary">Admission Intake 2024-25</span>
-<div class="w-px h-4 bg-fog"></div>
-<button class="text-caption-bold text-primary flex items-center gap-xxs">
-<span class="material-symbols-outlined text-[18px]">exit_to_app</span>
-                    Save &amp; Exit
-                </button>
-</div>
-</div>
-</header>
-<main class="max-w-max-width mx-auto px-lg py-section min-h-[calc(100vh-64px)]">
-<!-- Stepper Component -->
-<div class="mb-section">
-<div class="relative flex justify-between items-start max-w-4xl mx-auto">
-<!-- Line -->
-<div class="absolute top-5 left-0 w-full h-[2px] bg-fog -z-10"></div>
-<div class="absolute top-5 left-0 h-[2px] bg-primary transition-all duration-500 -z-10" style="width: 12.5%;"></div>
-<!-- Step 1: Personal Info (Active) -->
-<div class="flex flex-col items-center gap-sm">
-<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold shadow-md">1</div>
-<span class="font-caption-bold text-ink">Personal Info</span>
-</div>
-<!-- Step 2: Academic History -->
-<div class="flex flex-col items-center gap-sm">
-<div class="w-10 h-10 rounded-full bg-canvas border-2 border-fog text-secondary flex items-center justify-center font-bold">2</div>
-<span class="font-caption-md text-secondary">Academic History</span>
-</div>
-<!-- Step 3: Program Selection -->
-<div class="flex flex-col items-center gap-sm">
-<div class="w-10 h-10 rounded-full bg-canvas border-2 border-fog text-secondary flex items-center justify-center font-bold">3</div>
-<span class="font-caption-md text-secondary">Program Selection</span>
-</div>
-<!-- Step 4: Document Upload -->
-<div class="flex flex-col items-center gap-sm">
-<div class="w-10 h-10 rounded-full bg-canvas border-2 border-fog text-secondary flex items-center justify-center font-bold">4</div>
-<span class="font-caption-md text-secondary">Document Upload</span>
-</div>
-</div>
-</div>
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-xl items-start">
-<!-- Main Form Container -->
-<div class="lg:col-span-8 bg-canvas rounded-xl shadow-[0_2px_8px_rgba(26,26,26,0.08)] p-xxl relative overflow-hidden">
-<!-- Architectural Branding Motif -->
-<div class="absolute top-0 right-0 w-24 h-24 pointer-events-none opacity-10">
-<div class="chevron-motif bg-primary w-full h-12 absolute top-0 right-[-20%] rotate-12"></div>
-<div class="chevron-motif bg-primary w-full h-12 absolute top-8 right-[-10%] rotate-12"></div>
-</div>
-<div class="mb-xl">
-<h1 class="font-display-md text-display-md text-ink mb-xs">Personal Information</h1>
-<p class="text-body-md text-on-surface-variant">Please provide your primary contact and family details as per your official documents.</p>
-</div>
-<form class="space-y-xl">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-xl">
-<!-- Full Name -->
-<div class="flex flex-col gap-xs">
-<label class="font-caption-bold text-ink" for="name">Full Name (As per High School Certificate)</label>
-<input class="h-11 rounded-lg border-steel focus:border-ink focus:ring-0 transition-all px-md font-body-md text-ink placeholder:text-outline" id="name" placeholder="John Doe" type="text"/>
-</div>
-<!-- Email Address -->
-<div class="flex flex-col gap-xs">
-<label class="font-caption-bold text-ink" for="email">Email Address</label>
-<input class="h-11 rounded-lg border-steel focus:border-ink focus:ring-0 transition-all px-md font-body-md text-ink placeholder:text-outline" id="email" placeholder="john.doe@example.com" type="email"/>
-</div>
-<!-- Phone Number -->
-<div class="flex flex-col gap-xs">
-<label class="font-caption-bold text-ink" for="phone">Phone Number</label>
-<div class="flex gap-xxs">
-<span class="h-11 flex items-center px-sm bg-cloud border border-steel rounded-lg text-secondary font-body-md">+91</span>
-<input class="h-11 flex-1 rounded-lg border-steel focus:border-ink focus:ring-0 transition-all px-md font-body-md text-ink placeholder:text-outline" id="phone" placeholder="9876543210" type="tel"/>
-</div>
-</div>
-<!-- Father's Name -->
-<div class="flex flex-col gap-xs">
-<label class="font-caption-bold text-ink" for="father">Father's Name</label>
-<input class="h-11 rounded-lg border-steel focus:border-ink focus:ring-0 transition-all px-md font-body-md text-ink placeholder:text-outline" id="father" placeholder="Robert Doe" type="text"/>
-</div>
-</div>
-<!-- Permanent Address -->
-<div class="flex flex-col gap-xs">
-<label class="font-caption-bold text-ink" for="address">Permanent Address</label>
-<textarea class="rounded-lg border-steel focus:border-ink focus:ring-0 transition-all p-md font-body-md text-ink placeholder:text-outline resize-none" id="address" placeholder="Street name, City, State, ZIP code" rows="3"></textarea>
-</div>
-<div class="pt-lg flex items-center justify-between border-t border-fog">
-<p class="text-caption-sm text-secondary italic">Step 1 of 4: Personal Information</p>
-<button class="bg-primary hover:bg-primary-deep text-on-primary font-button-md h-11 px-xxl rounded transition-all active:scale-95 flex items-center gap-sm" type="submit">
-                            Next: Academic History
-                            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-</button>
-</div>
-</form>
-</div>
-<!-- Sidebar Support -->
-<aside class="lg:col-span-4 space-y-lg">
-<!-- Help Card -->
-<div class="bg-ink rounded-xl p-xl text-on-ink relative overflow-hidden group">
-<div class="relative z-10">
-<h3 class="font-display-xs text-display-xs mb-md">Need Help?</h3>
-<p class="font-caption-md opacity-80 mb-xl">Our admissions team is here to guide you through every step of the application process.</p>
-<div class="space-y-lg">
-<div class="flex items-start gap-md">
-<span class="material-symbols-outlined text-primary-soft">call</span>
-<div>
-<p class="font-caption-bold">Call Us</p>
-<p class="font-body-md text-primary-soft">+91 123 456 7890</p>
-</div>
-</div>
-<div class="flex items-start gap-md">
-<span class="material-symbols-outlined text-primary-soft">mail</span>
-<div>
-<p class="font-caption-bold">Email Support</p>
-<p class="font-body-md text-primary-soft">admissions@niet.edu.in</p>
-</div>
-</div>
-</div>
-</div>
-<!-- Signature Chevron Decoration -->
-<div class="absolute bottom-[-10px] right-[-20px] w-32 h-32 opacity-20 pointer-events-none">
-<div class="chevron-motif bg-primary-bright w-full h-full transform rotate-45"></div>
-</div>
-</div>
-<!-- Guidance Info -->
-<div class="bg-cloud rounded-xl p-xl border border-fog">
-<h4 class="font-caption-bold text-ink mb-md flex items-center gap-xxs">
-<span class="material-symbols-outlined text-primary text-[20px]">info</span>
-                        Checklist for next steps
-                    </h4>
-<ul class="space-y-sm">
-<li class="flex items-start gap-sm text-caption-md text-secondary">
-<span class="material-symbols-outlined text-primary text-[16px] mt-0.5">check_circle</span>
-                            10th &amp; 12th Marksheets ready
-                        </li>
-<li class="flex items-start gap-sm text-caption-md text-secondary">
-<span class="material-symbols-outlined text-primary text-[16px] mt-0.5">check_circle</span>
-                            Government ID (Aadhar/Passport)
-                        </li>
-<li class="flex items-start gap-sm text-caption-md text-secondary">
-<span class="material-symbols-outlined text-primary text-[16px] mt-0.5">check_circle</span>
-                            Recent passport size photo
-                        </li>
-</ul>
-</div>
-<!-- Visual Anchor -->
-<div class="rounded-xl overflow-hidden aspect-video relative">
-<img alt="Modern University Campus" class="w-full h-full object-cover" data-alt="A wide-angle shot of a modern, architectural university campus building at dawn. The structure features clean glass surfaces and sharp geometric lines that reflect a cool, professional blue light. The atmosphere is serene and intellectual, illuminated by soft morning sunlight that creates a sense of optimism and high-end educational pursuit. The background shows a manicured green landscape under a clear, bright sky." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8GIHjXr4Ut2gAl7XWjtYskYGA5M2kFvlVle8j2X4i5oEmDHMV17IMdPFHLduIRAP_gafjJRR90mVFW51yRQcfk3GF97bpV6cuE2umHnpVImlTPYekht8L2Q5JSnGyspdN7qWFZK7zifnOFfB-QZJt6a5cl5PBCM4TB5KG9sACxiGZXdEv0syMj7x_B7Uuw72lRrZv37jr954noT4kD4JG75ai6MlnL0iFXawaYxg1MVxj2JsbVh-Y7agoz1pHHaoFga8sX9Eu6jeC"/>
-<div class="absolute inset-0 bg-ink/20 flex flex-col justify-end p-lg">
-<p class="text-on-ink font-display-xs">Join our 2024 Cohort</p>
-</div>
-</div>
-</aside>
-</div>
-</main>
-<footer class="bg-ink-deep text-on-ink py-xxl mt-section">
-<div class="max-w-max-width mx-auto px-lg">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-xl mb-xl border-b border-white/10 pb-xl">
-<div class="col-span-1 md:col-span-2">
-<span class="text-display-sm font-display-sm font-extrabold mb-md block">NIET</span>
-<p class="text-caption-md opacity-60 max-w-sm">Northvale Institute of Engineering &amp; Technology is committed to academic excellence and preparing the next generation of global leaders.</p>
-</div>
-<div>
-<h5 class="font-caption-bold mb-md">Quick Links</h5>
-<nav class="flex flex-col gap-sm">
-<a class="text-caption-md opacity-70 hover:opacity-100 hover:text-primary-bright transition-all" href="#">Admission Process</a>
-<a class="text-caption-md opacity-70 hover:opacity-100 hover:text-primary-bright transition-all" href="#">Fee Structure</a>
-<a class="text-caption-md opacity-70 hover:opacity-100 hover:text-primary-bright transition-all" href="#">Scholarships</a>
-</nav>
-</div>
-<div>
-<h5 class="font-caption-bold mb-md">Legal</h5>
-<nav class="flex flex-col gap-sm">
-<a class="text-caption-md opacity-70 hover:opacity-100 hover:text-primary-bright transition-all" href="#">Privacy Policy</a>
-<a class="text-caption-md opacity-70 hover:opacity-100 hover:text-primary-bright transition-all" href="#">Terms of Service</a>
-</nav>
-</div>
-</div>
-<p class="text-caption-sm opacity-40 text-center">© 2024 Northvale Institute of Engineering &amp; Technology. All rights reserved.</p>
-</div>
-</footer>
-</body></html>
+  </head>
+  <body
+    class="bg-background text-on-background font-body-md selection:bg-primary-soft"
+  >
+    <!-- Transactional Header -->
+    <header
+      class="h-16 bg-canvas border-b border-fog flex items-center justify-center sticky top-0 z-50"
+    >
+      <div
+        class="max-w-max-width w-full px-lg flex items-center justify-between"
+      >
+        <span class="text-display-sm font-display-sm font-extrabold text-ink"
+          >NIET</span
+        >
+        <div class="hidden md:flex items-center gap-md">
+          <span class="text-caption-md text-secondary"
+            >Admission Intake 2024-25</span
+          >
+          <div class="w-px h-4 bg-fog"></div>
+          <button
+            class="text-caption-bold text-primary flex items-center gap-xxs"
+          >
+            <span class="material-symbols-outlined text-[18px]"
+              >exit_to_app</span
+            >
+            Save &amp; Exit
+          </button>
+        </div>
+      </div>
+    </header>
+    <main
+      class="max-w-max-width mx-auto px-lg py-section min-h-[calc(100vh-64px)]"
+    >
+      <!-- Stepper Component -->
+      <div class="mb-section">
+        <div
+          class="relative flex justify-between items-start max-w-4xl mx-auto"
+        >
+          <!-- Line -->
+          <div class="absolute top-5 left-0 w-full h-[2px] bg-fog -z-10"></div>
+          <div
+            class="absolute top-5 left-0 h-[2px] bg-primary transition-all duration-500 -z-10"
+            style="width: 12.5%"
+          ></div>
+          <!-- Step 1: Personal Info (Active) -->
+          <div class="flex flex-col items-center gap-sm">
+            <div
+              class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold shadow-md"
+            >
+              1
+            </div>
+            <span class="font-caption-bold text-ink">Personal Info</span>
+          </div>
+          <!-- Step 2: Academic History -->
+          <div class="flex flex-col items-center gap-sm">
+            <div
+              class="w-10 h-10 rounded-full bg-canvas border-2 border-fog text-secondary flex items-center justify-center font-bold"
+            >
+              2
+            </div>
+            <span class="font-caption-md text-secondary">Academic History</span>
+          </div>
+          <!-- Step 3: Program Selection -->
+          <div class="flex flex-col items-center gap-sm">
+            <div
+              class="w-10 h-10 rounded-full bg-canvas border-2 border-fog text-secondary flex items-center justify-center font-bold"
+            >
+              3
+            </div>
+            <span class="font-caption-md text-secondary"
+              >Program Selection</span
+            >
+          </div>
+          <!-- Step 4: Document Upload -->
+          <div class="flex flex-col items-center gap-sm">
+            <div
+              class="w-10 h-10 rounded-full bg-canvas border-2 border-fog text-secondary flex items-center justify-center font-bold"
+            >
+              4
+            </div>
+            <span class="font-caption-md text-secondary">Document Upload</span>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-xl items-start">
+        <!-- Main Form Container -->
+        <div
+          class="lg:col-span-8 bg-canvas rounded-xl shadow-[0_2px_8px_rgba(26,26,26,0.08)] p-xxl relative overflow-hidden"
+        >
+          <!-- Architectural Branding Motif -->
+          <div
+            class="absolute top-0 right-0 w-24 h-24 pointer-events-none opacity-10"
+          >
+            <div
+              class="chevron-motif bg-primary w-full h-12 absolute top-0 right-[-20%] rotate-12"
+            ></div>
+            <div
+              class="chevron-motif bg-primary w-full h-12 absolute top-8 right-[-10%] rotate-12"
+            ></div>
+          </div>
+          <div class="mb-xl">
+            <h1 class="font-display-md text-display-md text-ink mb-xs">
+              Personal Information
+            </h1>
+            <p class="text-body-md text-on-surface-variant">
+              Please provide your primary contact and family details as per your
+              official documents.
+            </p>
+          </div>
+          <form class="space-y-xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-xl">
+              <!-- Full Name -->
+              <div class="flex flex-col gap-xs">
+                <label class="font-caption-bold text-ink" for="name"
+                  >Full Name (As per High School Certificate)</label
+                >
+                <input
+                  class="h-11 rounded-lg border-steel focus:border-ink focus:ring-0 transition-all px-md font-body-md text-ink placeholder:text-outline"
+                  id="name"
+                  placeholder="John Doe"
+                  type="text"
+                />
+              </div>
+              <!-- Email Address -->
+              <div class="flex flex-col gap-xs">
+                <label class="font-caption-bold text-ink" for="email"
+                  >Email Address</label
+                >
+                <input
+                  class="h-11 rounded-lg border-steel focus:border-ink focus:ring-0 transition-all px-md font-body-md text-ink placeholder:text-outline"
+                  id="email"
+                  placeholder="john.doe@example.com"
+                  type="email"
+                />
+              </div>
+              <!-- Phone Number -->
+              <div class="flex flex-col gap-xs">
+                <label class="font-caption-bold text-ink" for="phone"
+                  >Phone Number</label
+                >
+                <div class="flex gap-xxs">
+                  <span
+                    class="h-11 flex items-center px-sm bg-cloud border border-steel rounded-lg text-secondary font-body-md"
+                    >+91</span
+                  >
+                  <input
+                    class="h-11 flex-1 rounded-lg border-steel focus:border-ink focus:ring-0 transition-all px-md font-body-md text-ink placeholder:text-outline"
+                    id="phone"
+                    placeholder="9876543210"
+                    type="tel"
+                  />
+                </div>
+              </div>
+              <!-- Father's Name -->
+              <div class="flex flex-col gap-xs">
+                <label class="font-caption-bold text-ink" for="father"
+                  >Father's Name</label
+                >
+                <input
+                  class="h-11 rounded-lg border-steel focus:border-ink focus:ring-0 transition-all px-md font-body-md text-ink placeholder:text-outline"
+                  id="father"
+                  placeholder="Robert Doe"
+                  type="text"
+                />
+              </div>
+            </div>
+            <!-- Permanent Address -->
+            <div class="flex flex-col gap-xs">
+              <label class="font-caption-bold text-ink" for="address"
+                >Permanent Address</label
+              >
+              <textarea
+                class="rounded-lg border-steel focus:border-ink focus:ring-0 transition-all p-md font-body-md text-ink placeholder:text-outline resize-none"
+                id="address"
+                placeholder="Street name, City, State, ZIP code"
+                rows="3"
+              ></textarea>
+            </div>
+            <div
+              class="pt-lg flex items-center justify-between border-t border-fog"
+            >
+              <p class="text-caption-sm text-secondary italic">
+                Step 1 of 4: Personal Information
+              </p>
+              <button
+                class="bg-primary hover:bg-primary-deep text-on-primary font-button-md h-11 px-xxl rounded transition-all active:scale-95 flex items-center gap-sm"
+                type="submit"
+              >
+                Next: Academic History
+                <span class="material-symbols-outlined text-[18px]"
+                  >arrow_forward</span
+                >
+              </button>
+            </div>
+          </form>
+        </div>
+        <!-- Sidebar Support -->
+        <aside class="lg:col-span-4 space-y-lg">
+          <!-- Help Card -->
+          <div
+            class="bg-ink rounded-xl p-xl text-on-ink relative overflow-hidden group"
+          >
+            <div class="relative z-10">
+              <h3 class="font-display-xs text-display-xs mb-md">Need Help?</h3>
+              <p class="font-caption-md opacity-80 mb-xl">
+                Our admissions team is here to guide you through every step of
+                the application process.
+              </p>
+              <div class="space-y-lg">
+                <div class="flex items-start gap-md">
+                  <span class="material-symbols-outlined text-primary-soft"
+                    >call</span
+                  >
+                  <div>
+                    <p class="font-caption-bold">Call Us</p>
+                    <p class="font-body-md text-primary-soft">
+                      +91 123 456 7890
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-md">
+                  <span class="material-symbols-outlined text-primary-soft"
+                    >mail</span
+                  >
+                  <div>
+                    <p class="font-caption-bold">Email Support</p>
+                    <p class="font-body-md text-primary-soft">
+                      admissions@niet.edu.in
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Signature Chevron Decoration -->
+            <div
+              class="absolute bottom-[-10px] right-[-20px] w-32 h-32 opacity-20 pointer-events-none"
+            >
+              <div
+                class="chevron-motif bg-primary-bright w-full h-full transform rotate-45"
+              ></div>
+            </div>
+          </div>
+          <!-- Guidance Info -->
+          <div class="bg-cloud rounded-xl p-xl border border-fog">
+            <h4
+              class="font-caption-bold text-ink mb-md flex items-center gap-xxs"
+            >
+              <span class="material-symbols-outlined text-primary text-[20px]"
+                >info</span
+              >
+              Checklist for next steps
+            </h4>
+            <ul class="space-y-sm">
+              <li
+                class="flex items-start gap-sm text-caption-md text-secondary"
+              >
+                <span
+                  class="material-symbols-outlined text-primary text-[16px] mt-0.5"
+                  >check_circle</span
+                >
+                10th &amp; 12th Marksheets ready
+              </li>
+              <li
+                class="flex items-start gap-sm text-caption-md text-secondary"
+              >
+                <span
+                  class="material-symbols-outlined text-primary text-[16px] mt-0.5"
+                  >check_circle</span
+                >
+                Government ID (Aadhar/Passport)
+              </li>
+              <li
+                class="flex items-start gap-sm text-caption-md text-secondary"
+              >
+                <span
+                  class="material-symbols-outlined text-primary text-[16px] mt-0.5"
+                  >check_circle</span
+                >
+                Recent passport size photo
+              </li>
+            </ul>
+          </div>
+          <!-- Visual Anchor -->
+          <div class="rounded-xl overflow-hidden aspect-video relative">
+            <img
+              alt="Modern University Campus"
+              class="w-full h-full object-cover"
+              data-alt="A wide-angle shot of a modern, architectural university campus building at dawn. The structure features clean glass surfaces and sharp geometric lines that reflect a cool, professional blue light. The atmosphere is serene and intellectual, illuminated by soft morning sunlight that creates a sense of optimism and high-end educational pursuit. The background shows a manicured green landscape under a clear, bright sky."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8GIHjXr4Ut2gAl7XWjtYskYGA5M2kFvlVle8j2X4i5oEmDHMV17IMdPFHLduIRAP_gafjJRR90mVFW51yRQcfk3GF97bpV6cuE2umHnpVImlTPYekht8L2Q5JSnGyspdN7qWFZK7zifnOFfB-QZJt6a5cl5PBCM4TB5KG9sACxiGZXdEv0syMj7x_B7Uuw72lRrZv37jr954noT4kD4JG75ai6MlnL0iFXawaYxg1MVxj2JsbVh-Y7agoz1pHHaoFga8sX9Eu6jeC"
+            />
+            <div
+              class="absolute inset-0 bg-ink/20 flex flex-col justify-end p-lg"
+            >
+              <p class="text-on-ink font-display-xs">Join our 2024 Cohort</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <footer class="bg-ink-deep text-on-ink py-xxl mt-section">
+      <div class="max-w-max-width mx-auto px-lg">
+        <div
+          class="grid grid-cols-1 md:grid-cols-4 gap-xl mb-xl border-b border-white/10 pb-xl"
+        >
+          <div class="col-span-1 md:col-span-2">
+            <span
+              class="text-display-sm font-display-sm font-extrabold mb-md block"
+              >NIET</span
+            >
+            <p class="text-caption-md opacity-60 max-w-sm">
+              Northvale Institute of Engineering &amp; Technology is committed
+              to academic excellence and preparing the next generation of global
+              leaders.
+            </p>
+          </div>
+          <div>
+            <h5 class="font-caption-bold mb-md">Quick Links</h5>
+            <nav class="flex flex-col gap-sm">
+              <a
+                class="text-caption-md opacity-70 hover:opacity-100 hover:text-primary-bright transition-all"
+                href="#"
+                >Admission Process</a
+              >
+              <a
+                class="text-caption-md opacity-70 hover:opacity-100 hover:text-primary-bright transition-all"
+                href="#"
+                >Fee Structure</a
+              >
+              <a
+                class="text-caption-md opacity-70 hover:opacity-100 hover:text-primary-bright transition-all"
+                href="#"
+                >Scholarships</a
+              >
+            </nav>
+          </div>
+          <div>
+            <h5 class="font-caption-bold mb-md">Legal</h5>
+            <nav class="flex flex-col gap-sm">
+              <a
+                class="text-caption-md opacity-70 hover:opacity-100 hover:text-primary-bright transition-all"
+                href="#"
+                >Privacy Policy</a
+              >
+              <a
+                class="text-caption-md opacity-70 hover:opacity-100 hover:text-primary-bright transition-all"
+                href="#"
+                >Terms of Service</a
+              >
+            </nav>
+          </div>
+        </div>
+        <p class="text-caption-sm opacity-40 text-center">
+          © 2024 Northvale Institute of Engineering &amp; Technology. All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

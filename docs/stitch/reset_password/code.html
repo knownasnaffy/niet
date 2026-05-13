@@ -1,230 +1,342 @@
-<!DOCTYPE html>
+<!doctype html>
 
-<html lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
         theme: {
           extend: {
-            "colors": {
-                    "on-surface": "#191b23",
-                    "on-error-container": "#93000a",
-                    "primary": "#0036a4",
-                    "primary-deep": "#0e3191",
-                    "canvas": "#ffffff",
-                    "on-primary-fixed": "#00164f",
-                    "paper": "#ffffff",
-                    "surface-container-low": "#f3f2ff",
-                    "background": "#faf8ff",
-                    "ink-deep": "#000000",
-                    "secondary-fixed-dim": "#c8c6c5",
-                    "on-tertiary-container": "#ffc1b0",
-                    "on-secondary-fixed-variant": "#474746",
-                    "tertiary-fixed-dim": "#ffb59f",
-                    "surface-container-high": "#e7e7f3",
-                    "primary-fixed-dim": "#b6c4ff",
-                    "on-error": "#ffffff",
-                    "surface-tint": "#1451de",
-                    "on-secondary-container": "#636262",
-                    "steel": "#c2c2c2",
-                    "on-surface-variant": "#434655",
-                    "surface-dim": "#d9d9e5",
-                    "on-background": "#191b23",
-                    "on-tertiary": "#ffffff",
-                    "primary-container": "#024ad8",
-                    "inverse-primary": "#b6c4ff",
-                    "ink": "#1a1a1a",
-                    "primary-bright": "#296ef9",
-                    "ink-soft": "#292929",
-                    "tertiary": "#7c2000",
-                    "graphite": "#636363",
-                    "charcoal": "#3d3d3d",
-                    "bloom-coral": "#ff5050",
-                    "surface": "#faf8ff",
-                    "primary-fixed": "#dce1ff",
-                    "primary-soft": "#c9e0fc",
-                    "inverse-on-surface": "#f0f0fc",
-                    "bloom-rose": "#f9d4d2",
-                    "surface-container-highest": "#e2e1ed",
-                    "tertiary-fixed": "#ffdbd1",
-                    "on-tertiary-fixed": "#3a0a00",
-                    "surface-container": "#ededf9",
-                    "cloud": "#f7f7f7",
-                    "on-secondary": "#ffffff",
-                    "surface-container-lowest": "#ffffff",
-                    "secondary": "#5f5e5e",
-                    "error": "#ba1a1a",
-                    "fog": "#e8e8e8",
-                    "storm-sea": "#7fadbe",
-                    "tertiary-container": "#a52d00",
-                    "outline": "#747686",
-                    "on-secondary-fixed": "#1c1b1b",
-                    "on-primary-container": "#c2ceff",
-                    "inverse-surface": "#2e3039",
-                    "on-tertiary-fixed-variant": "#862300",
-                    "on-primary-fixed-variant": "#003bb0",
-                    "bloom-deep": "#b3262b",
-                    "on-primary": "#ffffff",
-                    "surface-bright": "#faf8ff",
-                    "outline-variant": "#c3c5d7",
-                    "secondary-container": "#e2dfde",
-                    "storm-deep": "#356373",
-                    "surface-variant": "#e2e1ed",
-                    "secondary-fixed": "#e5e2e1",
-                    "on-ink": "#ffffff",
-                    "error-container": "#ffdad6"
+            colors: {
+              "on-surface": "#191b23",
+              "on-error-container": "#93000a",
+              primary: "#0036a4",
+              "primary-deep": "#0e3191",
+              canvas: "#ffffff",
+              "on-primary-fixed": "#00164f",
+              paper: "#ffffff",
+              "surface-container-low": "#f3f2ff",
+              background: "#faf8ff",
+              "ink-deep": "#000000",
+              "secondary-fixed-dim": "#c8c6c5",
+              "on-tertiary-container": "#ffc1b0",
+              "on-secondary-fixed-variant": "#474746",
+              "tertiary-fixed-dim": "#ffb59f",
+              "surface-container-high": "#e7e7f3",
+              "primary-fixed-dim": "#b6c4ff",
+              "on-error": "#ffffff",
+              "surface-tint": "#1451de",
+              "on-secondary-container": "#636262",
+              steel: "#c2c2c2",
+              "on-surface-variant": "#434655",
+              "surface-dim": "#d9d9e5",
+              "on-background": "#191b23",
+              "on-tertiary": "#ffffff",
+              "primary-container": "#024ad8",
+              "inverse-primary": "#b6c4ff",
+              ink: "#1a1a1a",
+              "primary-bright": "#296ef9",
+              "ink-soft": "#292929",
+              tertiary: "#7c2000",
+              graphite: "#636363",
+              charcoal: "#3d3d3d",
+              "bloom-coral": "#ff5050",
+              surface: "#faf8ff",
+              "primary-fixed": "#dce1ff",
+              "primary-soft": "#c9e0fc",
+              "inverse-on-surface": "#f0f0fc",
+              "bloom-rose": "#f9d4d2",
+              "surface-container-highest": "#e2e1ed",
+              "tertiary-fixed": "#ffdbd1",
+              "on-tertiary-fixed": "#3a0a00",
+              "surface-container": "#ededf9",
+              cloud: "#f7f7f7",
+              "on-secondary": "#ffffff",
+              "surface-container-lowest": "#ffffff",
+              secondary: "#5f5e5e",
+              error: "#ba1a1a",
+              fog: "#e8e8e8",
+              "storm-sea": "#7fadbe",
+              "tertiary-container": "#a52d00",
+              outline: "#747686",
+              "on-secondary-fixed": "#1c1b1b",
+              "on-primary-container": "#c2ceff",
+              "inverse-surface": "#2e3039",
+              "on-tertiary-fixed-variant": "#862300",
+              "on-primary-fixed-variant": "#003bb0",
+              "bloom-deep": "#b3262b",
+              "on-primary": "#ffffff",
+              "surface-bright": "#faf8ff",
+              "outline-variant": "#c3c5d7",
+              "secondary-container": "#e2dfde",
+              "storm-deep": "#356373",
+              "surface-variant": "#e2e1ed",
+              "secondary-fixed": "#e5e2e1",
+              "on-ink": "#ffffff",
+              "error-container": "#ffdad6",
             },
-            "borderRadius": {
-                    "DEFAULT": "0.25rem",
-                    "lg": "0.5rem",
-                    "xl": "0.75rem",
-                    "full": "9999px"
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
             },
-            "spacing": {
-                    "sm": "12px",
-                    "md": "16px",
-                    "xl": "24px",
-                    "xxs": "4px",
-                    "section": "80px",
-                    "xs": "8px",
-                    "max-width": "1366px",
-                    "xxl": "32px",
-                    "lg": "20px"
+            spacing: {
+              sm: "12px",
+              md: "16px",
+              xl: "24px",
+              xxs: "4px",
+              section: "80px",
+              xs: "8px",
+              "max-width": "1366px",
+              xxl: "32px",
+              lg: "20px",
             },
-            "fontFamily": {
-                    "display-xl": ["Manrope"],
-                    "display-xxl": ["Manrope"],
-                    "body-lg": ["Manrope"],
-                    "caption-md": ["Manrope"],
-                    "display-lg": ["Manrope"],
-                    "body-md": ["Manrope"],
-                    "display-xs": ["Manrope"],
-                    "display-sm": ["Manrope"],
-                    "body-emphasis": ["Manrope"],
-                    "button-md": ["Manrope"],
-                    "display-md": ["Manrope"],
-                    "caption-sm": ["Manrope"],
-                    "caption-bold": ["Manrope"],
-                    "price-md": ["Manrope"]
-            }
-          }
-        }
-      }
+            fontFamily: {
+              "display-xl": ["Manrope"],
+              "display-xxl": ["Manrope"],
+              "body-lg": ["Manrope"],
+              "caption-md": ["Manrope"],
+              "display-lg": ["Manrope"],
+              "body-md": ["Manrope"],
+              "display-xs": ["Manrope"],
+              "display-sm": ["Manrope"],
+              "body-emphasis": ["Manrope"],
+              "button-md": ["Manrope"],
+              "display-md": ["Manrope"],
+              "caption-sm": ["Manrope"],
+              "caption-bold": ["Manrope"],
+              "price-md": ["Manrope"],
+            },
+          },
+        },
+      };
     </script>
-<style>
+    <style>
       body {
-        font-family: 'Manrope', sans-serif;
+        font-family: "Manrope", sans-serif;
         background-color: #faf8ff;
       }
       .material-symbols-outlined {
-        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
       }
       .chevron-decoration {
         clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
       }
     </style>
-</head>
-<body class="bg-background min-h-screen flex flex-col">
-<!-- TopNavBar (Suppressed for focused transactional task, but product identity remains) -->
-<header class="bg-paper dark:bg-on-surface border-b border-fog dark:border-outline-variant h-16 w-full flex items-center justify-center px-xl sticky top-0 z-50">
-<div class="flex items-center justify-between w-full max-w-max-width mx-auto">
-<div class="font-display-md text-display-md font-bold text-primary dark:text-primary-bright">
-                NIET Portal
+  </head>
+  <body class="bg-background min-h-screen flex flex-col">
+    <!-- TopNavBar (Suppressed for focused transactional task, but product identity remains) -->
+    <header
+      class="bg-paper dark:bg-on-surface border-b border-fog dark:border-outline-variant h-16 w-full flex items-center justify-center px-xl sticky top-0 z-50"
+    >
+      <div
+        class="flex items-center justify-between w-full max-w-max-width mx-auto"
+      >
+        <div
+          class="font-display-md text-display-md font-bold text-primary dark:text-primary-bright"
+        >
+          NIET Portal
+        </div>
+        <div
+          class="hidden md:flex items-center gap-xl text-secondary dark:text-secondary-fixed-dim font-display-sm text-display-sm"
+        >
+          <span class="material-symbols-outlined text-primary">shield</span>
+          <span class="text-body-md font-body-md">Secure Session</span>
+        </div>
+      </div>
+    </header>
+    <main
+      class="flex-grow flex items-center justify-center py-section px-md relative overflow-hidden"
+    >
+      <!-- Background Architectural Elements (Blue Chevrons) -->
+      <div
+        class="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-12 hidden lg:block"
+      >
+        <div class="chevron-decoration bg-primary w-24 h-96 opacity-10"></div>
+      </div>
+      <div
+        class="absolute top-1/2 right-0 -translate-y-1/2 translate-x-12 hidden lg:block"
+      >
+        <div class="chevron-decoration bg-primary w-24 h-96 opacity-10"></div>
+      </div>
+      <!-- Centered Card Container -->
+      <div
+        class="w-full max-w-[480px] bg-canvas rounded-xl shadow-[0_2px_8px_rgba(26,26,26,0.08)] p-xxl relative z-10 border border-fog"
+      >
+        <!-- Header Section -->
+        <div class="mb-xxl text-center">
+          <div
+            class="inline-flex items-center justify-center w-16 h-16 bg-surface-container-low rounded-full mb-md"
+          >
+            <span
+              class="material-symbols-outlined text-primary text-[32px]"
+              data-icon="lock_reset"
+              >lock_reset</span
+            >
+          </div>
+          <h1 class="font-display-md text-display-md text-ink mb-xs">
+            Set New Password
+          </h1>
+          <p class="font-body-md text-body-md text-secondary">
+            Create a secure password to protect your account.
+          </p>
+        </div>
+        <!-- Form -->
+        <form class="space-y-xl">
+          <!-- New Password Field -->
+          <div class="space-y-xs">
+            <label
+              class="font-body-emphasis text-body-emphasis text-charcoal"
+              for="new_password"
+              >New Password</label
+            >
+            <div class="relative">
+              <input
+                class="w-full h-[44px] px-md border border-steel rounded-[4px] focus:border-ink focus:ring-0 text-body-md font-body-md transition-colors outline-none pr-12"
+                id="new_password"
+                placeholder="Min. 12 characters"
+                type="password"
+              />
+              <button
+                class="absolute right-md top-1/2 -translate-y-1/2 text-graphite hover:text-ink transition-colors"
+                type="button"
+              >
+                <span class="material-symbols-outlined" data-icon="visibility"
+                  >visibility</span
+                >
+              </button>
             </div>
-<div class="hidden md:flex items-center gap-xl text-secondary dark:text-secondary-fixed-dim font-display-sm text-display-sm">
-<span class="material-symbols-outlined text-primary">shield</span>
-<span class="text-body-md font-body-md">Secure Session</span>
-</div>
-</div>
-</header>
-<main class="flex-grow flex items-center justify-center py-section px-md relative overflow-hidden">
-<!-- Background Architectural Elements (Blue Chevrons) -->
-<div class="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-12 hidden lg:block">
-<div class="chevron-decoration bg-primary w-24 h-96 opacity-10"></div>
-</div>
-<div class="absolute top-1/2 right-0 -translate-y-1/2 translate-x-12 hidden lg:block">
-<div class="chevron-decoration bg-primary w-24 h-96 opacity-10"></div>
-</div>
-<!-- Centered Card Container -->
-<div class="w-full max-w-[480px] bg-canvas rounded-xl shadow-[0_2px_8px_rgba(26,26,26,0.08)] p-xxl relative z-10 border border-fog">
-<!-- Header Section -->
-<div class="mb-xxl text-center">
-<div class="inline-flex items-center justify-center w-16 h-16 bg-surface-container-low rounded-full mb-md">
-<span class="material-symbols-outlined text-primary text-[32px]" data-icon="lock_reset">lock_reset</span>
-</div>
-<h1 class="font-display-md text-display-md text-ink mb-xs">Set New Password</h1>
-<p class="font-body-md text-body-md text-secondary">Create a secure password to protect your account.</p>
-</div>
-<!-- Form -->
-<form class="space-y-xl">
-<!-- New Password Field -->
-<div class="space-y-xs">
-<label class="font-body-emphasis text-body-emphasis text-charcoal" for="new_password">New Password</label>
-<div class="relative">
-<input class="w-full h-[44px] px-md border border-steel rounded-[4px] focus:border-ink focus:ring-0 text-body-md font-body-md transition-colors outline-none pr-12" id="new_password" placeholder="Min. 12 characters" type="password"/>
-<button class="absolute right-md top-1/2 -translate-y-1/2 text-graphite hover:text-ink transition-colors" type="button">
-<span class="material-symbols-outlined" data-icon="visibility">visibility</span>
-</button>
-</div>
-<!-- Password Strength Indicator -->
-<div class="pt-xxs">
-<div class="flex justify-between items-center mb-xxs">
-<span class="font-caption-md text-caption-md text-graphite">Strength: <span class="text-primary-bright font-bold">Strong</span></span>
-</div>
-<div class="flex gap-xxs h-1">
-<div class="flex-1 bg-primary rounded-full"></div>
-<div class="flex-1 bg-primary rounded-full"></div>
-<div class="flex-1 bg-primary rounded-full"></div>
-<div class="flex-1 bg-fog rounded-full"></div>
-</div>
-<p class="font-caption-sm text-caption-sm text-graphite mt-xs">Use a mix of letters, numbers, and symbols.</p>
-</div>
-</div>
-<!-- Confirm Password Field -->
-<div class="space-y-xs">
-<label class="font-body-emphasis text-body-emphasis text-charcoal" for="confirm_password">Confirm New Password</label>
-<div class="relative">
-<input class="w-full h-[44px] px-md border border-steel rounded-[4px] focus:border-ink focus:ring-0 text-body-md font-body-md transition-colors outline-none pr-12" id="confirm_password" placeholder="Repeat new password" type="password"/>
-<button class="absolute right-md top-1/2 -translate-y-1/2 text-graphite hover:text-ink transition-colors" type="button">
-<span class="material-symbols-outlined" data-icon="visibility">visibility</span>
-</button>
-</div>
-</div>
-<!-- CTA -->
-<div class="pt-md">
-<button class="w-full h-[44px] bg-primary text-on-ink font-button-md text-button-md uppercase rounded-[4px] hover:bg-primary-deep transition-all duration-200 flex items-center justify-center gap-xs" type="submit">
-                        Update Password
-                        <span class="material-symbols-outlined text-[18px]" data-icon="arrow_forward">arrow_forward</span>
-</button>
-</div>
-<div class="text-center pt-md">
-<a class="font-caption-bold text-caption-bold text-primary hover:text-primary-deep transition-colors flex items-center justify-center gap-xxs" href="#">
-<span class="material-symbols-outlined text-[16px]" data-icon="arrow_back">arrow_back</span>
-                        Back to Login
-                    </a>
-</div>
-</form>
-</div>
-</main>
-<!-- Footer -->
-<footer class="bg-ink dark:bg-ink-deep w-full py-xxl px-xl">
-<div class="max-w-max-width mx-auto flex flex-col md:flex-row justify-between items-center gap-md">
-<div class="font-display-xs text-display-xs font-bold text-on-ink">NIET Portal</div>
-<div class="flex flex-wrap justify-center gap-xl">
-<a class="font-caption-md text-caption-md text-on-ink opacity-80 hover:opacity-100 hover:text-primary-soft transition-opacity" href="#">Privacy Policy</a>
-<a class="font-caption-md text-caption-md text-on-ink opacity-80 hover:opacity-100 hover:text-primary-soft transition-opacity" href="#">Terms of Service</a>
-<a class="font-caption-md text-caption-md text-on-ink opacity-80 hover:opacity-100 hover:text-primary-soft transition-opacity" href="#">IT Support</a>
-<a class="font-caption-md text-caption-md text-on-ink opacity-80 hover:opacity-100 hover:text-primary-soft transition-opacity" href="#">Campus Map</a>
-</div>
-<div class="font-caption-md text-caption-md text-on-ink opacity-80 text-center md:text-right">
-                © 2024 NIET Institutional Portal. All rights reserved.
+            <!-- Password Strength Indicator -->
+            <div class="pt-xxs">
+              <div class="flex justify-between items-center mb-xxs">
+                <span class="font-caption-md text-caption-md text-graphite"
+                  >Strength:
+                  <span class="text-primary-bright font-bold"
+                    >Strong</span
+                  ></span
+                >
+              </div>
+              <div class="flex gap-xxs h-1">
+                <div class="flex-1 bg-primary rounded-full"></div>
+                <div class="flex-1 bg-primary rounded-full"></div>
+                <div class="flex-1 bg-primary rounded-full"></div>
+                <div class="flex-1 bg-fog rounded-full"></div>
+              </div>
+              <p class="font-caption-sm text-caption-sm text-graphite mt-xs">
+                Use a mix of letters, numbers, and symbols.
+              </p>
             </div>
-</div>
-</footer>
-</body></html>
+          </div>
+          <!-- Confirm Password Field -->
+          <div class="space-y-xs">
+            <label
+              class="font-body-emphasis text-body-emphasis text-charcoal"
+              for="confirm_password"
+              >Confirm New Password</label
+            >
+            <div class="relative">
+              <input
+                class="w-full h-[44px] px-md border border-steel rounded-[4px] focus:border-ink focus:ring-0 text-body-md font-body-md transition-colors outline-none pr-12"
+                id="confirm_password"
+                placeholder="Repeat new password"
+                type="password"
+              />
+              <button
+                class="absolute right-md top-1/2 -translate-y-1/2 text-graphite hover:text-ink transition-colors"
+                type="button"
+              >
+                <span class="material-symbols-outlined" data-icon="visibility"
+                  >visibility</span
+                >
+              </button>
+            </div>
+          </div>
+          <!-- CTA -->
+          <div class="pt-md">
+            <button
+              class="w-full h-[44px] bg-primary text-on-ink font-button-md text-button-md uppercase rounded-[4px] hover:bg-primary-deep transition-all duration-200 flex items-center justify-center gap-xs"
+              type="submit"
+            >
+              Update Password
+              <span
+                class="material-symbols-outlined text-[18px]"
+                data-icon="arrow_forward"
+                >arrow_forward</span
+              >
+            </button>
+          </div>
+          <div class="text-center pt-md">
+            <a
+              class="font-caption-bold text-caption-bold text-primary hover:text-primary-deep transition-colors flex items-center justify-center gap-xxs"
+              href="#"
+            >
+              <span
+                class="material-symbols-outlined text-[16px]"
+                data-icon="arrow_back"
+                >arrow_back</span
+              >
+              Back to Login
+            </a>
+          </div>
+        </form>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-ink dark:bg-ink-deep w-full py-xxl px-xl">
+      <div
+        class="max-w-max-width mx-auto flex flex-col md:flex-row justify-between items-center gap-md"
+      >
+        <div class="font-display-xs text-display-xs font-bold text-on-ink">
+          NIET Portal
+        </div>
+        <div class="flex flex-wrap justify-center gap-xl">
+          <a
+            class="font-caption-md text-caption-md text-on-ink opacity-80 hover:opacity-100 hover:text-primary-soft transition-opacity"
+            href="#"
+            >Privacy Policy</a
+          >
+          <a
+            class="font-caption-md text-caption-md text-on-ink opacity-80 hover:opacity-100 hover:text-primary-soft transition-opacity"
+            href="#"
+            >Terms of Service</a
+          >
+          <a
+            class="font-caption-md text-caption-md text-on-ink opacity-80 hover:opacity-100 hover:text-primary-soft transition-opacity"
+            href="#"
+            >IT Support</a
+          >
+          <a
+            class="font-caption-md text-caption-md text-on-ink opacity-80 hover:opacity-100 hover:text-primary-soft transition-opacity"
+            href="#"
+            >Campus Map</a
+          >
+        </div>
+        <div
+          class="font-caption-md text-caption-md text-on-ink opacity-80 text-center md:text-right"
+        >
+          © 2024 NIET Institutional Portal. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
