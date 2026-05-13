@@ -1,9 +1,21 @@
+"use client";
+import React, { useState } from "react";
+import mockData from "@/data/mockData.json";
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
 
 
 export default function FacultyDirectory() {
+    const [searchQuery, setSearchQuery] = useState("");
+    const [departmentFilter, setDepartmentFilter] = useState("All");
+    const filteredFaculty = mockData.faculty.filter(member => {
+        const matchesSearch = member.name.toLowerCase().includes(searchQuery.toLowerCase()) || member.tags.some(tag => tag.toLowerCase().includes(searchQuery.toLowerCase()));
+        const matchesDept = departmentFilter === "All" || member.department === departmentFilter;
+        return matchesSearch && matchesDept;
+    });
+    const departments = ["All", ...new Set(mockData.faculty.map(f => f.department))];
+
     return (
         <>
 

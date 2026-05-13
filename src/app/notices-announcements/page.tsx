@@ -1,9 +1,15 @@
+"use client";
+import React, { useState } from "react";
+import mockData from "@/data/mockData.json";
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
 
 
 export default function NoticesAnnouncements() {
+    const [filter, setFilter] = useState("All");
+    const filteredAnnouncements = filter === "All" ? mockData.announcements : mockData.announcements.filter(a => a.category === filter);
+    const categories = ["All", "Academic", "General", "Placements", "Admissions"];
     return (
         <>
 
@@ -22,12 +28,9 @@ export default function NoticesAnnouncements() {
 <h1 className="font-display-lg text-display-lg text-ink font-bold">Notices &amp; Circulars</h1>
 </div>
 <div className="flex flex-wrap gap-xs">
-<button className="px-md py-xxs rounded-full bg-primary text-on-ink font-button-md text-[12px] uppercase">All</button>
-<button className="px-md py-xxs rounded-full bg-canvas border border-fog text-secondary font-button-md text-[12px] uppercase hover:border-primary transition-colors">Academic</button>
-<button className="px-md py-xxs rounded-full bg-canvas border border-fog text-secondary font-button-md text-[12px] uppercase hover:border-primary transition-colors">Examinations</button>
-<button className="px-md py-xxs rounded-full bg-canvas border border-fog text-secondary font-button-md text-[12px] uppercase hover:border-primary transition-colors">Admissions</button>
-<button className="px-md py-xxs rounded-full bg-canvas border border-fog text-secondary font-button-md text-[12px] uppercase hover:border-primary transition-colors">Placements</button>
-<button className="px-md py-xxs rounded-full bg-canvas border border-fog text-secondary font-button-md text-[12px] uppercase hover:border-primary transition-colors">General</button>
+    {categories.map(cat => (
+        <button key={cat} onClick={() => setFilter(cat)} className={`px-md py-sm rounded-full font-button-md text-button-md transition-colors duration-200 ${filter === cat ? 'bg-primary text-on-primary' : 'bg-canvas text-secondary border border-fog hover:text-ink hover:border-steel'}`}>{cat}</button>
+    ))}
 </div>
 </div>
 
@@ -72,92 +75,32 @@ export default function NoticesAnnouncements() {
 <span className="text-caption-md text-outline">Showing 1-15 of 248 entries</span>
 </div>
 
-<article className="bg-canvas border border-fog p-md md:p-xl rounded-xl hover:border-primary transition-all group soft-lift">
-<div className="flex flex-col md:flex-row gap-xl items-start">
-<div className="flex flex-col items-center justify-center min-w-[80px] h-[80px] bg-cloud rounded-lg border border-fog">
-<span className="text-display-xs font-bold text-ink">14</span>
-<span className="text-caption-sm uppercase font-bold text-primary">OCT 24</span>
-</div>
-<div className="flex-1 space-y-sm">
-<div className="flex flex-wrap items-center gap-md">
-<span className="text-[11px] font-bold px-sm py-xxs rounded border border-primary text-primary uppercase">Admissions</span>
-<span className="text-caption-sm text-outline flex items-center gap-xxs">
-<span className="material-symbols-outlined text-[16px]">visibility</span> 1.2k views
-                                    </span>
-</div>
-<h4 className="font-display-xs text-display-xs font-bold text-ink group-hover:text-primary transition-colors">Registration for International Exchange Program 2025</h4>
-<p className="text-on-surface-variant font-body-md line-clamp-2">Applications are invited from 3rd-year engineering students for the semester-abroad programs in partnership with our European affiliate universities...</p>
-<div className="flex items-center gap-xl pt-xxs">
-<a className="flex items-center gap-xs text-primary font-caption-bold hover:underline" href="/downloads-documents">
-<span className="material-symbols-outlined text-[20px]">picture_as_pdf</span>
-                                        DOWNLOAD PDF (420 KB)
-                                    </a>
-<a className="flex items-center gap-xs text-secondary font-caption-bold hover:text-ink" href="/downloads-documents">
-<span className="material-symbols-outlined text-[20px]">share</span>
-                                        SHARE
-                                    </a>
-</div>
-</div>
-</div>
-</article>
-
-<article className="bg-canvas border border-fog p-md md:p-xl rounded-xl hover:border-primary transition-all group soft-lift">
-<div className="flex flex-col md:flex-row gap-xl items-start">
-<div className="flex flex-col items-center justify-center min-w-[80px] h-[80px] bg-cloud rounded-lg border border-fog">
-<span className="text-display-xs font-bold text-ink">12</span>
-<span className="text-caption-sm uppercase font-bold text-primary">OCT 24</span>
-</div>
-<div className="flex-1 space-y-sm">
-<div className="flex flex-wrap items-center gap-md">
-<span className="text-[11px] font-bold px-sm py-xxs rounded border border-primary text-primary uppercase">Placements</span>
-<span className="text-caption-sm text-outline flex items-center gap-xxs">
-<span className="material-symbols-outlined text-[16px]">visibility</span> 4.5k views
-                                    </span>
-</div>
-<h4 className="font-display-xs text-display-xs font-bold text-ink group-hover:text-primary transition-colors">On-Campus Recruitment Drive: Global Tech Solutions</h4>
-<p className="text-on-surface-variant font-body-md line-clamp-2">All final year B.Tech and MCA students are required to register on the placement portal for the upcoming recruitment drive scheduled for late October...</p>
-<div className="flex items-center gap-xl pt-xxs">
-<a className="flex items-center gap-xs text-primary font-caption-bold hover:underline" href="/downloads-documents">
-<span className="material-symbols-outlined text-[20px]">picture_as_pdf</span>
-                                        DOWNLOAD PDF (1.2 MB)
-                                    </a>
-<a className="flex items-center gap-xs text-secondary font-caption-bold hover:text-ink" href="/downloads-documents">
-<span className="material-symbols-outlined text-[20px]">share</span>
-                                        SHARE
-                                    </a>
-</div>
-</div>
-</div>
-</article>
-
-<article className="bg-canvas border border-fog p-md md:p-xl rounded-xl hover:border-primary transition-all group soft-lift">
-<div className="flex flex-col md:flex-row gap-xl items-start">
-<div className="flex flex-col items-center justify-center min-w-[80px] h-[80px] bg-cloud rounded-lg border border-fog">
-<span className="text-display-xs font-bold text-ink">08</span>
-<span className="text-caption-sm uppercase font-bold text-primary">OCT 24</span>
-</div>
-<div className="flex-1 space-y-sm">
-<div className="flex flex-wrap items-center gap-md">
-<span className="text-[11px] font-bold px-sm py-xxs rounded border border-primary text-primary uppercase">Academic</span>
-<span className="text-caption-sm text-outline flex items-center gap-xxs">
-<span className="material-symbols-outlined text-[16px]">visibility</span> 890 views
-                                    </span>
-</div>
-<h4 className="font-display-xs text-display-xs font-bold text-ink group-hover:text-primary transition-colors">Revised Academic Calendar for Winter Session</h4>
-<p className="text-on-surface-variant font-body-md line-clamp-2">Please take note of the slight adjustments in the winter session dates including pre-board examinations and the commencement of the new semester...</p>
-<div className="flex items-center gap-xl pt-xxs">
-<a className="flex items-center gap-xs text-primary font-caption-bold hover:underline" href="/downloads-documents">
-<span className="material-symbols-outlined text-[20px]">picture_as_pdf</span>
-                                        DOWNLOAD PDF (245 KB)
-                                    </a>
-<a className="flex items-center gap-xs text-secondary font-caption-bold hover:text-ink" href="/downloads-documents">
-<span className="material-symbols-outlined text-[20px]">share</span>
-                                        SHARE
-                                    </a>
-</div>
-</div>
-</div>
-</article>
+{filteredAnnouncements.map(notice => (
+    <article key={notice.id} className="bg-canvas border border-fog p-md md:p-xl rounded-xl hover:border-primary transition-all group soft-lift mb-md">
+        <div className="flex flex-col md:flex-row gap-xl items-start">
+            <div className="flex flex-col items-center justify-center min-w-[80px] h-[80px] bg-cloud rounded-lg border border-fog">
+                <span className="text-display-xs font-bold text-ink">{notice.day}</span>
+                <span className="text-caption-sm uppercase font-bold text-primary">{notice.month}</span>
+            </div>
+            <div className="flex-1 space-y-sm">
+                <div className="flex flex-wrap items-center gap-md">
+                    <span className="text-[11px] font-bold px-sm py-xxs rounded border border-primary text-primary uppercase">{notice.category}</span>
+                    <span className="text-caption-sm text-outline flex items-center gap-xxs">
+                        <span className="material-symbols-outlined text-[16px]">visibility</span> {notice.views} views
+                    </span>
+                </div>
+                <h4 className="font-display-xs text-display-xs font-bold text-ink group-hover:text-primary transition-colors">{notice.title}</h4>
+                <p className="text-on-surface-variant font-body-md line-clamp-2">{notice.description}</p>
+                <div className="flex items-center gap-xl pt-xxs">
+                    <button className="flex items-center gap-xs text-primary font-caption-bold hover:underline">
+                        <span className="material-symbols-outlined text-[20px]">picture_as_pdf</span>
+                        DOWNLOAD PDF ({notice.size})
+                    </button>
+                </div>
+            </div>
+        </div>
+    </article>
+))}
 <div className="pt-lg flex justify-center">
 <button className="flex items-center gap-sm px-xxl py-sm border border-primary text-primary font-button-md text-button-md uppercase hover:bg-primary hover:text-on-ink transition-all">
                             Load More Notices

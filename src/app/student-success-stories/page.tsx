@@ -1,3 +1,6 @@
+"use client";
+import React, { useState } from "react";
+import mockData from "@/data/mockData.json";
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
