@@ -2,7 +2,7 @@
 
 # Northvale Institute of Engineering & Technology (NIET) Demo Website
 
-This repository contains a multi-page demo website for a college/institute, built with Next.js and focused on institutional pages such as admissions, academics, departments, resources, and student workflows.
+This repository contains a multi-page demo website for a college/institute, built with Next.js and focused on institutional pages such as admissions, academics, departments, resources, and student workflows. Chekout the [live demo](http://niet.barinr.xyz/)!
 
 ## Development
 
@@ -41,7 +41,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 
 ## Contributing
 
-Contributions are welcome! Feel free to open an issue to report a bug or suggest an improvement, or submit a pull request with your changes. Since this is a demo project there are no strict contribution guidelines — just keep changes focused and descriptive.
+Contributions are welcome! Feel free to open an issue to report a bug or suggest an improvement, or submit a pull request with your changes. Since this is a demo project there are no strict contribution guidelines, just keep changes focused and descriptive.
 
 ## License
 
